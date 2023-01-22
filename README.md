@@ -1,8 +1,7 @@
 <!-- For banner -->
-![banner (1)](https://user-images.githubusercontent.com/108221736/213935163-41bbf96d-01cd-4300-a0fa-fa67edcc24c0.png)
+![header](https://user-images.githubusercontent.com/108221736/213944618-c9750500-5b68-47bf-af18-fc6592cf0c98.png)
 
 <!-- For main text -->
-- 👋 Hi, I’m @SyNTaX-TheTrickster
 - 👀 I’m interested in Computer Science, Cybersecurity and Gaming
 - 🌱 I’m currently learning Computer Science major <br>
 Thanks for reading, I hope you all readers have a good day!
