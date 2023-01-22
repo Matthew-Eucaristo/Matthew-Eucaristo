@@ -44,7 +44,7 @@ Thanks for reading, I hope you all readers have a good day!
 <img src="https://readme-jokes.vercel.app/api?theme=radical" alt="Jokes Card" />
 
 <!-- For Quotes -->
-## And Remember...
+## And remember...
 [![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)](https://github.com/piyushsuthar/github-readme-quotes)
 
 <!---
