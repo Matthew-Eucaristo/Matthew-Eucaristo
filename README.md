@@ -1,3 +1,7 @@
+<!-- For banner -->
+![banner (1)](https://user-images.githubusercontent.com/108221736/213935163-41bbf96d-01cd-4300-a0fa-fa67edcc24c0.png)
+
+<!-- For main text -->
 - 👋 Hi, I’m @SyNTaX-TheTrickster
 - 👀 I’m interested in Computer Science, Cybersecurity and Gaming
 - 🌱 I’m currently learning Computer Science major <br>
@@ -14,3 +18,4 @@ Thanks for reading, I hope you all readers have a good day!
 SyNTaX-TheTrickster/SyNTaX-TheTrickster is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
+
