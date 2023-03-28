@@ -7,16 +7,13 @@
 Thanks for reading, I hope you all readers have a good day!
 
 <!-- For GitHub statistics -->
-![GitHub Visitor Count](https://komarev.com/ghpvc/?username=Matthew-Eucaristo&color=orange)
-
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Matthew-Eucaristo&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Matthew-Eucaristo&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
-
-[![trophy](https://github-profile-trophy.vercel.app/?username=Matthew-Eucaristo&theme=radical)](https://github.com/ryo-ma/github-profile-trophy)
-
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Matthew-Eucaristo&theme=radical)](https://git.io/streak-stats)
-
+<img src="https://komarev.com/ghpvc/?username=Matthew-Eucaristo&color=orange" alt="GitHub Visitor Count">
+<div style="display:flex; flex-wrap: wrap;">
+  <img src="https://github-readme-stats.vercel.app/api?username=Matthew-Eucaristo&show_icons=true&theme=radical" alt="Anurag's GitHub stats">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Matthew-Eucaristo&show_icons=true&theme=radical" alt="Top Langs">
+  <img src="https://github-profile-trophy.vercel.app/?username=Matthew-Eucaristo&theme=radical" alt="trophy">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Matthew-Eucaristo&theme=radical" alt="GitHub Streak">
+</div>
 
 
 <!-- For Languages and tools -->
