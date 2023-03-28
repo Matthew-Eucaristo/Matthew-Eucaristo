@@ -1,5 +1,5 @@
 <!-- For banner -->
-![header](https://user-images.githubusercontent.com/108221736/213944618-c9750500-5b68-47bf-af18-fc6592cf0c98.png)
+![Banner](https://user-images.githubusercontent.com/108221736/228186373-063ac4f5-af1a-4b86-b7fe-df4051f2de18.png)
 
 <!-- For main text -->
 - 👀 I’m interested in Computer Science, Cybersecurity and Gaming
@@ -7,15 +7,15 @@
 Thanks for reading, I hope you all readers have a good day!
 
 <!-- For GitHub statistics -->
-![GitHub Visitor Count](https://komarev.com/ghpvc/?username=SyNTaX-TheTrickster&color=orange)
+![GitHub Visitor Count](https://komarev.com/ghpvc/?username=Matthew-Eucaristo&color=orange)
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=SyNTaX-TheTrickster&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Matthew-Eucaristo&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SyNTaX-TheTrickster&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Matthew-Eucaristo&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=SyNTaX-TheTrickster&theme=radical)](https://github.com/ryo-ma/github-profile-trophy)
+[![trophy](https://github-profile-trophy.vercel.app/?username=Matthew-Eucaristo&theme=radical)](https://github.com/ryo-ma/github-profile-trophy)
 
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=SyNTaX-TheTrickster&theme=radical)](https://git.io/streak-stats)
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Matthew-Eucaristo&theme=radical)](https://git.io/streak-stats)
 
 
 
@@ -51,7 +51,7 @@ Thanks for reading, I hope you all readers have a good day!
 [![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)](https://github.com/piyushsuthar/github-readme-quotes)
 
 <!---
-SyNTaX-TheTrickster/SyNTaX-TheTrickster is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Matthew-Eucaristo/Matthew-Eucaristo is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
 
