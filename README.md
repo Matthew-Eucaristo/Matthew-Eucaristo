@@ -7,6 +7,8 @@
 Thanks for reading, I hope you all readers have a good day!
 
 <!-- For GitHub statistics -->
+![GitHub Visitor Count](https://komarev.com/ghpvc/?username=SyNTaX-TheTrickster&color=orange)
+
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=SyNTaX-TheTrickster&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SyNTaX-TheTrickster&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
@@ -14,6 +16,8 @@ Thanks for reading, I hope you all readers have a good day!
 [![trophy](https://github-profile-trophy.vercel.app/?username=SyNTaX-TheTrickster&theme=radical)](https://github.com/ryo-ma/github-profile-trophy)
 
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=SyNTaX-TheTrickster&theme=radical)](https://git.io/streak-stats)
+
+
 
 <!-- For Languages and tools -->
 <h3 align="left">Languages and Tools:</h3>
