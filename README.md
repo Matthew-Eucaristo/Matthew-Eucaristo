@@ -15,6 +15,13 @@ Thanks for reading, I hope you all readers have a good day!
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Matthew-Eucaristo&theme=radical" alt="GitHub Streak">
 </div>
 
+<!-- For Platane/snk Snake Contribution -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="github-snake.svg" />
+  <img alt="github-snake" src="github-snake.svg" />
+</picture>
+
 
 <!-- For Languages and tools -->
 <h3 align="left">Languages and Tools:</h3>
