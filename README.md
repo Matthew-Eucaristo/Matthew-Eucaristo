@@ -8,20 +8,21 @@ Thanks for reading, I hope you all readers have a good day!
 
 <!-- For GitHub statistics -->
 <img src="https://komarev.com/ghpvc/?username=Matthew-Eucaristo&color=orange" alt="GitHub Visitor Count">
-<div style="display:flex; flex-wrap: wrap;">
-  <img src="https://github-readme-stats.vercel.app/api?username=Matthew-Eucaristo&show_icons=true&theme=radical" alt="Anurag's GitHub stats">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Matthew-Eucaristo&show_icons=true&theme=radical" alt="Top Langs">
-  <img src="https://github-profile-trophy.vercel.app/?username=Matthew-Eucaristo&theme=radical" alt="trophy">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Matthew-Eucaristo&theme=radical" alt="GitHub Streak">
-</div>
 
-<!-- For Platane/snk Snake Contribution -->
+  <!-- For Platane/snk Snake Contribution -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Matthew-Eucaristo/Matthew-Eucaristo/output/github-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Matthew-Eucaristo/Matthew-Eucaristo/output/github-snake.svg" />
   <img alt="github-snake" src="https://raw.githubusercontent.com/Matthew-Eucaristo/Matthew-Eucaristo/output/github-contribution-grid-snake.svg" />
 </picture>
 
+
+<div style="display:flex; flex-wrap: wrap;">
+  <img src="https://github-readme-stats.vercel.app/api?username=Matthew-Eucaristo&show_icons=true&theme=radical" alt="Anurag's GitHub stats">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Matthew-Eucaristo&show_icons=true&theme=radical" alt="Top Langs">
+  <img src="https://github-profile-trophy.vercel.app/?username=Matthew-Eucaristo&theme=radical" alt="trophy">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Matthew-Eucaristo&theme=radical" alt="GitHub Streak">
+</div>
 
 <!-- For Languages and tools -->
 <h3 align="left">Languages and Tools:</h3>
