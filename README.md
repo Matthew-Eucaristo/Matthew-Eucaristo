@@ -2,7 +2,7 @@
 ![Banner](https://user-images.githubusercontent.com/108221736/228186373-063ac4f5-af1a-4b86-b7fe-df4051f2de18.png)
 
 <!-- For main text -->
-- 👀 I’m interested in Computer Science, Cybersecurity and Gaming
+- 👀 I’m interested in Computer Science, Game Development, Cybersecurity and ... ***to play game of course***
 - 🌱 I’m currently learning Computer Science major <br>
 Thanks for reading, I hope you all readers have a good day!
 
