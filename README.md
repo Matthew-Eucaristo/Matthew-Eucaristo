@@ -24,28 +24,7 @@ Thanks for reading, I hope you all readers have a good day!
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Matthew-Eucaristo&theme=radical" alt="GitHub Streak">
 </div>
 
-<!-- For Languages and tools -->
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> 
-<img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white">
-<img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white">
-<img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white">
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
-<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white">
 
-<img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white">
-<img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white">
-<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white">
-</p>
-
-<!-- For Games -->
-<h3 align="left">Games:</h3>
-<p align="left">
-<img src="https://img.shields.io/badge/Battle.net-000?style=for-the-badge&logo=battle.net&logoColor=148EFF">
-<img src="https://img.shields.io/badge/Riot_Games-D32936?style=for-the-badge&logo=riot-games&logoColor=white">
-<img src="https://img.shields.io/badge/Steam-000000?style=for-the-badge&logo=steam&logoColor=white">
-<img src="https://img.shields.io/badge/PlayStation-003791?style=for-the-badge&logo=playstation&logoColor=white">
-</p>
 
 <!-- For Jokes -->
 <h2>Need some jokes to cherish your programming workflow?</h2>
