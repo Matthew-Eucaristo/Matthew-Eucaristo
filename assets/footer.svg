@@ -1,0 +1,22 @@
+<svg width="1200" height="120" viewBox="0 0 1200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220" />
+      <stop offset="0.5" stop-color="#0f2a2e" />
+      <stop offset="1" stop-color="#14532d" />
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22c55e" />
+      <stop offset="0.5" stop-color="#f59e0b" />
+      <stop offset="1" stop-color="#22c55e" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="120" rx="20" fill="url(#bg)" />
+  <rect x="40" y="58" width="1120" height="2" fill="url(#line)" />
+  <text x="60" y="45" fill="#e2e8f0" font-size="18" font-family="Verdana, Arial, sans-serif" font-weight="700">
+    Let’s build the future of learning and play.
+  </text>
+  <text x="60" y="92" fill="#94a3b8" font-size="14" font-family="Verdana, Arial, sans-serif">
+    Open to collaboration, research, and ambitious game systems.
+  </text>
+</svg>
