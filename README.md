@@ -71,15 +71,6 @@ I am a computer scientist focused on game development and AI. I work on Unreal E
 </p>
 
 ## GitHub in motion
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Matthew-Eucaristo&show_icons=true&rank_icon=github&hide_border=true&bg_color=00000000&title_color=f59e0b&text_color=93c5fd&icon_color=22c55e" alt="GitHub stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Matthew-Eucaristo&hide_border=true&background=00000000&ring=f59e0b&fire=22c55e&currStreakLabel=93c5fd&currStreakNum=e2e8f0&sideLabels=93c5fd&sideNums=e2e8f0&dates=94a3b8" alt="GitHub streak" />
-</div>
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Matthew-Eucaristo&layout=compact&hide_border=true&bg_color=00000000&title_color=f59e0b&text_color=93c5fd" alt="Top languages" />
-</div>
-
 <!-- Contribution snake -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Matthew-Eucaristo/Matthew-Eucaristo/output/github-snake-dark.svg" />
