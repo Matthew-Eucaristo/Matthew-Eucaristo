@@ -56,19 +56,6 @@ I am a computer scientist focused on game development and AI. I work on Unreal E
   <img src="assets/divider.svg" alt="divider" />
 </p>
 
-## Featured work
-<table>
-  <tr>
-    <td align="center"><img src="assets/card-ggai.svg" alt="GeniusGrowthAI" /></td>
-    <td align="center"><img src="assets/card-rl.svg" alt="RL for Games" /></td>
-    <td align="center"><img src="assets/card-web3.svg" alt="Web3 Game" /></td>
-  </tr>
-</table>
-
-<p align="center">
-  <img src="assets/divider.svg" alt="divider" />
-</p>
-
 ## Now
 - Founder at GeniusGrowthAI, building AI for education.
 - Prototyping a blockchain-based web3 game.
@@ -87,10 +74,6 @@ I am a computer scientist focused on game development and AI. I work on Unreal E
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Matthew-Eucaristo&show_icons=true&rank_icon=github&hide_border=true&bg_color=00000000&title_color=f59e0b&text_color=93c5fd&icon_color=22c55e" alt="GitHub stats" />
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Matthew-Eucaristo&hide_border=true&background=00000000&ring=f59e0b&fire=22c55e&currStreakLabel=93c5fd&currStreakNum=e2e8f0&sideLabels=93c5fd&sideNums=e2e8f0&dates=94a3b8" alt="GitHub streak" />
-</div>
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Matthew-Eucaristo&bg_color=0b1220&color=94a3b8&line=22c55e&point=f59e0b&area=true&hide_border=true" alt="Activity graph" />
 </div>
 
 <div align="center">
