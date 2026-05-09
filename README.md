@@ -121,12 +121,12 @@ Visitors can vote on the next public `Matthew.SYS` mission. Click one command, s
 
 | Mission | Signal | Unique voters |
 | --- | --- | ---: |
-| [Deploy GG.AI Infra](https://github.com/Matthew-Eucaristo/Matthew-Eucaristo/issues/new?title=Bingo%20Mission%3A%20Deploy%20GG.AI%20Infra&body=Mission%3A%20Deploy%20GG.AI%20Infra%0A%0AI%20vote%20for%20this%20Matthew.SYS%20mission.) | AI agents + DevOps | 0 |
-| [Train RL Game Agent](https://github.com/Matthew-Eucaristo/Matthew-Eucaristo/issues/new?title=Bingo%20Mission%3A%20Train%20RL%20Game%20Agent&body=Mission%3A%20Train%20RL%20Game%20Agent%0A%0AI%20vote%20for%20this%20Matthew.SYS%20mission.) | Rainbow DQN + game AI | 0 |
-| [Prototype Unreal System](https://github.com/Matthew-Eucaristo/Matthew-Eucaristo/issues/new?title=Bingo%20Mission%3A%20Prototype%20Unreal%20System&body=Mission%3A%20Prototype%20Unreal%20System%0A%0AI%20vote%20for%20this%20Matthew.SYS%20mission.) | Gameplay + tooling | 0 |
-| [Ship Web3 Game Loop](https://github.com/Matthew-Eucaristo/Matthew-Eucaristo/issues/new?title=Bingo%20Mission%3A%20Ship%20Web3%20Game%20Loop&body=Mission%3A%20Ship%20Web3%20Game%20Loop%0A%0AI%20vote%20for%20this%20Matthew.SYS%20mission.) | Smart contracts + play | 0 |
+| [Deploy GG.AI Infra](https://github.com/Matthew-Eucaristo/Matthew-Eucaristo/issues/new?title=Bingo+Mission%3A+Deploy+GG.AI+Infra&body=Mission%3A+Deploy+GG.AI+Infra%0A%0AI+vote+for+this+Matthew.SYS+mission.) | AI agents + DevOps | 0 |
+| [Train RL Game Agent](https://github.com/Matthew-Eucaristo/Matthew-Eucaristo/issues/new?title=Bingo+Mission%3A+Train+RL+Game+Agent&body=Mission%3A+Train+RL+Game+Agent%0A%0AI+vote+for+this+Matthew.SYS+mission.) | Rainbow DQN + game AI | 0 |
+| [Prototype Unreal System](https://github.com/Matthew-Eucaristo/Matthew-Eucaristo/issues/new?title=Bingo+Mission%3A+Prototype+Unreal+System&body=Mission%3A+Prototype+Unreal+System%0A%0AI+vote+for+this+Matthew.SYS+mission.) | Gameplay + tooling | 0 |
+| [Ship Web3 Game Loop](https://github.com/Matthew-Eucaristo/Matthew-Eucaristo/issues/new?title=Bingo+Mission%3A+Ship+Web3+Game+Loop&body=Mission%3A+Ship+Web3+Game+Loop%0A%0AI+vote+for+this+Matthew.SYS+mission.) | Smart contracts + play | 0 |
 
-<sub>Last vote per GitHub user counts. Last sync: pending.</sub>
+<sub>Last vote per GitHub user counts. Last sync: 2026-05-09T19:36:09Z.</sub>
 <!-- mission-board:end -->
 
 ## GitHub In Motion
