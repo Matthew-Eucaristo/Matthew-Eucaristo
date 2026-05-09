@@ -1,22 +1,32 @@
-<svg width="1200" height="120" viewBox="0 0 1200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="150" viewBox="0 0 1200 150" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Matthew.SYS footer call to action">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="120" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0b1220" />
-      <stop offset="0.5" stop-color="#0f2a2e" />
-      <stop offset="1" stop-color="#14532d" />
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="150" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#050816" />
+      <stop offset="0.48" stop-color="#0b1220" />
+      <stop offset="1" stop-color="#082f27" />
     </linearGradient>
-    <linearGradient id="line" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+    <linearGradient id="line" x1="40" y1="0" x2="1160" y2="0" gradientUnits="userSpaceOnUse">
       <stop stop-color="#22c55e" />
-      <stop offset="0.5" stop-color="#f59e0b" />
-      <stop offset="1" stop-color="#22c55e" />
+      <stop offset="0.5" stop-color="#2dd4bf" />
+      <stop offset="1" stop-color="#f59e0b" />
     </linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18" />
+    </filter>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .pulse { animation: pulse 2s ease-in-out infinite; }
+      @keyframes pulse { 0%, 100% { opacity: .42; } 50% { opacity: 1; } }
+      @media (prefers-reduced-motion: reduce) { .pulse { animation: none; } }
+    </style>
   </defs>
-  <rect width="1200" height="120" rx="20" fill="url(#bg)" />
-  <rect x="40" y="58" width="1120" height="2" fill="url(#line)" />
-  <text x="60" y="45" fill="#e2e8f0" font-size="18" font-family="Verdana, Arial, sans-serif" font-weight="700">
-    Let’s build the future of learning and play.
-  </text>
-  <text x="60" y="92" fill="#94a3b8" font-size="14" font-family="Verdana, Arial, sans-serif">
-    Open to collaboration, research, and ambitious game systems.
-  </text>
+  <rect width="1200" height="150" rx="24" fill="url(#bg)" />
+  <circle cx="1080" cy="34" r="54" fill="#22c55e" opacity="0.25" filter="url(#blur)" />
+  <circle cx="180" cy="132" r="62" fill="#f59e0b" opacity="0.2" filter="url(#blur)" />
+  <rect x="42" y="40" width="1116" height="70" rx="18" fill="#020617" opacity="0.58" stroke="#163c3a" />
+  <rect x="64" y="74" width="1072" height="2" fill="url(#line)" />
+  <text class="mono" x="76" y="64" fill="#22c55e" font-size="14" font-weight="700">SYS_OP: COLLABORATION PORT OPEN</text>
+  <text class="mono" x="76" y="101" fill="#e2e8f0" font-size="18" font-weight="800">Build the future of learning and play.</text>
+  <text class="mono" x="720" y="101" fill="#94a3b8" font-size="14">AI agents / Unreal systems / RL / Web3 games</text>
+  <circle class="pulse" cx="1118" cy="58" r="7" fill="#22c55e" />
 </svg>

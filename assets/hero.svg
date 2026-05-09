@@ -1,50 +1,89 @@
-<svg width="1200" height="320" viewBox="0 0 1200 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Matthew.SYS control room hero">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="320" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0b1220" />
-      <stop offset="0.5" stop-color="#0f2a2e" />
-      <stop offset="1" stop-color="#14532d" />
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#050816" />
+      <stop offset="0.45" stop-color="#0b1220" />
+      <stop offset="1" stop-color="#082f27" />
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="edge" x1="56" y1="54" x2="1144" y2="306" gradientUnits="userSpaceOnUse">
       <stop stop-color="#22c55e" />
+      <stop offset="0.55" stop-color="#2dd4bf" />
       <stop offset="1" stop-color="#f59e0b" />
     </linearGradient>
-    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M24 0H0V24" fill="none" stroke="#1f2a44" stroke-width="1" />
+    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#22c55e" stop-opacity="0" />
+      <stop offset="0.5" stop-color="#22c55e" stop-opacity="0.26" />
+      <stop offset="1" stop-color="#22c55e" stop-opacity="0" />
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#1f2a44" stroke-width="1" />
     </pattern>
-    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="22" />
+    <filter id="blur" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="24" />
     </filter>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .sans { font-family: Inter, Segoe UI, Arial, sans-serif; }
+      .pulse { animation: pulse 2.6s ease-in-out infinite; }
+      .float { animation: float 5s ease-in-out infinite; }
+      .sweep { animation: sweep 5.8s linear infinite; }
+      @keyframes pulse { 0%, 100% { opacity: .48; } 50% { opacity: 1; } }
+      @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+      @keyframes sweep { 0% { transform: translateY(-210px); } 100% { transform: translateY(260px); } }
+      @media (prefers-reduced-motion: reduce) { .pulse, .float, .sweep { animation: none; } }
+    </style>
   </defs>
 
-  <rect width="1200" height="320" rx="24" fill="url(#bg)" />
-  <rect width="1200" height="320" rx="24" fill="url(#grid)" opacity="0.35" />
+  <rect width="1200" height="360" rx="28" fill="url(#bg)" />
+  <rect width="1200" height="360" rx="28" fill="url(#grid)" opacity="0.42" />
+  <circle cx="1032" cy="78" r="84" fill="#22c55e" opacity="0.34" filter="url(#blur)" />
+  <circle cx="214" cy="314" r="110" fill="#f59e0b" opacity="0.26" filter="url(#blur)" />
+  <path d="M0 306C142 266 231 280 362 300C505 322 600 324 756 278C914 232 1048 232 1200 266V360H0V306Z" fill="#020617" opacity="0.42" />
 
-  <circle cx="1050" cy="70" r="58" fill="#22c55e" opacity="0.6" filter="url(#blur)" />
-  <circle cx="220" cy="260" r="80" fill="#f59e0b" opacity="0.45" filter="url(#blur)" />
+  <rect x="56" y="54" width="1088" height="252" rx="28" fill="#07111f" opacity="0.88" stroke="url(#edge)" stroke-width="1.5" />
+  <rect x="56" y="54" width="1088" height="252" rx="28" fill="#020617" opacity="0.26" />
+  <rect class="sweep" x="56" y="54" width="1088" height="90" rx="28" fill="url(#scan)" />
 
-  <g opacity="0.6" stroke="#2dd4bf" stroke-width="2">
-    <path d="M40 80H220L260 40H520" />
-    <path d="M680 260H940L980 220H1160" />
-    <circle cx="220" cy="80" r="6" fill="#2dd4bf" />
-    <circle cx="980" cy="220" r="6" fill="#2dd4bf" />
+  <g class="mono" transform="translate(90 88)">
+    <text x="0" y="0" fill="#22c55e" font-size="14" font-weight="700">SYS_OP: ONLINE / ID: GG-001 / UPLINK: GENIUSGROWTHAI</text>
+    <text x="0" y="72" fill="#e5f6ef" font-size="58" font-weight="800" letter-spacing="2">MATTHEW.SYS</text>
+    <text x="2" y="108" fill="#f8fafc" font-size="20" font-weight="700">Co-Founder / CTO @ GeniusGrowthAI</text>
+    <text x="2" y="142" fill="#94a3b8" font-size="17">AI agent infrastructure  |  Unreal Engine  |  RL for games  |  Web3 game systems</text>
+    <text x="2" y="177" fill="#f59e0b" font-size="15" font-weight="700">KISS. SHIP. ITERATE. DO THE WORK.</text>
   </g>
 
-  <rect x="80" y="70" width="1040" height="180" rx="18" fill="#0b1220" opacity="0.65" stroke="url(#accent)" stroke-width="1.5" />
+  <g transform="translate(790 82)">
+    <rect x="0" y="0" width="300" height="178" rx="20" fill="#020617" opacity="0.74" stroke="#163c3a" />
+    <g class="mono" fill="#cbd5e1" font-size="13">
+      <text x="24" y="36" fill="#22c55e" font-weight="700">CONTROL LOOP</text>
+      <text x="24" y="70">01  GG.AI agent fleet</text>
+      <text x="24" y="98">02  DevOps + infra flow</text>
+      <text x="24" y="126">03  RL gameplay research</text>
+      <text x="24" y="154">04  Web3 game economy</text>
+    </g>
+    <g class="pulse">
+      <circle cx="255" cy="34" r="7" fill="#22c55e" />
+      <circle cx="255" cy="34" r="16" stroke="#22c55e" opacity="0.4" />
+    </g>
+  </g>
 
-  <text x="120" y="150" fill="#e2e8f0" font-size="44" font-family="Verdana, Arial, sans-serif" font-weight="700">
-    Matthew Eucaristo
-  </text>
-  <text x="120" y="188" fill="#94a3b8" font-size="18" font-family="Verdana, Arial, sans-serif">
-    Founder @ GeniusGrowthAI  •  Game Dev (Unreal Engine)  •  AI / RL for Games  •  Web3 Games
-  </text>
-  <text x="120" y="220" fill="#22c55e" font-size="16" font-family="Verdana, Arial, sans-serif">
-    Building intelligent learning systems and next-gen interactive worlds
-  </text>
+  <g class="float" transform="translate(973 236)">
+    <circle cx="44" cy="44" r="40" fill="#0f2a2e" stroke="#22c55e" stroke-width="2" />
+    <rect x="18" y="30" width="52" height="34" rx="12" fill="#07111f" stroke="#2dd4bf" />
+    <circle cx="34" cy="47" r="4" fill="#f59e0b" />
+    <circle cx="54" cy="47" r="4" fill="#f59e0b" />
+    <path d="M34 58H54" stroke="#22c55e" stroke-width="3" stroke-linecap="round" />
+    <path d="M44 20V9" stroke="#22c55e" stroke-width="3" stroke-linecap="round" />
+    <circle cx="44" cy="7" r="4" fill="#22c55e" />
+    <text class="mono" x="44" y="96" text-anchor="middle" fill="#94a3b8" font-size="12" font-weight="700">BINGO.AI</text>
+  </g>
 
-  <g opacity="0.5" stroke="#f59e0b" stroke-width="2">
-    <path d="M900 110h170" />
-    <path d="M900 140h120" />
-    <path d="M900 170h150" />
+  <g opacity="0.66" stroke="#2dd4bf" stroke-width="2" stroke-linecap="round">
+    <path d="M68 93H28" />
+    <path d="M28 93V148H56" />
+    <path d="M1135 264H1174" />
+    <path d="M1174 264V210H1144" />
+    <circle cx="28" cy="93" r="4" fill="#2dd4bf" />
+    <circle cx="1174" cy="264" r="4" fill="#2dd4bf" />
   </g>
 </svg>
