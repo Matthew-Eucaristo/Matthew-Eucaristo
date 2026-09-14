@@ -24,7 +24,6 @@ jobs:
           outputs: |
             dist/github-snake.svg?palette=github-light&color_snake=%23f59e0b&color_dots=%23ebedf0,%23bbf7d0,%2386efac,%2322c55e,%23f59e0b
             dist/github-snake-dark.svg?palette=github-dark&color_snake=%23f59e0b&color_dots=%230b1220,%230f2a2e,%2314532d,%2322c55e,%23f59e0b
-            dist/github-snake-ocean.gif?color_snake=%23f59e0b&color_dots=%23bfd6f6,%238dbdff,%2364a1f4,%234b91f1,%233c7dd9
 
       - name: Publish snake assets
         uses: crazy-max/ghaction-github-pages@v4
