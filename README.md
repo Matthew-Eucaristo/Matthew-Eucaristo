@@ -13,18 +13,19 @@ Rule of thumb: keep it simple, measure it, ship it.
 | project | what it is | built with |
 | :-- | :-- | :-- |
 | [**s1**](https://github.com/Matthew-Eucaristo/s1) | Voice-first macOS agent. A fast local *System 1* acts; an LLM *System 2* is asked only when unsure. Every step gated and logged. `brew install --cask s1` | Swift 6 · AX API · ScreenCaptureKit |
+| [**flutterkill**](https://github.com/Matthew-Eucaristo/flutterkill) | npkill for Flutter. One TUI finds `build/`, `.dart_tool`, Pods and Gradle leftovers plus pub, Gradle, FVM and Xcode caches, flags stale projects, and moves what you pick to the Trash. `brew install matthew-eucaristo/tap/flutterkill` | Go · Bubble Tea |
 | [**Mouse Maze Mayhem**](https://mouse-maze-mayhem-skripsi.web.app) | My thesis, playable. Four cats vs. one RL mouse in 3D mazes — a solver-distilled policy running in your browser via ONNX. | PyTorch · ONNX · React Three Fiber |
 | [**solitaire-rl**](https://github.com/Matthew-Eucaristo/solitaire-rl) | Masked DQN and MaskablePPO learning Klondike, judged on a fixed 1000-deal benchmark. Honest result: the heuristic still wins. | Python · SB3 · Gymnasium |
 | [**crypto-cycle-signals**](https://github.com/Matthew-Eucaristo/crypto-cycle-signals) | Futures indicator anchored to BTC's 4-year cycle; every parameter earned by backtest on 68 perps × 6 years. | Pine Script v6 |
 | [**Flip10**](https://github.com/Matthew-Eucaristo/Flip10) | Shut the Box, polished: 3D tile flips, procedural audio, offline PWA. [Play →](https://flip10.pages.dev) | Flutter |
-| [**Poppp: Rocket Balloon**](https://github.com/Matthew-Eucaristo/GMTKGameJam2024) | GMTK Game Jam 2024 entry — steer a balloon, inflate it by blowing into your mic. [Play →](https://mammamiaaaaa.itch.io/pop-rocket-balloon) | Unreal Engine |
 
 <details>
-<summary><code>$ ls ~/archive</code> — university game lab</summary>
+<summary><code>$ ls ~/archive</code> — game jam + university game lab</summary>
 <br>
 
 | build | stack |
 | :-- | :-- |
+| [Poppp: Rocket Balloon](https://github.com/Matthew-Eucaristo/GMTKGameJam2024) · [play](https://mammamiaaaaa.itch.io/pop-rocket-balloon) | Unreal Engine · GMTK Game Jam 2024 |
 | [FOCUS tower defense](https://github.com/Matthew-Eucaristo/FOCUS-Game) · [play](https://syntax-gamedev.itch.io/focus-td) | Unreal Engine 5 |
 | [Sliding puzzle](https://github.com/Matthew-Eucaristo/Sliding-Puzzle-UnrealEngine) | Unreal Engine 5 |
 | [Shoot The Ghost AR](https://github.com/Matthew-Eucaristo/Shoot-The-Ghost-AR-KelasARVR) · [play](https://syntax-gamedev.itch.io/shoot-the-ghost-ar) | Unreal Engine · AR |
