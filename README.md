@@ -91,6 +91,6 @@ brew install matthew-eucaristo/tap/{fell,flutterkill,nodekill,lately}
 
 ### `$ ping matthew`
 
-[LinkedIn](https://www.linkedin.com/in/matthew-eucaristo-265127184/) · [X](https://x.com/0xZexy) · [itch.io](https://syntax-gamedev.itch.io/) · [CV](https://mattheweuc.vercel.app/)
+[LinkedIn](https://www.linkedin.com/in/matthew-eucaristo-265127184/) · [X](https://x.com/0xZexy) · [itch.io](https://syntax-gamedev.itch.io/)
 
 <sub>pytorch · stable-baselines3 · onnx · swift · typescript · react · three.js · go · bubble tea · lua · unreal engine · docker · cloudflare</sub>
