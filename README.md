@@ -50,7 +50,7 @@ brew install matthew-eucaristo/tap/lately
   <img alt="Graph of public projects: fell, flutterkill and nodekill ship through homebrew-tap and feed the planned decruft; lately sits beside them as a Go tool for macOS; s1 has its landing page and cask; spoor.nvim and jupynvim are Neovim plugins; the games form their own cluster" src="assets/graph-dark.svg" width="100%">
 </picture>
 
-<sub>Drawn by <a href="graph/build.py"><code>graph/build.py</code></a> on every change and once a week. It only draws repos the GitHub API reports as public.</sub>
+<sub>Drawn by <a href="graph/build.py"><code>graph/build.py</code></a> on every change and once a week. It only draws repos the GitHub API reports as public. <a href="https://matthew-eucaristo.github.io/Matthew-Eucaristo/">Interactive version →</a></sub>
 
 <details>
 <summary><code>$ ls ~/archive</code> — game jam + university game lab</summary>
