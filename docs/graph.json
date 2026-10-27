@@ -3,80 +3,80 @@
   {
    "id": "#agents",
    "tag": true,
-   "x": 566.8,
-   "y": 185.0
+   "x": 563.2,
+   "y": 190.4
   },
   {
    "id": "#games",
    "tag": true,
-   "x": 257.0,
-   "y": 197.4
+   "x": 248.8,
+   "y": 195.9
   },
   {
    "id": "#go",
    "tag": true,
-   "x": 398.3,
-   "y": 231.1
+   "x": 387.9,
+   "y": 238.3
   },
   {
    "id": "#macos",
    "tag": true,
-   "x": 420.2,
-   "y": 91.9
+   "x": 417.8,
+   "y": 88.8
   },
   {
    "id": "#neovim",
    "tag": true,
-   "x": 641.2,
-   "y": 273.5
+   "x": 644.6,
+   "y": 280.2
   },
   {
    "id": "Flip10",
    "group": "games",
    "url": "https://github.com/Matthew-Eucaristo/Flip10",
    "desc": "",
-   "x": 284.0,
-   "y": 134.1
+   "x": 281.3,
+   "y": 129.8
   },
   {
    "id": "crypto-cycle-signals",
    "group": "misc",
    "url": "https://github.com/Matthew-Eucaristo/crypto-cycle-signals",
    "desc": "Crypto futures indicator (Pine v6): BTC 4-year-cycle anchored, two measured signal engines (trend pullback + capitulation fade), limit-order entries. 87% WR backtested on 68 perps × 6y, sniper, not scalper.",
-   "x": 303.3,
-   "y": 342.1
+   "x": 288.3,
+   "y": 343.2
   },
   {
    "id": "decruft",
    "group": "tools",
    "planned": true,
    "note": "planned umbrella TUI over the cleaners",
-   "x": 481.8,
-   "y": 335.1
+   "x": 473.9,
+   "y": 339.3
   },
   {
    "id": "fell",
    "group": "tools",
    "url": "https://github.com/Matthew-Eucaristo/fell",
    "desc": "Find and safely clean up git worktrees left behind by AI coding agents (TUI): evidence first, Trash + rescue bundle, never breaks the agent's own lifecycle",
-   "x": 506.7,
-   "y": 260.0
+   "x": 494.2,
+   "y": 259.0
   },
   {
    "id": "flutterkill",
    "group": "tools",
    "url": "https://github.com/Matthew-Eucaristo/flutterkill",
    "desc": "npkill for Flutter: reclaim disk space from Flutter/Dart build artifacts and global caches (TUI)",
-   "x": 413.9,
-   "y": 300.9
+   "x": 404.1,
+   "y": 305.1
   },
   {
    "id": "homebrew-tap",
    "group": "tools",
    "url": "https://github.com/Matthew-Eucaristo/homebrew-tap",
    "desc": "",
-   "x": 464.7,
-   "y": 219.2
+   "x": 444.2,
+   "y": 212.2
   },
   {
    "id": "jupynvim",
@@ -85,64 +85,64 @@
    "note": "upstream PRs",
    "url": "https://github.com/sheng-tse/jupynvim",
    "desc": "Jupyter notebooks in Neovim, plus a full remote workspace over SSH that edits any file and runs kernels on a remote machine or cluster as if local. Kitty graphics, Rust backend.",
-   "x": 688.7,
-   "y": 238.1
+   "x": 695.3,
+   "y": 241.9
   },
   {
    "id": "lately",
    "group": "tools",
    "url": "https://github.com/Matthew-Eucaristo/lately",
    "desc": "What just happened on my Mac? A classified timeline from the unified log, crash reports and persistence items (TUI). No root, no daemon, no AI.",
-   "x": 371.6,
-   "y": 144.4
+   "x": 390.2,
+   "y": 155.6
   },
   {
    "id": "mob-run",
    "group": "games",
    "url": "https://github.com/Matthew-Eucaristo/mob-run",
    "desc": "The game from those fake mobile ads — for real. 3D crowd-runner × multiplier-gates shooter in Three.js.",
-   "x": 260.9,
-   "y": 267.0
+   "x": 229.4,
+   "y": 266.4
   },
   {
    "id": "nodekill",
    "group": "tools",
    "url": "https://github.com/Matthew-Eucaristo/nodekill",
    "desc": "Reclaim the disk space Node.js leaves behind (TUI): node_modules, .next and framework caches, npm/pnpm/Yarn/Bun caches, npx, global packages and old Node versions; Trash first, official commands only",
-   "x": 450.1,
-   "y": 267.7
+   "x": 442.1,
+   "y": 271.7
   },
   {
    "id": "s1",
    "group": "s1",
    "url": "https://github.com/Matthew-Eucaristo/s1",
    "desc": "Voice-first macOS agent — drive your whole Mac by voice: sees the screen via Accessibility, acts via clicks/typing, verifies every step. Fast local System 1 + pluggable System 2 LLM. Beta.",
-   "x": 492.7,
-   "y": 136.6
+   "x": 492.0,
+   "y": 134.5
   },
   {
    "id": "s1-landingpage",
    "group": "s1",
    "url": "https://github.com/Matthew-Eucaristo/s1-landingpage",
    "desc": "Landing page for S1",
-   "x": 541.8,
-   "y": 89.9
+   "x": 543.9,
+   "y": 93.0
   },
   {
    "id": "solitaire-rl",
    "group": "games",
    "url": "https://github.com/Matthew-Eucaristo/solitaire-rl",
    "desc": "Trying to make RL in Solitare with help of Devin Cloud (since it's still free)",
-   "x": 191.3,
-   "y": 203.1
+   "x": 182.4,
+   "y": 172.6
   },
   {
    "id": "spoor.nvim",
    "group": "nvim",
    "url": "https://github.com/Matthew-Eucaristo/spoor.nvim",
    "desc": "Follow the trail through a codebase in LazyVim: live call bow-tie, trace mode with notes, and what your agent changed. No AI, no index.",
-   "x": 638.0,
-   "y": 186.5
+   "x": 635.5,
+   "y": 193.6
   }
  ],
  "edges": [
@@ -205,6 +205,11 @@
    "lately",
    "#macos",
    "tag"
+  ],
+  [
+   "lately",
+   "homebrew-tap",
+   "formula"
   ],
   [
    "mob-run",
