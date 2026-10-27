@@ -2,45 +2,93 @@
   "seconds_per_slide": 5,
   "slides": [
     {
-      "repo": "s1", "group": "s1", "visual": "voice",
+      "repo": "s1",
+      "group": "s1",
+      "visual": "voice",
       "kicker": "AI agent · macOS",
       "desc": "Voice-first macOS agent. A fast local System 1 acts; an LLM System 2 is asked only when unsure. Every step gated and logged.",
-      "stack": ["Swift 6", "AX API", "ScreenCaptureKit"],
+      "stack": [
+        "Swift 6",
+        "AX API",
+        "ScreenCaptureKit"
+      ],
       "where": "s1-mac.pages.dev"
     },
     {
-      "repo": "Mouse Maze Mayhem", "group": "games", "visual": "maze",
+      "repo": "Mouse Maze Mayhem",
+      "group": "games",
+      "visual": "maze",
       "kicker": "reinforcement learning · thesis",
       "desc": "Four cats vs. one RL mouse in 3D mazes. A solver-distilled policy plays in your browser via ONNX.",
-      "stack": ["PyTorch", "ONNX", "React Three Fiber"],
+      "stack": [
+        "PyTorch",
+        "ONNX",
+        "React Three Fiber"
+      ],
       "where": "mouse-maze-mayhem-skripsi.web.app"
     },
     {
-      "repo": "mob-run", "group": "games", "visual": "crowd",
+      "repo": "mob-run",
+      "group": "games",
+      "visual": "crowd",
       "kicker": "game · browser",
       "desc": "The game from those fake mobile ads, for real: pick multiplier gates and outgun mobs, walls and bosses across 5 zones.",
-      "stack": ["Three.js"],
+      "stack": [
+        "Three.js"
+      ],
       "where": "mob-run.pages.dev"
     },
     {
-      "repo": "fell", "group": "tools", "visual": "worktrees",
+      "repo": "decruft",
+      "group": "tools",
+      "visual": "storage",
+      "kicker": "dev tool · Go TUI",
+      "desc": "A better Storage screen for programmers: one scan of what your dev machine has piled up, reclaimed through each tool's own command.",
+      "stack": [
+        "Go",
+        "Bubble Tea",
+        "fell · nodekill · flutterkill"
+      ],
+      "where": "github.com/Matthew-Eucaristo/decruft"
+    },
+    {
+      "repo": "fell",
+      "group": "tools",
+      "visual": "worktrees",
       "kicker": "dev tool · Go TUI",
       "desc": "Finds git worktrees left behind by AI coding agents, shows the evidence, and cleans up without breaking the agent's own lifecycle.",
-      "stack": ["Go", "Bubble Tea", "Homebrew"],
+      "stack": [
+        "Go",
+        "Bubble Tea",
+        "Homebrew"
+      ],
       "where": "brew install matthew-eucaristo/tap/fell"
     },
     {
-      "repo": "lately", "group": "tools", "visual": "timeline",
+      "repo": "lately",
+      "group": "tools",
+      "visual": "timeline",
       "kicker": "dev tool · macOS",
       "desc": "What just happened on my Mac? A classified timeline from the unified log, crash reports and persistence items. No root, no daemon.",
-      "stack": ["Go", "Bubble Tea", "Homebrew"],
+      "stack": [
+        "Go",
+        "Bubble Tea",
+        "Homebrew"
+      ],
       "where": "brew install matthew-eucaristo/tap/lately"
     },
     {
-      "repo": "spoor.nvim", "group": "nvim", "visual": "bowtie",
+      "repo": "spoor.nvim",
+      "group": "nvim",
+      "visual": "bowtie",
       "kicker": "Neovim plugin",
-      "desc": "Follow the trail through a codebase in LazyVim: a live call bow-tie, trace mode with notes, and what your agent changed.",
-      "stack": ["Lua", "Neovim", "LSP"],
+      "desc": "Follow the trail through a codebase in Neovim: a call bow-tie on K, trace mode with notes, and what your agent changed. No AI, no index.",
+      "stack": [
+        "Lua",
+        "Neovim",
+        "LSP",
+        "tree-sitter"
+      ],
       "where": "github.com/Matthew-Eucaristo/spoor.nvim"
     }
   ]

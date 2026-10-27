@@ -157,7 +157,29 @@ def bowtie(c, a):
     return out
 
 
-VISUALS = {"voice": voice, "maze": maze, "crowd": crowd, "worktrees": worktrees, "timeline": timeline, "bowtie": bowtie}
+def storage(c, a):
+    # The disk as one bar by developer category; the safe parts shrink as their own tool cleans them.
+    rows = [("Xcode", "xcrun simctl delete unavailable", c["orange"], 70, True), ("Go", "go clean -cache", a, 46, True),
+            ("node_modules", "via nodekill", c["nvim"], 58, False), ("Homebrew", "brew autoremove", c["games"], 34, True),
+            ("Docker", "docker system prune", c["misc"], 40, True)]
+    out = [f'<text x="8" y="14" font-size="10" fill="{c["muted"]}">disk</text>',
+           f'<rect x="8" y="20" width="272" height="16" rx="4" fill="{c["border"]}" opacity="0.5"/>']
+    x = 8
+    for i, (_, _, col, w, safe) in enumerate(rows):
+        cls = f' class="strip" style="animation-delay:{i * 0.35:.2f}s"' if safe else ""
+        out.append(f'<rect{cls} x="{x}" y="20" width="{w}" height="16" fill="{col}" opacity="0.85"/>')
+        x += w
+    for i, (name, cmd, col, _, _) in enumerate(rows):
+        y = 64 + i * 25
+        out += [f'<circle cx="14" cy="{y - 4}" r="4" fill="{col}"/>',
+                f'<text x="26" y="{y}" font-size="11" fill="{c["text"]}">{name}</text>',
+                f'<text x="282" y="{y}" text-anchor="end" font-size="10" fill="{c["muted"]}">{esc(cmd)}</text>']
+    out.append(f'<text x="144" y="196" text-anchor="middle" font-size="11" fill="{c["muted"]}">one scan · each tool cleans its own</text>')
+    return out
+
+
+VISUALS = {"voice": voice, "maze": maze, "crowd": crowd, "worktrees": worktrees, "timeline": timeline, "bowtie": bowtie,
+           "storage": storage}
 
 SKETCH_CSS = (
     ".wave{transform-box:fill-box;transform-origin:center;animation:wave 1.1s ease-in-out infinite}"
