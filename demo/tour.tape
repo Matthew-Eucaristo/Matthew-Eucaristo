@@ -1,5 +1,5 @@
 # Record with: vhs demo/tour.tape   (from this repo's root, with the tool repos in ../dev-tools)
-# Each tool runs from its committed HEAD in its own demo/setup.sh workspace; see demo/tour.sh.
+# Each tool runs from its public origin/main in its own demo/setup.sh workspace; see demo/tour.sh.
 # Afterwards shrink the palette as AGENTS.md describes (keeps the GIF under 1 MB).
 Output assets/tour.gif
 Set Shell bash

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Helpers for demo/tour.tape. Each tool is built from its committed HEAD (what is public)
+# Helpers for demo/tour.tape. Each tool is built from its public origin/main
 # and runs in a child shell set up by the tool's own demo/setup.sh: a synthetic HOME with
 # generated dummy data, so nothing from the real machine is shown.
 # Expects the tool repos next to this one, in ../dev-tools/<tool>.
@@ -11,7 +11,8 @@ stage() { # tool: opens a shell in the tool's demo workspace; `exit` returns her
   local src demo
   src=$(mktemp -d)
   demo="$(cd /tmp && pwd -P)/$1-demo" # every family setup.sh builds its workspace here
-  git -C "$TOUR_TOOLS/$1" archive HEAD | tar -x -C "$src"
+  git -C "$TOUR_TOOLS/$1" fetch -q origin
+  git -C "$TOUR_TOOLS/$1" archive origin/main | tar -x -C "$src" # what is public, whatever the clone has checked out
   # Some setups end by exec'ing their own clean shell; the others get one here.
   (cd "$src" && source demo/setup.sh && exec bash --norc --noprofile)
   cd / && hdiutil detach -quiet "$demo/home" 2>/dev/null
