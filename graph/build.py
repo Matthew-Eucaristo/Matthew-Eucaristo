@@ -27,11 +27,13 @@ THEMES = {
         "bg": "#0d1117", "bar": "#161b22", "border": "#30363d", "edge": "#30363d",
         "text": "#e6edf3", "muted": "#7d8590",
         "tools": "#3fb950", "s1": "#d29922", "nvim": "#a371f7", "games": "#58a6ff", "misc": "#db61a2",
+        "red": "#f85149", "orange": "#db6d28",
     },
     "light": {
         "bg": "#ffffff", "bar": "#f6f8fa", "border": "#d0d7de", "edge": "#d0d7de",
         "text": "#1f2328", "muted": "#656d76",
         "tools": "#1a7f37", "s1": "#9a6700", "nvim": "#8250df", "games": "#0969da", "misc": "#bf3989",
+        "red": "#cf222e", "orange": "#bc4c00",
     },
 }
 
@@ -220,21 +222,29 @@ def svg(nodes, edges, xy, deg, c):
     out = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" '
         f'aria-label="Graph of public projects: dev tools, the Homebrew tap, s1, Neovim plugins and games">',
-        "<style>text{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace}</style>",
+        "<style>text{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace}"
+        ".n{opacity:0;animation:in .6s ease-out forwards}.flow{animation:flow 1.2s linear infinite}"
+        "@keyframes in{to{opacity:1}}@keyframes flow{to{stroke-dashoffset:-8}}"
+        "@media (prefers-reduced-motion:reduce){.n{animation:none;opacity:1}.flow{animation:none}.pulse{display:none}}</style>",
         f'<rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="12" fill="{c["bg"]}" stroke="{c["border"]}"/>',
         f'<path d="M0.5 12.5 a12 12 0 0 1 12 -12 h{W - 25} a12 12 0 0 1 12 12 v19.5 h-{W - 1} z" fill="{c["bar"]}"/>',
         f'<line x1="0.5" y1="{TOP}" x2="{W - 0.5}" y2="{TOP}" stroke="{c["border"]}"/>',
         f'<text x="20" y="21" font-size="12" fill="{c["muted"]}"><tspan fill="{c["tools"]}">~</tspan> $ graph --public</text>',
         f'<text x="{W - 20}" y="21" text-anchor="end" font-size="12" fill="{c["muted"]}">{len([n for n in nodes.values() if not n.get("tag")])} nodes · {len(edges)} links</text>',
     ]
-    for a, b, kind in sorted(edges):
+    for k, (a, b, kind) in enumerate(sorted(edges)):
         (x1, y1), (x2, y2) = xy[a], xy[b]
-        dash = ' stroke-dasharray="4 4"' if kind == "depends" else ""
+        dash = ' stroke-dasharray="4 4" class="flow"' if kind == "depends" else ""
         op = "0.6" if kind == "tag" else "1"
         out.append(f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="{c["edge"]}" stroke-width="1.2" stroke-opacity="{op}"{dash}/>')
-    for i in sorted(nodes):
+        if kind != "tag":  # a slow signal along real links (tap, depends, landing page)
+            dur = 3.5 + (k * 7 % 5) * 0.5
+            out.append(f'<circle class="pulse" r="1.8" fill="{c[nodes[a].get("group", "tools")]}" opacity="0.8">'
+                       f'<animateMotion dur="{dur}s" begin="{k * 0.4:.1f}s" repeatCount="indefinite" path="M{x1} {y1} L{x2} {y2}"/></circle>')
+    for k, i in enumerate(sorted(nodes, key=lambda i: (nodes[i].get("tag", False), -deg[i], i))):
         n, (x, y) = nodes[i], xy[i]
         r = round(radius(n, deg[i]), 1)
+        out.append(f'<g class="n" style="animation-delay:{k * 0.06:.2f}s">')
         if n.get("tag"):
             out.append(f'<circle cx="{x}" cy="{y}" r="{r}" fill="{c["muted"]}"/>')
             fill, weight = c["muted"], ""
@@ -246,6 +256,7 @@ def svg(nodes, edges, xy, deg, c):
             fill, weight = c["text"], ""
         text = esc(label(n))
         out.append(f'<text x="{x}" y="{round(y + r + 12, 1)}" text-anchor="middle" font-size="11" fill="{fill}"{weight}>{text}</text>')
+        out.append("</g>")
     legend = [("tools", "dev tools"), ("s1", "s1"), ("nvim", "neovim"), ("games", "games")]
     lx = 20
     for g, name in legend:

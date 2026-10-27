@@ -1,15 +1,15 @@
-name: graph
+name: profile
 
 on:
   push:
     branches: [main]
-    paths: [graph/**, .github/workflows/graph.yml]
+    paths: [graph/**, cards/**, .github/workflows/profile.yml]
   schedule:
-    - cron: "17 3 * * 1" # weekly: picks up new tap formulas and visibility changes
+    - cron: "17 3 * * 1" # weekly: picks up new releases, tap formulas and visibility changes
   workflow_dispatch:
 
 concurrency:
-  group: graph
+  group: profile
   cancel-in-progress: true
 
 permissions:
@@ -21,13 +21,13 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v5
-      - run: python3 graph/build.py
+      - run: python3 graph/build.py && python3 cards/build.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: commit if changed
         run: |
-          git add assets/graph-*.svg docs/graph.json
+          git add assets/graph-*.svg assets/spotlight-*.svg assets/shipped-*.svg docs/graph.json
           git diff --cached --quiet && exit 0
           git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
-            commit -m "graph: regenerate"
+            commit -m "profile: regenerate cards and graph"
           git push

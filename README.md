@@ -8,29 +8,33 @@ I build **agents** that act, **RL** that plays games, and **games** people actua
 Day job: infra and AI agents for an education platform at [GeniusGrowthAI](https://geniusgrowth.ai).
 Rule of thumb: keep it simple, measure it, ship it.
 
-### `$ ls ~/projects`
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/spotlight-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/spotlight-light.svg">
+  <img alt="Project spotlight, one at a time: s1, a voice-first macOS agent; Mouse Maze Mayhem, an RL mouse escaping cats in the browser; mob-run, a 3D crowd-runner; fell, a cleaner for AI agents' git worktrees; lately, a timeline of what just happened on a Mac; spoor.nvim, a call bow-tie for Neovim" src="assets/spotlight-dark.svg" width="100%">
+</picture>
 
-| project | what it is | built with |
-| :-- | :-- | :-- |
-| [**s1**](https://github.com/Matthew-Eucaristo/s1) | Voice-first macOS agent. A fast local *System 1* acts; an LLM *System 2* is asked only when unsure. Every step gated and logged. [Site →](https://s1-mac.pages.dev) `brew install --cask matthew-eucaristo/tap/s1` | Swift 6 · AX API · ScreenCaptureKit |
-| [**Mouse Maze Mayhem**](https://mouse-maze-mayhem-skripsi.web.app) | My thesis, playable. Four cats vs. one RL mouse in 3D mazes — a solver-distilled policy running in your browser via ONNX. | PyTorch · ONNX · React Three Fiber |
-| [**solitaire-rl**](https://github.com/Matthew-Eucaristo/solitaire-rl) | Masked DQN and MaskablePPO learning Klondike, judged on a fixed 1000-deal benchmark. Honest result: the heuristic still wins. | Python · SB3 · Gymnasium |
-| [**mob-run**](https://github.com/Matthew-Eucaristo/mob-run) | The game from those fake mobile ads, for real: a 3D crowd-runner where you pick multiplier gates and outgun mobs, walls and bosses across 5 zones. [Play →](https://mob-run.pages.dev) | Three.js |
-| [**crypto-cycle-signals**](https://github.com/Matthew-Eucaristo/crypto-cycle-signals) | Futures indicator anchored to BTC's 4-year cycle; every parameter earned by backtest on 68 perps × 6 years. | Pine Script v6 |
-| [**Flip10**](https://github.com/Matthew-Eucaristo/Flip10) | Shut the Box, polished: hand-drawn SVG tiles, procedural audio, fully offline. [Play →](https://flip10.pages.dev) | Next.js · TypeScript |
+[**s1**](https://github.com/Matthew-Eucaristo/s1) · [**Mouse Maze Mayhem**](https://mouse-maze-mayhem-skripsi.web.app) · [**mob-run**](https://mob-run.pages.dev) · [**Flip10**](https://flip10.pages.dev) · [**solitaire-rl**](https://github.com/Matthew-Eucaristo/solitaire-rl) · [**crypto-cycle-signals**](https://github.com/Matthew-Eucaristo/crypto-cycle-signals)
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/shipped-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/shipped-light.svg">
+  <img alt="Latest releases of my public repos, newest first, refreshed weekly from the GitHub API" src="assets/shipped-dark.svg" width="100%">
+</picture>
 
 ### `$ ls ~/dev-tools`
 
 <img alt="A short tour on demo data: fell lists git worktrees left by AI coding agents, flutterkill lists Flutter build artifacts and caches, nodekill lists node_modules, caches and old Node versions, each with a safety label and in dry-run mode; then lately replays sample events as a classified timeline and opens one event card" src="assets/tour.gif" width="100%">
 
-Small terminal tools for a developer's Mac. The cleaners show the evidence first, move folders to the Trash, and remove caches and installs only through the owning tool's own command. Recorded with [VHS](https://github.com/charmbracelet/vhs) on demo data ([tape](demo/tour.tape)); each repo's README has a longer demo.
+Terminal tools for a developer's Mac, recorded on demo data ([tape](demo/tour.tape)). Evidence first, Trash by default, and every removal through the owning tool's own command.
 
 ```sh
-brew install matthew-eucaristo/tap/fell
-brew install matthew-eucaristo/tap/flutterkill
-brew install matthew-eucaristo/tap/nodekill
-brew install matthew-eucaristo/tap/lately
+brew install matthew-eucaristo/tap/{fell,flutterkill,nodekill,lately}
 ```
+
+<details>
+<summary>what each tool does</summary>
+<br>
 
 | tool | what it does | status |
 | :-- | :-- | :-- |
@@ -39,8 +43,10 @@ brew install matthew-eucaristo/tap/lately
 | [**nodekill**](https://github.com/Matthew-Eucaristo/nodekill) | The Node.js footprint: `node_modules`, `.next` and framework caches, npm/pnpm/Yarn/Bun caches, npx, globals, old Node versions. | v0.1.0 |
 | [**lately**](https://github.com/Matthew-Eucaristo/lately) | What just happened on my Mac? A classified timeline from the unified log, crash reports and persistence items, with a card per event. No root, no daemon. [Demo →](https://github.com/Matthew-Eucaristo/lately#readme) | v0.1.0 |
 | **decruft** | One TUI over the cleaners. It reads each tool's `scan --json` and hands removal back to that tool. | planned |
-| [**spoor.nvim**](https://github.com/Matthew-Eucaristo/spoor.nvim) | Follow the trail through a codebase in LazyVim: live call bow-tie, trace mode with notes, and what your agent changed. No AI, no index. [Demo →](https://github.com/Matthew-Eucaristo/spoor.nvim#readme) | v1.0.0 · lazy.nvim |
+| [**spoor.nvim**](https://github.com/Matthew-Eucaristo/spoor.nvim) | Follow the trail through a codebase in LazyVim: live call bow-tie, trace mode with notes, and what your agent changed. No AI, no index. [Demo →](https://github.com/Matthew-Eucaristo/spoor.nvim#readme) | v1.1.0 · lazy.nvim |
 | [**jupynvim**](https://github.com/sheng-tse/jupynvim) | Jupyter notebooks in Neovim. I send fixes upstream: [HTML tables for pandas Styler](https://github.com/sheng-tse/jupynvim/pull/45), [docs](https://github.com/sheng-tse/jupynvim/pull/46). | upstream PRs |
+
+</details>
 
 ### `$ graph --public`
 
@@ -51,6 +57,21 @@ brew install matthew-eucaristo/tap/lately
 </picture>
 
 <sub>Drawn by <a href="graph/build.py"><code>graph/build.py</code></a> on every change and once a week. It only draws repos the GitHub API reports as public. <a href="https://matthew-eucaristo.github.io/Matthew-Eucaristo/">Interactive version →</a></sub>
+
+<details>
+<summary><code>$ ls -l ~/projects</code> — every project, with its stack</summary>
+<br>
+
+| project | what it is | built with |
+| :-- | :-- | :-- |
+| [**s1**](https://github.com/Matthew-Eucaristo/s1) | Voice-first macOS agent. A fast local *System 1* acts; an LLM *System 2* is asked only when unsure. Every step gated and logged. [Site →](https://s1-mac.pages.dev) `brew install --cask matthew-eucaristo/tap/s1` | Swift 6 · AX API · ScreenCaptureKit |
+| [**Mouse Maze Mayhem**](https://mouse-maze-mayhem-skripsi.web.app) | My thesis, playable. Four cats vs. one RL mouse in 3D mazes — a solver-distilled policy running in your browser via ONNX. | PyTorch · ONNX · React Three Fiber |
+| [**solitaire-rl**](https://github.com/Matthew-Eucaristo/solitaire-rl) | Masked DQN and MaskablePPO learning Klondike, judged on a fixed 1000-deal benchmark. Honest result: the heuristic still wins. | Python · SB3 · Gymnasium |
+| [**mob-run**](https://github.com/Matthew-Eucaristo/mob-run) | The game from those fake mobile ads, for real: a 3D crowd-runner where you pick multiplier gates and outgun mobs, walls and bosses across 5 zones. [Play →](https://mob-run.pages.dev) | Three.js |
+| [**crypto-cycle-signals**](https://github.com/Matthew-Eucaristo/crypto-cycle-signals) | Futures indicator anchored to BTC's 4-year cycle; every parameter earned by backtest on 68 perps × 6 years. | Pine Script v6 |
+| [**Flip10**](https://github.com/Matthew-Eucaristo/Flip10) | Shut the Box, polished: hand-drawn SVG tiles, procedural audio, fully offline. [Play →](https://flip10.pages.dev) | Next.js · TypeScript |
+
+</details>
 
 <details>
 <summary><code>$ ls ~/archive</code> — game jam + university game lab</summary>
@@ -68,16 +89,8 @@ brew install matthew-eucaristo/tap/lately
 
 </details>
 
-### `$ cat stack.txt`
-
-```txt
-ai      pytorch · stable-baselines3 · onnx · llm agents
-apps    swift · typescript · react · three.js · flutter · go
-tools   go · bubble tea · lua · neovim · homebrew
-games   unreal engine · react three fiber · godot
-ops     docker · linux · firebase · cloudflare
-```
-
 ### `$ ping matthew`
 
 [LinkedIn](https://www.linkedin.com/in/matthew-eucaristo-265127184/) · [X](https://x.com/0xZexy) · [itch.io](https://syntax-gamedev.itch.io/) · [CV](https://mattheweuc.vercel.app/)
+
+<sub>pytorch · stable-baselines3 · onnx · swift · typescript · react · three.js · go · bubble tea · lua · unreal engine · docker · cloudflare</sub>

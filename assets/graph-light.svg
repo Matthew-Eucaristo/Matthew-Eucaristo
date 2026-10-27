@@ -1,71 +1,118 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="880" height="400" viewBox="0 0 880 400" role="img" aria-label="Graph of public projects: dev tools, the Homebrew tap, s1, Neovim plugins and games">
-<style>text{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace}</style>
+<style>text{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace}.n{opacity:0;animation:in .6s ease-out forwards}.flow{animation:flow 1.2s linear infinite}@keyframes in{to{opacity:1}}@keyframes flow{to{stroke-dashoffset:-8}}@media (prefers-reduced-motion:reduce){.n{animation:none;opacity:1}.flow{animation:none}.pulse{display:none}}</style>
 <rect x="0.5" y="0.5" width="879" height="399" rx="12" fill="#ffffff" stroke="#d0d7de"/>
 <path d="M0.5 12.5 a12 12 0 0 1 12 -12 h855 a12 12 0 0 1 12 12 v19.5 h-879 z" fill="#f6f8fa"/>
 <line x1="0.5" y1="32" x2="879.5" y2="32" stroke="#d0d7de"/>
 <text x="20" y="21" font-size="12" fill="#656d76"><tspan fill="#1a7f37">~</tspan> $ graph --public</text>
 <text x="860" y="21" text-anchor="end" font-size="12" fill="#656d76">14 nodes · 23 links</text>
 <line x1="281.3" y1="129.8" x2="248.8" y2="195.9" stroke="#d0d7de" stroke-width="1.2" stroke-opacity="0.6"/>
-<line x1="473.9" y1="339.3" x2="494.2" y2="259.0" stroke="#d0d7de" stroke-width="1.2" stroke-opacity="1" stroke-dasharray="4 4"/>
-<line x1="473.9" y1="339.3" x2="404.1" y2="305.1" stroke="#d0d7de" stroke-width="1.2" stroke-opacity="1" stroke-dasharray="4 4"/>
-<line x1="473.9" y1="339.3" x2="442.1" y2="271.7" stroke="#d0d7de" stroke-width="1.2" stroke-opacity="1" stroke-dasharray="4 4"/>
+<line x1="473.9" y1="339.3" x2="494.2" y2="259.0" stroke="#d0d7de" stroke-width="1.2" stroke-opacity="1" stroke-dasharray="4 4" class="flow"/>
+<circle class="pulse" r="1.8" fill="#1a7f37" opacity="0.8"><animateMotion dur="4.5s" begin="0.4s" repeatCount="indefinite" path="M473.9 339.3 L494.2 259.0"/></circle>
+<line x1="473.9" y1="339.3" x2="404.1" y2="305.1" stroke="#d0d7de" stroke-width="1.2" stroke-opacity="1" stroke-dasharray="4 4" class="flow"/>
+<circle class="pulse" r="1.8" fill="#1a7f37" opacity="0.8"><animateMotion dur="5.5s" begin="0.8s" repeatCount="indefinite" path="M473.9 339.3 L404.1 305.1"/></circle>
+<line x1="473.9" y1="339.3" x2="442.1" y2="271.7" stroke="#d0d7de" stroke-width="1.2" stroke-opacity="1" stroke-dasharray="4 4" class="flow"/>
+<circle class="pulse" r="1.8" fill="#1a7f37" opacity="0.8"><animateMotion dur="4.0s" begin="1.2s" repeatCount="indefinite" path="M473.9 339.3 L442.1 271.7"/></circle>
 <line x1="494.2" y1="259.0" x2="563.2" y2="190.4" stroke="#d0d7de" stroke-width="1.2" stroke-opacity="0.6"/>
 <line x1="494.2" y1="259.0" x2="387.9" y2="238.3" stroke="#d0d7de" stroke-width="1.2" stroke-opacity="0.6"/>
 <line x1="494.2" y1="259.0" x2="444.2" y2="212.2" stroke="#d0d7de" stroke-width="1.2" stroke-opacity="1"/>
+<circle class="pulse" r="1.8" fill="#1a7f37" opacity="0.8"><animateMotion dur="4.5s" begin="2.4s" repeatCount="indefinite" path="M494.2 259.0 L444.2 212.2"/></circle>
 <line x1="404.1" y1="305.1" x2="387.9" y2="238.3" stroke="#d0d7de" stroke-width="1.2" stroke-opacity="0.6"/>
 <line x1="404.1" y1="305.1" x2="444.2" y2="212.2" stroke="#d0d7de" stroke-width="1.2" stroke-opacity="1"/>
+<circle class="pulse" r="1.8" fill="#1a7f37" opacity="0.8"><animateMotion dur="4.0s" begin="3.2s" repeatCount="indefinite" path="M404.1 305.1 L444.2 212.2"/></circle>
 <line x1="695.3" y1="241.9" x2="644.6" y2="280.2" stroke="#d0d7de" stroke-width="1.2" stroke-opacity="0.6"/>
 <line x1="390.2" y1="155.6" x2="387.9" y2="238.3" stroke="#d0d7de" stroke-width="1.2" stroke-opacity="0.6"/>
 <line x1="390.2" y1="155.6" x2="417.8" y2="88.8" stroke="#d0d7de" stroke-width="1.2" stroke-opacity="0.6"/>
 <line x1="390.2" y1="155.6" x2="444.2" y2="212.2" stroke="#d0d7de" stroke-width="1.2" stroke-opacity="1"/>
+<circle class="pulse" r="1.8" fill="#1a7f37" opacity="0.8"><animateMotion dur="5.5s" begin="4.8s" repeatCount="indefinite" path="M390.2 155.6 L444.2 212.2"/></circle>
 <line x1="229.4" y1="266.4" x2="248.8" y2="195.9" stroke="#d0d7de" stroke-width="1.2" stroke-opacity="0.6"/>
 <line x1="442.1" y1="271.7" x2="387.9" y2="238.3" stroke="#d0d7de" stroke-width="1.2" stroke-opacity="0.6"/>
 <line x1="442.1" y1="271.7" x2="444.2" y2="212.2" stroke="#d0d7de" stroke-width="1.2" stroke-opacity="1"/>
+<circle class="pulse" r="1.8" fill="#1a7f37" opacity="0.8"><animateMotion dur="3.5s" begin="6.0s" repeatCount="indefinite" path="M442.1 271.7 L444.2 212.2"/></circle>
 <line x1="492.0" y1="134.5" x2="563.2" y2="190.4" stroke="#d0d7de" stroke-width="1.2" stroke-opacity="0.6"/>
 <line x1="492.0" y1="134.5" x2="417.8" y2="88.8" stroke="#d0d7de" stroke-width="1.2" stroke-opacity="0.6"/>
 <line x1="492.0" y1="134.5" x2="444.2" y2="212.2" stroke="#d0d7de" stroke-width="1.2" stroke-opacity="1"/>
+<circle class="pulse" r="1.8" fill="#9a6700" opacity="0.8"><animateMotion dur="4.0s" begin="7.2s" repeatCount="indefinite" path="M492.0 134.5 L444.2 212.2"/></circle>
 <line x1="543.9" y1="93.0" x2="492.0" y2="134.5" stroke="#d0d7de" stroke-width="1.2" stroke-opacity="1"/>
+<circle class="pulse" r="1.8" fill="#9a6700" opacity="0.8"><animateMotion dur="5.0s" begin="7.6s" repeatCount="indefinite" path="M543.9 93.0 L492.0 134.5"/></circle>
 <line x1="182.4" y1="172.6" x2="248.8" y2="195.9" stroke="#d0d7de" stroke-width="1.2" stroke-opacity="0.6"/>
 <line x1="635.5" y1="193.6" x2="563.2" y2="190.4" stroke="#d0d7de" stroke-width="1.2" stroke-opacity="0.6"/>
 <line x1="635.5" y1="193.6" x2="644.6" y2="280.2" stroke="#d0d7de" stroke-width="1.2" stroke-opacity="0.6"/>
-<circle cx="563.2" cy="190.4" r="2.5" fill="#656d76"/>
-<text x="563.2" y="204.9" text-anchor="middle" font-size="11" fill="#656d76">#agents</text>
-<circle cx="248.8" cy="195.9" r="2.5" fill="#656d76"/>
-<text x="248.8" y="210.4" text-anchor="middle" font-size="11" fill="#656d76">#games</text>
-<circle cx="387.9" cy="238.3" r="2.5" fill="#656d76"/>
-<text x="387.9" y="252.8" text-anchor="middle" font-size="11" fill="#656d76">#go</text>
-<circle cx="417.8" cy="88.8" r="2.5" fill="#656d76"/>
-<text x="417.8" y="103.3" text-anchor="middle" font-size="11" fill="#656d76">#macos</text>
-<circle cx="644.6" cy="280.2" r="2.5" fill="#656d76"/>
-<text x="644.6" y="294.7" text-anchor="middle" font-size="11" fill="#656d76">#neovim</text>
-<circle cx="281.3" cy="129.8" r="5.0" fill="#0969da"/>
-<text x="281.3" y="146.8" text-anchor="middle" font-size="11" fill="#1f2328">Flip10</text>
-<circle cx="288.3" cy="343.2" r="3.5" fill="#bf3989"/>
-<text x="288.3" y="358.7" text-anchor="middle" font-size="11" fill="#1f2328">crypto-cycle-signals</text>
-<circle cx="473.9" cy="339.3" r="6.1" fill="#ffffff" stroke="#1a7f37" stroke-width="1.5" stroke-dasharray="2.5 2"/>
-<text x="473.9" y="357.4" text-anchor="middle" font-size="11" fill="#656d76">decruft (planned)</text>
-<circle cx="494.2" cy="259.0" r="6.5" fill="#1a7f37"/>
-<text x="494.2" y="277.5" text-anchor="middle" font-size="11" fill="#1f2328">fell</text>
-<circle cx="404.1" cy="305.1" r="6.1" fill="#1a7f37"/>
-<text x="404.1" y="323.2" text-anchor="middle" font-size="11" fill="#1f2328">flutterkill</text>
+<g class="n" style="animation-delay:0.00s">
 <circle cx="444.2" cy="212.2" r="6.9" fill="#1a7f37"/>
 <text x="444.2" y="231.1" text-anchor="middle" font-size="11" fill="#1f2328">homebrew-tap</text>
-<circle cx="695.3" cy="241.9" r="5.0" fill="#8250df"/>
-<text x="695.3" y="258.9" text-anchor="middle" font-size="11" fill="#1f2328">jupynvim</text>
-<circle cx="390.2" cy="155.6" r="6.1" fill="#1a7f37"/>
-<text x="390.2" y="173.7" text-anchor="middle" font-size="11" fill="#1f2328">lately</text>
-<circle cx="229.4" cy="266.4" r="5.0" fill="#0969da"/>
-<text x="229.4" y="283.4" text-anchor="middle" font-size="11" fill="#1f2328">mob-run</text>
-<circle cx="442.1" cy="271.7" r="6.1" fill="#1a7f37"/>
-<text x="442.1" y="289.8" text-anchor="middle" font-size="11" fill="#1f2328">nodekill</text>
+</g>
+<g class="n" style="animation-delay:0.06s">
+<circle cx="494.2" cy="259.0" r="6.5" fill="#1a7f37"/>
+<text x="494.2" y="277.5" text-anchor="middle" font-size="11" fill="#1f2328">fell</text>
+</g>
+<g class="n" style="animation-delay:0.12s">
 <circle cx="492.0" cy="134.5" r="6.5" fill="#9a6700"/>
 <text x="492.0" y="153.0" text-anchor="middle" font-size="11" fill="#1f2328">s1</text>
-<circle cx="543.9" cy="93.0" r="5.0" fill="#9a6700"/>
-<text x="543.9" y="110.0" text-anchor="middle" font-size="11" fill="#1f2328">s1-landingpage</text>
-<circle cx="182.4" cy="172.6" r="5.0" fill="#0969da"/>
-<text x="182.4" y="189.6" text-anchor="middle" font-size="11" fill="#1f2328">solitaire-rl</text>
+</g>
+<g class="n" style="animation-delay:0.18s">
+<circle cx="473.9" cy="339.3" r="6.1" fill="#ffffff" stroke="#1a7f37" stroke-width="1.5" stroke-dasharray="2.5 2"/>
+<text x="473.9" y="357.4" text-anchor="middle" font-size="11" fill="#656d76">decruft (planned)</text>
+</g>
+<g class="n" style="animation-delay:0.24s">
+<circle cx="404.1" cy="305.1" r="6.1" fill="#1a7f37"/>
+<text x="404.1" y="323.2" text-anchor="middle" font-size="11" fill="#1f2328">flutterkill</text>
+</g>
+<g class="n" style="animation-delay:0.30s">
+<circle cx="390.2" cy="155.6" r="6.1" fill="#1a7f37"/>
+<text x="390.2" y="173.7" text-anchor="middle" font-size="11" fill="#1f2328">lately</text>
+</g>
+<g class="n" style="animation-delay:0.36s">
+<circle cx="442.1" cy="271.7" r="6.1" fill="#1a7f37"/>
+<text x="442.1" y="289.8" text-anchor="middle" font-size="11" fill="#1f2328">nodekill</text>
+</g>
+<g class="n" style="animation-delay:0.42s">
 <circle cx="635.5" cy="193.6" r="5.6" fill="#8250df"/>
 <text x="635.5" y="211.2" text-anchor="middle" font-size="11" fill="#1f2328">spoor.nvim</text>
+</g>
+<g class="n" style="animation-delay:0.48s">
+<circle cx="281.3" cy="129.8" r="5.0" fill="#0969da"/>
+<text x="281.3" y="146.8" text-anchor="middle" font-size="11" fill="#1f2328">Flip10</text>
+</g>
+<g class="n" style="animation-delay:0.54s">
+<circle cx="695.3" cy="241.9" r="5.0" fill="#8250df"/>
+<text x="695.3" y="258.9" text-anchor="middle" font-size="11" fill="#1f2328">jupynvim</text>
+</g>
+<g class="n" style="animation-delay:0.60s">
+<circle cx="229.4" cy="266.4" r="5.0" fill="#0969da"/>
+<text x="229.4" y="283.4" text-anchor="middle" font-size="11" fill="#1f2328">mob-run</text>
+</g>
+<g class="n" style="animation-delay:0.66s">
+<circle cx="543.9" cy="93.0" r="5.0" fill="#9a6700"/>
+<text x="543.9" y="110.0" text-anchor="middle" font-size="11" fill="#1f2328">s1-landingpage</text>
+</g>
+<g class="n" style="animation-delay:0.72s">
+<circle cx="182.4" cy="172.6" r="5.0" fill="#0969da"/>
+<text x="182.4" y="189.6" text-anchor="middle" font-size="11" fill="#1f2328">solitaire-rl</text>
+</g>
+<g class="n" style="animation-delay:0.78s">
+<circle cx="288.3" cy="343.2" r="3.5" fill="#bf3989"/>
+<text x="288.3" y="358.7" text-anchor="middle" font-size="11" fill="#1f2328">crypto-cycle-signals</text>
+</g>
+<g class="n" style="animation-delay:0.84s">
+<circle cx="387.9" cy="238.3" r="2.5" fill="#656d76"/>
+<text x="387.9" y="252.8" text-anchor="middle" font-size="11" fill="#656d76">#go</text>
+</g>
+<g class="n" style="animation-delay:0.90s">
+<circle cx="563.2" cy="190.4" r="2.5" fill="#656d76"/>
+<text x="563.2" y="204.9" text-anchor="middle" font-size="11" fill="#656d76">#agents</text>
+</g>
+<g class="n" style="animation-delay:0.96s">
+<circle cx="248.8" cy="195.9" r="2.5" fill="#656d76"/>
+<text x="248.8" y="210.4" text-anchor="middle" font-size="11" fill="#656d76">#games</text>
+</g>
+<g class="n" style="animation-delay:1.02s">
+<circle cx="417.8" cy="88.8" r="2.5" fill="#656d76"/>
+<text x="417.8" y="103.3" text-anchor="middle" font-size="11" fill="#656d76">#macos</text>
+</g>
+<g class="n" style="animation-delay:1.08s">
+<circle cx="644.6" cy="280.2" r="2.5" fill="#656d76"/>
+<text x="644.6" y="294.7" text-anchor="middle" font-size="11" fill="#656d76">#neovim</text>
+</g>
 <circle cx="24" cy="384" r="3.5" fill="#1a7f37"/>
 <text x="32" y="388" font-size="11" fill="#656d76">dev tools</text>
 <circle cx="107.4" cy="384" r="3.5" fill="#9a6700"/>
