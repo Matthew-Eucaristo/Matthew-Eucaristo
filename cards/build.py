@@ -208,9 +208,11 @@ def spotlight(spec, c):
     fade = 1.6
     css = (
         f"text{{{FONT}}}"
-        f".s{{opacity:0;animation:slide {n * t}s infinite}}"
-        f"@keyframes slide{{0%{{opacity:0;transform:translateY(6px)}}{fade:.2f}%{{opacity:1;transform:none}}"
-        f"{share - fade:.2f}%{{opacity:1;transform:none}}{share:.2f}%,100%{{opacity:0}}}}"
+        # Negative delays keep every slide's animation running from t=0, and each slide is fully visible at the
+        # start of its own turn, so the first frame (and any renderer that ignores CSS animation) shows slide 0.
+        f".s{{opacity:0;animation:slide {n * t}s infinite}}.s0{{opacity:1}}"
+        f"@keyframes slide{{0%,{share - fade:.2f}%{{opacity:1;transform:none}}{share:.2f}%{{opacity:0}}"
+        f"{100 - fade:.2f}%{{opacity:0;transform:translateY(6px)}}100%{{opacity:1;transform:none}}}}"
         f".bar{{transform-box:fill-box;transform-origin:left;animation:bar {n * t}s linear infinite}}"
         f"@keyframes bar{{0%{{transform:scaleX(0)}}{share:.2f}%,100%{{transform:scaleX(1)}}}}"
         + SKETCH_CSS +
@@ -223,7 +225,8 @@ def spotlight(spec, c):
         out.append(f'<circle cx="{W - 32 - (n - 1 - k) * 14}" cy="{h - 22}" r="3" fill="{c["border"]}"/>')
     for i, s in enumerate(slides):
         a = c[s["group"]]
-        g = [f'<g class="s s{i}" style="animation-delay:{i * t}s">']
+        delay = f"animation-delay:{(i - n) * t}s"
+        g = [f'<g class="s s{i}" style="{delay}">']
         g.append(f'<text x="32" y="70" font-size="11" letter-spacing="1.5" fill="{a}">{esc(s["kicker"].upper())}</text>')
         g.append(f'<text x="32" y="106" font-size="28" font-weight="700" fill="{c["text"]}">{esc(s["repo"])}</text>')
         for j, line in enumerate(textwrap.wrap(s["desc"], 54)[:3]):
@@ -240,7 +243,7 @@ def spotlight(spec, c):
         g += VISUALS[s["visual"]](c, a)
         g.append("</g>")
         g.append(f'<circle cx="{W - 32 - (n - 1 - i) * 14}" cy="{h - 22}" r="3.5" fill="{a}"/>')
-        g.append(f'<rect class="bar" x="1" y="{TOP}" width="{W - 2}" height="2" fill="{a}" opacity="0.7"/>')
+        g.append(f'<rect class="bar" style="{delay}" x="1" y="{TOP}" width="{W - 2}" height="2" fill="{a}" opacity="0.7"/>')
         g.append("</g>")
         out += g
     out.append("</svg>")
@@ -262,11 +265,10 @@ def latest_releases(owner, groups, limit=5):
 
 def shipped(rels, c):
     h, n = 112, max(len(rels), 1)
-    css = (f"text{{{FONT}}}.r{{opacity:0;animation:up .6s ease-out forwards}}"
-           "@keyframes up{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}"
+    css = (f"text{{{FONT}}}"
            ".new{animation:ping 2s ease-out infinite;transform-box:fill-box;transform-origin:center}"
            "@keyframes ping{0%{transform:scale(1);opacity:.8}100%{transform:scale(3);opacity:0}}"
-           "@media (prefers-reduced-motion:reduce){*{animation:none!important}.r{opacity:1}.new{display:none}}")
+           "@media (prefers-reduced-motion:reduce){*{animation:none!important}.new{display:none}}")
     out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{h}" viewBox="0 0 {W} {h}" role="img" '
            f'aria-label="Latest releases: {esc(", ".join(r["repo"] + " " + r["tag"] for r in rels))}">', f"<style>{css}</style>"]
     out += chrome(c, h, "git tag --sort=-creatordate  # latest releases", "updated weekly")
@@ -274,7 +276,7 @@ def shipped(rels, c):
     for i, r in enumerate(rels):
         x, a = 20 + i * cw, c[r["group"]]
         day = datetime.fromisoformat(r["date"].replace("Z", "+00:00")).strftime("%b %-d")
-        out.append(f'<g class="r" style="animation-delay:{0.2 + i * 0.15:.2f}s">')
+        out.append('<g>')
         out.append(f'<rect x="{x + 4:.0f}" y="46" width="{cw - 8:.0f}" height="50" rx="8" fill="{c["bar"]}" stroke="{c["border"]}"/>')
         if i == 0:
             out.append(f'<circle class="new" cx="{x + 20:.0f}" cy="63" r="3.5" fill="{a}"/>')

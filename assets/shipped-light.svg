@@ -1,39 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="880" height="112" viewBox="0 0 880 112" role="img" aria-label="Latest releases: flutterkill v0.3.0, fell v0.1.2, lately v0.2.1, spoor.nvim v2.0.0, nodekill v0.1.0">
-<style>text{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace}.r{opacity:0;animation:up .6s ease-out forwards}@keyframes up{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}.new{animation:ping 2s ease-out infinite;transform-box:fill-box;transform-origin:center}@keyframes ping{0%{transform:scale(1);opacity:.8}100%{transform:scale(3);opacity:0}}@media (prefers-reduced-motion:reduce){*{animation:none!important}.r{opacity:1}.new{display:none}}</style>
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="112" viewBox="0 0 880 112" role="img" aria-label="Latest releases: decruft v0.1.0, flutterkill v0.3.0, fell v0.1.2, lately v0.2.1, spoor.nvim v2.0.0">
+<style>text{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace}.new{animation:ping 2s ease-out infinite;transform-box:fill-box;transform-origin:center}@keyframes ping{0%{transform:scale(1);opacity:.8}100%{transform:scale(3);opacity:0}}@media (prefers-reduced-motion:reduce){*{animation:none!important}.new{display:none}}</style>
 <rect x="0.5" y="0.5" width="879" height="111" rx="12" fill="#ffffff" stroke="#d0d7de"/>
 <path d="M0.5 12.5 a12 12 0 0 1 12 -12 h855 a12 12 0 0 1 12 12 v19.5 h-879 z" fill="#f6f8fa"/>
 <line x1="0.5" y1="32" x2="879.5" y2="32" stroke="#d0d7de"/>
 <text x="20" y="21" font-size="12" fill="#656d76"><tspan fill="#1a7f37">~</tspan> $ git tag --sort=-creatordate  # latest releases</text>
 <text x="860" y="21" text-anchor="end" font-size="12" fill="#656d76">updated weekly</text>
-<g class="r" style="animation-delay:0.20s">
+<g>
 <rect x="24" y="46" width="160" height="50" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
 <circle class="new" cx="40" cy="63" r="3.5" fill="#1a7f37"/>
 <circle cx="40" cy="63" r="3.5" fill="#1a7f37"/>
-<text x="52" y="67" font-size="13" font-weight="700" fill="#1f2328">flutterkill</text>
-<text x="40" y="87" font-size="11" fill="#1a7f37">v0.3.0<tspan fill="#656d76">  ·  Oct 27</tspan></text>
+<text x="52" y="67" font-size="13" font-weight="700" fill="#1f2328">decruft</text>
+<text x="40" y="87" font-size="11" fill="#1a7f37">v0.1.0<tspan fill="#656d76">  ·  Oct 27</tspan></text>
 </g>
-<g class="r" style="animation-delay:0.35s">
+<g>
 <rect x="192" y="46" width="160" height="50" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
 <circle cx="208" cy="63" r="3.5" fill="#1a7f37"/>
-<text x="220" y="67" font-size="13" font-weight="700" fill="#1f2328">fell</text>
-<text x="208" y="87" font-size="11" fill="#1a7f37">v0.1.2<tspan fill="#656d76">  ·  Oct 27</tspan></text>
+<text x="220" y="67" font-size="13" font-weight="700" fill="#1f2328">flutterkill</text>
+<text x="208" y="87" font-size="11" fill="#1a7f37">v0.3.0<tspan fill="#656d76">  ·  Oct 27</tspan></text>
 </g>
-<g class="r" style="animation-delay:0.50s">
+<g>
 <rect x="360" y="46" width="160" height="50" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
 <circle cx="376" cy="63" r="3.5" fill="#1a7f37"/>
-<text x="388" y="67" font-size="13" font-weight="700" fill="#1f2328">lately</text>
-<text x="376" y="87" font-size="11" fill="#1a7f37">v0.2.1<tspan fill="#656d76">  ·  Oct 27</tspan></text>
+<text x="388" y="67" font-size="13" font-weight="700" fill="#1f2328">fell</text>
+<text x="376" y="87" font-size="11" fill="#1a7f37">v0.1.2<tspan fill="#656d76">  ·  Oct 27</tspan></text>
 </g>
-<g class="r" style="animation-delay:0.65s">
+<g>
 <rect x="528" y="46" width="160" height="50" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
-<circle cx="544" cy="63" r="3.5" fill="#8250df"/>
-<text x="556" y="67" font-size="13" font-weight="700" fill="#1f2328">spoor.nvim</text>
-<text x="544" y="87" font-size="11" fill="#8250df">v2.0.0<tspan fill="#656d76">  ·  Oct 27</tspan></text>
+<circle cx="544" cy="63" r="3.5" fill="#1a7f37"/>
+<text x="556" y="67" font-size="13" font-weight="700" fill="#1f2328">lately</text>
+<text x="544" y="87" font-size="11" fill="#1a7f37">v0.2.1<tspan fill="#656d76">  ·  Oct 27</tspan></text>
 </g>
-<g class="r" style="animation-delay:0.80s">
+<g>
 <rect x="696" y="46" width="160" height="50" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
-<circle cx="712" cy="63" r="3.5" fill="#1a7f37"/>
-<text x="724" y="67" font-size="13" font-weight="700" fill="#1f2328">nodekill</text>
-<text x="712" y="87" font-size="11" fill="#1a7f37">v0.1.0<tspan fill="#656d76">  ·  Oct 27</tspan></text>
+<circle cx="712" cy="63" r="3.5" fill="#8250df"/>
+<text x="724" y="67" font-size="13" font-weight="700" fill="#1f2328">spoor.nvim</text>
+<text x="712" y="87" font-size="11" fill="#8250df">v2.0.0<tspan fill="#656d76">  ·  Oct 27</tspan></text>
 </g>
 </svg>

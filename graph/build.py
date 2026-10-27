@@ -223,9 +223,8 @@ def svg(nodes, edges, xy, deg, c):
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" '
         f'aria-label="Graph of public projects: dev tools, the Homebrew tap, s1, Neovim plugins and games">',
         "<style>text{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace}"
-        ".n{opacity:0;animation:in .6s ease-out forwards}.flow{animation:flow 1.2s linear infinite}"
-        "@keyframes in{to{opacity:1}}@keyframes flow{to{stroke-dashoffset:-8}}"
-        "@media (prefers-reduced-motion:reduce){.n{animation:none;opacity:1}.flow{animation:none}.pulse{display:none}}</style>",
+        ".flow{animation:flow 1.2s linear infinite}@keyframes flow{to{stroke-dashoffset:-8}}"
+        "@media (prefers-reduced-motion:reduce){.flow{animation:none}.pulse{display:none}}</style>",
         f'<rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="12" fill="{c["bg"]}" stroke="{c["border"]}"/>',
         f'<path d="M0.5 12.5 a12 12 0 0 1 12 -12 h{W - 25} a12 12 0 0 1 12 12 v19.5 h-{W - 1} z" fill="{c["bar"]}"/>',
         f'<line x1="0.5" y1="{TOP}" x2="{W - 0.5}" y2="{TOP}" stroke="{c["border"]}"/>',
@@ -244,7 +243,7 @@ def svg(nodes, edges, xy, deg, c):
     for k, i in enumerate(sorted(nodes, key=lambda i: (nodes[i].get("tag", False), -deg[i], i))):
         n, (x, y) = nodes[i], xy[i]
         r = round(radius(n, deg[i]), 1)
-        out.append(f'<g class="n" style="animation-delay:{k * 0.06:.2f}s">')
+        out.append("<g>")
         if n.get("tag"):
             out.append(f'<circle cx="{x}" cy="{y}" r="{r}" fill="{c["muted"]}"/>')
             fill, weight = c["muted"], ""
@@ -270,11 +269,36 @@ def svg(nodes, edges, xy, deg, c):
     return "\n".join(out) + "\n"
 
 
+def crossings(edges, xy):
+    def ccw(a, b, c):
+        return (c[1] - a[1]) * (b[0] - a[0]) > (b[1] - a[1]) * (c[0] - a[0])
+    n = 0
+    for i, (a, b, _) in enumerate(edges):
+        for c, d, _ in edges[i + 1:]:
+            if len({a, b, c, d}) == 4:
+                p, q, r, s = xy[a], xy[b], xy[c], xy[d]
+                n += ccw(p, r, s) != ccw(q, r, s) and ccw(p, q, r) != ccw(p, q, s)
+    return n
+
+
+def best_layout(nodes, edges, seeds=range(1, 25)):
+    """Deterministic: the seed whose layout has the fewest edge crossings, then the most room between nodes."""
+    best = None
+    for seed in seeds:
+        pos, deg = layout(nodes, edges, seed=seed)
+        xy = fit(nodes, pos, deg)
+        ids = sorted(xy)
+        room = min(math.dist(xy[a], xy[b]) for i, a in enumerate(ids) for b in ids[i + 1:])
+        score = (crossings(sorted(edges), xy), -room)
+        if best is None or score < best[0]:
+            best = (score, xy, deg)
+    return best[1], best[2]
+
+
 def main():
     spec = json.loads((ROOT / "graph/graph.json").read_text())
     nodes, edges = resolve(spec)
-    pos, deg = layout(nodes, edges)
-    xy = fit(nodes, pos, deg)
+    xy, deg = best_layout(nodes, edges)
     for name, c in THEMES.items():
         (ROOT / f"assets/graph-{name}.svg").write_text(svg(nodes, edges, xy, deg, c))
     data = {
