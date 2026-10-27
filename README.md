@@ -21,22 +21,24 @@ Rule of thumb: keep it simple, measure it, ship it.
 
 ### `$ ls ~/dev-tools`
 
-<img alt="A 20-second tour: fell lists git worktrees left by AI coding agents, flutterkill lists Flutter build artifacts and caches, nodekill lists node_modules and old Node versions, each with a safety label, all in dry-run mode on demo data" src="assets/tour.gif" width="100%">
+<img alt="A short tour on demo data: fell lists git worktrees left by AI coding agents, flutterkill lists Flutter build artifacts and caches, nodekill lists node_modules, caches and old Node versions, each with a safety label and in dry-run mode; then lately replays sample events as a classified timeline and opens one event card" src="assets/tour.gif" width="100%">
 
-Small terminal tools that give a developer's Mac its disk back: evidence first, Trash by default, and every removal through the owning tool's own command. Recorded with [VHS](https://github.com/charmbracelet/vhs) on demo data ([tape](demo/tour.tape)); longer demos in [fell](https://github.com/Matthew-Eucaristo/fell#readme) and [spoor.nvim](https://github.com/Matthew-Eucaristo/spoor.nvim#readme).
+Small terminal tools for a developer's Mac. The cleaners show the evidence first, move folders to the Trash, and remove caches and installs only through the owning tool's own command. Recorded with [VHS](https://github.com/charmbracelet/vhs) on demo data ([tape](demo/tour.tape)); each repo's README has a longer demo.
 
 ```sh
 brew install matthew-eucaristo/tap/fell
 brew install matthew-eucaristo/tap/flutterkill
+brew install matthew-eucaristo/tap/nodekill
 ```
 
 | tool | what it does | status |
 | :-- | :-- | :-- |
-| [**fell**](https://github.com/Matthew-Eucaristo/fell) | Finds git worktrees left behind by AI coding agents, shows the evidence, and cleans up without breaking the agent's own lifecycle. | released |
-| [**flutterkill**](https://github.com/Matthew-Eucaristo/flutterkill) | npkill for Flutter: `build/`, `.dart_tool`, Pods and Gradle leftovers plus pub, Gradle, FVM and Xcode caches. | released |
-| [**nodekill**](https://github.com/Matthew-Eucaristo/nodekill) | The Node.js footprint: `node_modules`, `.next` and framework caches, npm/pnpm/Yarn/Bun caches, npx, globals, old Node versions. | no release yet |
-| **decruft** | One TUI over all of them. It reads each tool's `scan --json` and hands removal back to that tool. | planned |
-| [**spoor.nvim**](https://github.com/Matthew-Eucaristo/spoor.nvim) | Follow the trail through a codebase in LazyVim: live call bow-tie, trace mode with notes, and what your agent changed. No AI, no index. [Demo →](https://github.com/Matthew-Eucaristo/spoor.nvim#readme) | no release yet |
+| [**fell**](https://github.com/Matthew-Eucaristo/fell) | Finds git worktrees left behind by AI coding agents, shows the evidence, and cleans up without breaking the agent's own lifecycle. | v0.1.1 |
+| [**flutterkill**](https://github.com/Matthew-Eucaristo/flutterkill) | npkill for Flutter: `build/`, `.dart_tool`, Pods and Gradle leftovers plus pub, Gradle, FVM and Xcode caches. | v0.2.0 |
+| [**nodekill**](https://github.com/Matthew-Eucaristo/nodekill) | The Node.js footprint: `node_modules`, `.next` and framework caches, npm/pnpm/Yarn/Bun caches, npx, globals, old Node versions. | v0.1.0 |
+| [**lately**](https://github.com/Matthew-Eucaristo/lately) | What just happened on my Mac? A classified timeline from the unified log, crash reports and persistence items, with a card per event. No root, no daemon. [Demo →](https://github.com/Matthew-Eucaristo/lately#readme) | no release yet |
+| **decruft** | One TUI over the cleaners. It reads each tool's `scan --json` and hands removal back to that tool. | planned |
+| [**spoor.nvim**](https://github.com/Matthew-Eucaristo/spoor.nvim) | Follow the trail through a codebase in LazyVim: live call bow-tie, trace mode with notes, and what your agent changed. No AI, no index. [Demo →](https://github.com/Matthew-Eucaristo/spoor.nvim#readme) | v1.0.0 · lazy.nvim |
 | [**jupynvim**](https://github.com/sheng-tse/jupynvim) | Jupyter notebooks in Neovim. I send fixes upstream: [HTML tables for pandas Styler](https://github.com/sheng-tse/jupynvim/pull/45), [docs](https://github.com/sheng-tse/jupynvim/pull/46). | upstream PRs |
 
 ### `$ graph --public`
@@ -44,7 +46,7 @@ brew install matthew-eucaristo/tap/flutterkill
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/graph-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/graph-light.svg">
-  <img alt="Graph of public projects: fell, flutterkill and nodekill ship through homebrew-tap and feed the planned decruft; s1 has its landing page and cask; spoor.nvim and jupynvim are Neovim plugins; the games form their own cluster" src="assets/graph-dark.svg" width="100%">
+  <img alt="Graph of public projects: fell, flutterkill and nodekill ship through homebrew-tap and feed the planned decruft; lately sits beside them as a Go tool for macOS; s1 has its landing page and cask; spoor.nvim and jupynvim are Neovim plugins; the games form their own cluster" src="assets/graph-dark.svg" width="100%">
 </picture>
 
 <sub>Drawn by <a href="graph/build.py"><code>graph/build.py</code></a> on every change and once a week. It only draws repos the GitHub API reports as public.</sub>

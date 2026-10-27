@@ -1,5 +1,5 @@
 # Record with: vhs demo/tour.tape   (from this repo's root, with the tool repos in ../dev-tools)
-# Each tool runs from its committed HEAD against a synthetic HOME; see demo/tour.sh.
+# Each tool runs from its committed HEAD in its own demo/setup.sh workspace; see demo/tour.sh.
 Output assets/tour.gif
 Set Shell bash
 Set FontSize 14
@@ -13,7 +13,7 @@ Hide
 Type "source demo/tour.sh && stage fell" Enter
 Wait@120s /^\$ *$/
 # Start on a full screen, so the GIF's first frame is never an empty terminal.
-Type "fell --dry-run" Enter
+Type "clear && fell --dry-run" Enter
 Wait+Screen@30s /rebuildable/
 Sleep 500ms
 Show
@@ -23,8 +23,11 @@ Down Sleep 1.5s
 Type "q"
 
 Hide
+Type "exit" Enter
 Type "stage flutterkill" Enter
 Wait@120s /^\$ *$/
+Type "clear" Enter
+Sleep 300ms
 Show
 Type "flutterkill --dry-run" Sleep 300ms Enter
 Sleep 3.5s
@@ -33,8 +36,11 @@ Tab Sleep 2s
 Type "q"
 
 Hide
+Type "exit" Enter
 Type "stage nodekill" Enter
-Wait@120s /^\$ *$/
+Wait@180s /^\$ *$/
+Type "clear" Enter
+Sleep 300ms
 Show
 Type "nodekill --dry-run" Sleep 300ms Enter
 Sleep 3.5s
@@ -42,5 +48,21 @@ Type "s" Sleep 2.5s
 Type "q"
 
 Hide
-Type "unstage" Enter
+Type "exit" Enter
+Type "stage lately" Enter
+Wait@120s /^\$ *$/
+Type "clear" Enter
+Sleep 300ms
+Show
+Type "lately --replay sample" Sleep 300ms Enter
+Sleep 3s
+Down Sleep 300ms
+Down Sleep 300ms
+Down Sleep 300ms
+Down Sleep 800ms
+Enter Sleep 3.5s
+Type "q"
+
+Hide
+Type "exit" Enter
 Sleep 3s

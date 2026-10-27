@@ -5,6 +5,7 @@
     { "id": "fell", "group": "tools" },
     { "id": "flutterkill", "group": "tools" },
     { "id": "nodekill", "group": "tools" },
+    { "id": "lately", "group": "tools" },
     { "id": "homebrew-tap", "group": "tools" },
     { "id": "decruft", "group": "tools", "planned": true, "note": "planned umbrella TUI over the cleaners" },
 
@@ -22,7 +23,8 @@
     { "id": "#agents", "tag": true },
     { "id": "#neovim", "tag": true },
     { "id": "#games", "tag": true },
-    { "id": "#go", "tag": true }
+    { "id": "#go", "tag": true },
+    { "id": "#macos", "tag": true }
   ],
   "edges": [
     ["decruft", "fell", "depends"],
@@ -43,6 +45,10 @@
 
     ["fell", "#go", "tag"],
     ["flutterkill", "#go", "tag"],
-    ["nodekill", "#go", "tag"]
+    ["nodekill", "#go", "tag"],
+    ["lately", "#go", "tag"],
+
+    ["s1", "#macos", "tag"],
+    ["lately", "#macos", "tag"]
   ]
 }
