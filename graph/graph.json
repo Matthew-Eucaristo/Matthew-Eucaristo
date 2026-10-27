@@ -1,0 +1,48 @@
+{
+  "owner": "Matthew-Eucaristo",
+  "tap": "homebrew-tap",
+  "nodes": [
+    { "id": "fell", "group": "tools" },
+    { "id": "flutterkill", "group": "tools" },
+    { "id": "nodekill", "group": "tools" },
+    { "id": "homebrew-tap", "group": "tools" },
+    { "id": "decruft", "group": "tools", "planned": true, "note": "planned umbrella TUI over the cleaners" },
+
+    { "id": "s1", "group": "s1" },
+    { "id": "s1-landingpage", "group": "s1" },
+
+    { "id": "spoor.nvim", "group": "nvim" },
+    { "id": "jupynvim", "group": "nvim", "repo": "sheng-tse/jupynvim", "note": "upstream PRs" },
+
+    { "id": "mob-run", "group": "games" },
+    { "id": "Flip10", "group": "games" },
+    { "id": "solitaire-rl", "group": "games" },
+    { "id": "crypto-cycle-signals", "group": "misc" },
+
+    { "id": "#agents", "tag": true },
+    { "id": "#neovim", "tag": true },
+    { "id": "#games", "tag": true },
+    { "id": "#go", "tag": true }
+  ],
+  "edges": [
+    ["decruft", "fell", "depends"],
+    ["decruft", "flutterkill", "depends"],
+    ["decruft", "nodekill", "depends"],
+    ["s1-landingpage", "s1", "link"],
+
+    ["s1", "#agents", "tag"],
+    ["fell", "#agents", "tag"],
+    ["spoor.nvim", "#agents", "tag"],
+
+    ["spoor.nvim", "#neovim", "tag"],
+    ["jupynvim", "#neovim", "tag"],
+
+    ["mob-run", "#games", "tag"],
+    ["Flip10", "#games", "tag"],
+    ["solitaire-rl", "#games", "tag"],
+
+    ["fell", "#go", "tag"],
+    ["flutterkill", "#go", "tag"],
+    ["nodekill", "#go", "tag"]
+  ]
+}

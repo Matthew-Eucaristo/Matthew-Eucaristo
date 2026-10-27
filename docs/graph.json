@@ -1,0 +1,226 @@
+{
+ "nodes": [
+  {
+   "id": "#agents",
+   "tag": true,
+   "x": 320.5,
+   "y": 186.6
+  },
+  {
+   "id": "#games",
+   "tag": true,
+   "x": 626.8,
+   "y": 200.0
+  },
+  {
+   "id": "#go",
+   "tag": true,
+   "x": 472.9,
+   "y": 343.8
+  },
+  {
+   "id": "#neovim",
+   "tag": true,
+   "x": 418.3,
+   "y": 88.2
+  },
+  {
+   "id": "Flip10",
+   "group": "games",
+   "url": "https://github.com/Matthew-Eucaristo/Flip10",
+   "desc": "",
+   "x": 582.6,
+   "y": 129.4
+  },
+  {
+   "id": "crypto-cycle-signals",
+   "group": "misc",
+   "url": "https://github.com/Matthew-Eucaristo/crypto-cycle-signals",
+   "desc": "Crypto futures indicator (Pine v6): BTC 4-year-cycle anchored, two measured signal engines (trend pullback + capitulation fade), limit-order entries. 87% WR backtested on 68 perps × 6y, sniper, not scalper.",
+   "x": 183.4,
+   "y": 139.8
+  },
+  {
+   "id": "decruft",
+   "group": "tools",
+   "planned": true,
+   "note": "planned umbrella TUI over the cleaners",
+   "x": 467.1,
+   "y": 266.5
+  },
+  {
+   "id": "fell",
+   "group": "tools",
+   "url": "https://github.com/Matthew-Eucaristo/fell",
+   "desc": "Find and safely clean up git worktrees left behind by AI coding agents (TUI): evidence first, Trash + rescue bundle, never breaks the agent's own lifecycle",
+   "x": 390.8,
+   "y": 258.3
+  },
+  {
+   "id": "flutterkill",
+   "group": "tools",
+   "url": "https://github.com/Matthew-Eucaristo/flutterkill",
+   "desc": "npkill for Flutter: reclaim disk space from Flutter/Dart build artifacts and global caches (TUI)",
+   "x": 407.9,
+   "y": 330.6
+  },
+  {
+   "id": "homebrew-tap",
+   "group": "tools",
+   "url": "https://github.com/Matthew-Eucaristo/homebrew-tap",
+   "desc": "",
+   "x": 325.0,
+   "y": 310.0
+  },
+  {
+   "id": "jupynvim",
+   "group": "nvim",
+   "repo": "sheng-tse/jupynvim",
+   "note": "upstream PRs",
+   "url": "https://github.com/sheng-tse/jupynvim",
+   "desc": "Jupyter notebooks in Neovim, plus a full remote workspace over SSH that edits any file and runs kernels on a remote machine or cluster as if local. Kitty graphics, Rust backend.",
+   "x": 485.2,
+   "y": 103.7
+  },
+  {
+   "id": "mob-run",
+   "group": "games",
+   "url": "https://github.com/Matthew-Eucaristo/mob-run",
+   "desc": "The game from those fake mobile ads — for real. 3D crowd-runner × multiplier-gates shooter in Three.js.",
+   "x": 705.3,
+   "y": 198.8
+  },
+  {
+   "id": "nodekill",
+   "group": "tools",
+   "url": "https://github.com/Matthew-Eucaristo/nodekill",
+   "desc": "Reclaim the disk space Node.js leaves behind (TUI): node_modules, .next and framework caches, npm/pnpm/Yarn/Bun caches, npx, global packages and old Node versions; Trash first, official commands only",
+   "x": 532.8,
+   "y": 300.2
+  },
+  {
+   "id": "s1",
+   "group": "s1",
+   "url": "https://github.com/Matthew-Eucaristo/s1",
+   "desc": "Voice-first macOS agent — drive your whole Mac by voice: sees the screen via Accessibility, acts via clicks/typing, verifies every step. Fast local System 1 + pluggable System 2 LLM. Beta.",
+   "x": 252.4,
+   "y": 262.5
+  },
+  {
+   "id": "s1-landingpage",
+   "group": "s1",
+   "url": "https://github.com/Matthew-Eucaristo/s1-landingpage",
+   "desc": "Landing page for S1",
+   "x": 174.7,
+   "y": 270.0
+  },
+  {
+   "id": "solitaire-rl",
+   "group": "games",
+   "url": "https://github.com/Matthew-Eucaristo/solitaire-rl",
+   "desc": "Trying to make RL in Solitare with help of Devin Cloud (since it's still free)",
+   "x": 643.1,
+   "y": 285.0
+  },
+  {
+   "id": "spoor.nvim",
+   "group": "nvim",
+   "url": "https://github.com/Matthew-Eucaristo/spoor.nvim",
+   "desc": "Follow the trail through a codebase in LazyVim: live call bow-tie, trace mode with notes, and what your agent changed. No AI, no index.",
+   "x": 343.8,
+   "y": 98.9
+  }
+ ],
+ "edges": [
+  [
+   "Flip10",
+   "#games",
+   "tag"
+  ],
+  [
+   "decruft",
+   "fell",
+   "depends"
+  ],
+  [
+   "decruft",
+   "flutterkill",
+   "depends"
+  ],
+  [
+   "decruft",
+   "nodekill",
+   "depends"
+  ],
+  [
+   "fell",
+   "#agents",
+   "tag"
+  ],
+  [
+   "fell",
+   "#go",
+   "tag"
+  ],
+  [
+   "fell",
+   "homebrew-tap",
+   "formula"
+  ],
+  [
+   "flutterkill",
+   "#go",
+   "tag"
+  ],
+  [
+   "flutterkill",
+   "homebrew-tap",
+   "formula"
+  ],
+  [
+   "jupynvim",
+   "#neovim",
+   "tag"
+  ],
+  [
+   "mob-run",
+   "#games",
+   "tag"
+  ],
+  [
+   "nodekill",
+   "#go",
+   "tag"
+  ],
+  [
+   "s1",
+   "#agents",
+   "tag"
+  ],
+  [
+   "s1",
+   "homebrew-tap",
+   "cask"
+  ],
+  [
+   "s1-landingpage",
+   "s1",
+   "link"
+  ],
+  [
+   "solitaire-rl",
+   "#games",
+   "tag"
+  ],
+  [
+   "spoor.nvim",
+   "#agents",
+   "tag"
+  ],
+  [
+   "spoor.nvim",
+   "#neovim",
+   "tag"
+  ]
+ ]
+}

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>~/graph</title>
+<meta name="description" content="Public projects by Matthew Eucaristo and how they connect.">
+<style>
+  :root { --bg:#0d1117; --bar:#161b22; --border:#30363d; --edge:#30363d; --text:#e6edf3; --muted:#7d8590;
+          --tools:#3fb950; --s1:#d29922; --nvim:#a371f7; --games:#58a6ff; --misc:#db61a2; }
+  @media (prefers-color-scheme: light) {
+    :root { --bg:#ffffff; --bar:#f6f8fa; --border:#d0d7de; --edge:#d0d7de; --text:#1f2328; --muted:#656d76;
+            --tools:#1a7f37; --s1:#9a6700; --nvim:#8250df; --games:#0969da; --misc:#bf3989; }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text);
+    font: 13px/1.5 ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+  header { display: flex; justify-content: space-between; gap: 16px; padding: 8px 16px;
+    background: var(--bar); border-bottom: 1px solid var(--border); color: var(--muted); }
+  header a { color: inherit; }
+  .p { color: var(--tools); }
+  svg { display: block; width: 100%; height: calc(100% - 38px); cursor: grab; touch-action: none; }
+  line { stroke: var(--edge); stroke-width: 1.2; transition: stroke .15s, opacity .15s; }
+  line.depends { stroke-dasharray: 4 4; }
+  line.tag { opacity: .6; }
+  text { font-size: 11px; fill: var(--text); text-anchor: middle; pointer-events: none; transition: opacity .15s; }
+  .tag text, .planned text { fill: var(--muted); }
+  g.n { cursor: pointer; transition: opacity .15s; }
+  .dim { opacity: .15; }
+  line.hot { stroke: var(--muted); opacity: 1; }
+  #info { position: fixed; left: 16px; bottom: 16px; max-width: min(520px, calc(100% - 32px));
+    padding: 8px 12px; background: var(--bar); border: 1px solid var(--border); border-radius: 6px; display: none; }
+  #info b { color: var(--text); } #info span { color: var(--muted); }
+</style>
+</head>
+<body>
+<header><span><span class="p">~</span> $ graph --public --interactive</span><span>drag · hover · click opens the repo · <a href="https://github.com/Matthew-Eucaristo">github</a></span></header>
+<svg id="g"></svg>
+<div id="info"></div>
+<script>
+const NS = "http://www.w3.org/2000/svg", svg = document.getElementById("g"), info = document.getElementById("info");
+const el = (t, a, p) => { const e = document.createElementNS(NS, t); for (const k in a) e.setAttribute(k, a[k]); p && p.appendChild(e); return e; };
+
+fetch("graph.json").then(r => r.json()).then(({ nodes, edges }) => {
+  const byId = Object.fromEntries(nodes.map(n => [n.id, n]));
+  const deg = Object.fromEntries(nodes.map(n => [n.id, 0]));
+  edges.forEach(([a, b]) => { deg[a]++; deg[b]++; });
+  nodes.forEach(n => { n.r = n.tag ? 2.5 : 3.5 + 1.5 * Math.sqrt(deg[n.id]); n.vx = n.vy = 0; });
+  svg.setAttribute("viewBox", "0 32 880 368");
+
+  const lines = edges.map(([a, b, kind]) => ({ a: byId[a], b: byId[b], e: el("line", { class: kind }, svg) }));
+  const groups = nodes.map(n => {
+    const g = el("g", { class: "n" + (n.tag ? " tag" : "") + (n.planned ? " planned" : "") }, svg);
+    const color = n.tag ? "var(--muted)" : `var(--${n.group})`;
+    el("circle", n.planned ? { r: n.r, fill: "var(--bg)", stroke: color, "stroke-width": 1.5, "stroke-dasharray": "2.5 2" }
+                           : { r: n.r, fill: color }, g);
+    el("text", { y: n.r + 12 }, g).textContent = n.id + (n.planned ? " (planned)" : "");
+    n.g = g;
+    return g;
+  });
+
+  const nbrs = n => new Set(edges.flatMap(([a, b]) => a === n.id ? [b] : b === n.id ? [a] : []).concat(n.id));
+  function focus(n) {
+    const keep = n && nbrs(n);
+    nodes.forEach(m => m.g.classList.toggle("dim", !!n && !keep.has(m.id)));
+    lines.forEach(l => { const hot = n && (l.a === n || l.b === n); l.e.classList.toggle("hot", !!hot); l.e.classList.toggle("dim", !!n && !hot); });
+    if (!n || n.tag) { info.style.display = "none"; return; }
+    info.style.display = "block";
+    info.innerHTML = "";
+    const b = document.createElement("b"); b.textContent = n.id; info.append(b);
+    const s = document.createElement("span"); s.textContent = "  " + [n.note, n.desc].filter(Boolean).join(" · "); info.append(s);
+  }
+
+  // Pointer → SVG coordinates.
+  const pt = e => { const p = svg.createSVGPoint(); p.x = e.clientX; p.y = e.clientY; return p.matrixTransform(svg.getScreenCTM().inverse()); };
+  let drag = null, moved = false;
+  nodes.forEach(n => {
+    n.g.addEventListener("pointerenter", () => drag || focus(n));
+    n.g.addEventListener("pointerleave", () => drag || focus(null));
+    n.g.addEventListener("pointerdown", e => { drag = n; moved = false; n.g.setPointerCapture(e.pointerId); heat = 1; });
+    n.g.addEventListener("pointermove", e => { if (drag !== n) return; const p = pt(e); n.x = p.x; n.y = p.y; n.vx = n.vy = 0; moved = true; heat = 1; });
+    n.g.addEventListener("pointerup", () => { drag = null; if (!moved && n.url) window.open(n.url, "_blank", "noopener"); });
+  });
+
+  // A gentle spring simulation, seeded with the positions graph/build.py chose.
+  const home = Object.fromEntries(nodes.map(n => [n.id, [n.x, n.y]]));
+  let heat = 0;
+  function tick() {
+    if (heat > 0.01) {
+      for (let i = 0; i < nodes.length; i++) for (let j = i + 1; j < nodes.length; j++) {
+        const a = nodes[i], b = nodes[j]; let dx = a.x - b.x, dy = a.y - b.y; const d = Math.hypot(dx, dy) || 1;
+        if (d > 160) continue;
+        const f = 900 / (d * d); dx /= d; dy /= d;
+        a.vx += dx * f; a.vy += dy * f; b.vx -= dx * f; b.vy -= dy * f;
+      }
+      lines.forEach(({ a, b }) => {
+        const dx = b.x - a.x, dy = b.y - a.y, d = Math.hypot(dx, dy) || 1, f = (d - 90) * 0.02 / d;
+        a.vx += dx * f; a.vy += dy * f; b.vx -= dx * f; b.vy -= dy * f;
+      });
+      nodes.forEach(n => {
+        if (n === drag) return;
+        n.vx += (home[n.id][0] - n.x) * 0.01; n.vy += (home[n.id][1] - n.y) * 0.01;
+        n.vx *= 0.8; n.vy *= 0.8; n.x += n.vx; n.y += n.vy;
+      });
+      heat *= drag ? 1 : 0.985;
+    }
+    lines.forEach(({ a, b, e }) => { e.setAttribute("x1", a.x); e.setAttribute("y1", a.y); e.setAttribute("x2", b.x); e.setAttribute("y2", b.y); });
+    nodes.forEach(n => n.g.setAttribute("transform", `translate(${n.x},${n.y})`));
+    requestAnimationFrame(tick);
+  }
+  tick();
+});
+</script>
+</body>
+</html>

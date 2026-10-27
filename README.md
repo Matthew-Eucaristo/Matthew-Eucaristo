@@ -12,12 +12,42 @@ Rule of thumb: keep it simple, measure it, ship it.
 
 | project | what it is | built with |
 | :-- | :-- | :-- |
-| [**s1**](https://github.com/Matthew-Eucaristo/s1) | Voice-first macOS agent. A fast local *System 1* acts; an LLM *System 2* is asked only when unsure. Every step gated and logged. `brew install --cask s1` | Swift 6 · AX API · ScreenCaptureKit |
-| [**flutterkill**](https://github.com/Matthew-Eucaristo/flutterkill) | npkill for Flutter. One TUI finds `build/`, `.dart_tool`, Pods and Gradle leftovers plus pub, Gradle, FVM and Xcode caches, flags stale projects, and moves what you pick to the Trash. `brew install matthew-eucaristo/tap/flutterkill` | Go · Bubble Tea |
+| [**s1**](https://github.com/Matthew-Eucaristo/s1) | Voice-first macOS agent. A fast local *System 1* acts; an LLM *System 2* is asked only when unsure. Every step gated and logged. [Site →](https://s1-mac.pages.dev) `brew install --cask matthew-eucaristo/tap/s1` | Swift 6 · AX API · ScreenCaptureKit |
 | [**Mouse Maze Mayhem**](https://mouse-maze-mayhem-skripsi.web.app) | My thesis, playable. Four cats vs. one RL mouse in 3D mazes — a solver-distilled policy running in your browser via ONNX. | PyTorch · ONNX · React Three Fiber |
 | [**solitaire-rl**](https://github.com/Matthew-Eucaristo/solitaire-rl) | Masked DQN and MaskablePPO learning Klondike, judged on a fixed 1000-deal benchmark. Honest result: the heuristic still wins. | Python · SB3 · Gymnasium |
+| [**mob-run**](https://github.com/Matthew-Eucaristo/mob-run) | The game from those fake mobile ads, for real: a 3D crowd-runner where you pick multiplier gates and outgun mobs, walls and bosses across 5 zones. [Play →](https://mob-run.pages.dev) | Three.js |
 | [**crypto-cycle-signals**](https://github.com/Matthew-Eucaristo/crypto-cycle-signals) | Futures indicator anchored to BTC's 4-year cycle; every parameter earned by backtest on 68 perps × 6 years. | Pine Script v6 |
-| [**Flip10**](https://github.com/Matthew-Eucaristo/Flip10) | Shut the Box, polished: 3D tile flips, procedural audio, offline PWA. [Play →](https://flip10.pages.dev) | Flutter |
+| [**Flip10**](https://github.com/Matthew-Eucaristo/Flip10) | Shut the Box, polished: hand-drawn SVG tiles, procedural audio, fully offline. [Play →](https://flip10.pages.dev) | Next.js · TypeScript |
+
+### `$ ls ~/dev-tools`
+
+<img alt="A 20-second tour: fell lists git worktrees left by AI coding agents, flutterkill lists Flutter build artifacts and caches, nodekill lists node_modules and old Node versions, each with a safety label, all in dry-run mode on demo data" src="assets/tour.gif" width="100%">
+
+Small terminal tools that give a developer's Mac its disk back: evidence first, Trash by default, and every removal through the owning tool's own command. Recorded with [VHS](https://github.com/charmbracelet/vhs) on demo data ([tape](demo/tour.tape)); longer demos in [fell](https://github.com/Matthew-Eucaristo/fell#readme) and [spoor.nvim](https://github.com/Matthew-Eucaristo/spoor.nvim#readme).
+
+```sh
+brew install matthew-eucaristo/tap/fell
+brew install matthew-eucaristo/tap/flutterkill
+```
+
+| tool | what it does | status |
+| :-- | :-- | :-- |
+| [**fell**](https://github.com/Matthew-Eucaristo/fell) | Finds git worktrees left behind by AI coding agents, shows the evidence, and cleans up without breaking the agent's own lifecycle. | released |
+| [**flutterkill**](https://github.com/Matthew-Eucaristo/flutterkill) | npkill for Flutter: `build/`, `.dart_tool`, Pods and Gradle leftovers plus pub, Gradle, FVM and Xcode caches. | released |
+| [**nodekill**](https://github.com/Matthew-Eucaristo/nodekill) | The Node.js footprint: `node_modules`, `.next` and framework caches, npm/pnpm/Yarn/Bun caches, npx, globals, old Node versions. | no release yet |
+| **decruft** | One TUI over all of them. It reads each tool's `scan --json` and hands removal back to that tool. | planned |
+| [**spoor.nvim**](https://github.com/Matthew-Eucaristo/spoor.nvim) | Follow the trail through a codebase in LazyVim: live call bow-tie, trace mode with notes, and what your agent changed. No AI, no index. [Demo →](https://github.com/Matthew-Eucaristo/spoor.nvim#readme) | no release yet |
+| [**jupynvim**](https://github.com/sheng-tse/jupynvim) | Jupyter notebooks in Neovim. I send fixes upstream: [HTML tables for pandas Styler](https://github.com/sheng-tse/jupynvim/pull/45), [docs](https://github.com/sheng-tse/jupynvim/pull/46). | upstream PRs |
+
+### `$ graph --public`
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/graph-light.svg">
+  <img alt="Graph of public projects: fell, flutterkill and nodekill ship through homebrew-tap and feed the planned decruft; s1 has its landing page and cask; spoor.nvim and jupynvim are Neovim plugins; the games form their own cluster" src="assets/graph-dark.svg" width="100%">
+</picture>
+
+<sub>Drawn by <a href="graph/build.py"><code>graph/build.py</code></a> on every change and once a week. It only draws repos the GitHub API reports as public.</sub>
 
 <details>
 <summary><code>$ ls ~/archive</code> — game jam + university game lab</summary>
@@ -40,10 +70,11 @@ Rule of thumb: keep it simple, measure it, ship it.
 ```txt
 ai      pytorch · stable-baselines3 · onnx · llm agents
 apps    swift · typescript · react · three.js · flutter · go
+tools   go · bubble tea · lua · neovim · homebrew
 games   unreal engine · react three fiber · godot
 ops     docker · linux · firebase · cloudflare
 ```
 
 ### `$ ping matthew`
 
-[LinkedIn](https://www.linkedin.com/in/matthew-eucaristo-265127184/) · [X](https://x.com/MatthewEuc) · [itch.io](https://syntax-gamedev.itch.io/) · [mattheweuc.vercel.app](https://mattheweuc.vercel.app/)
+[LinkedIn](https://www.linkedin.com/in/matthew-eucaristo-265127184/) · [X](https://x.com/MatthewEuc) · [itch.io](https://syntax-gamedev.itch.io/) · [CV](https://mattheweuc.vercel.app/)
