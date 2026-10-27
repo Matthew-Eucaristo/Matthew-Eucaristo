@@ -5,7 +5,7 @@
 </picture>
 
 I build **agents** that act, **RL** that plays games, and **games** people actually play.
-Day job: infra and AI agents for an education platform at [GeniusGrowthAI](https://geniusgrowth.ai).
+Day job: CTO at [GeniusGrowthAI](https://geniusgrowth.ai), running the infra and AI agents behind an education platform.
 Rule of thumb: keep it simple, measure it, ship it.
 
 <picture>
