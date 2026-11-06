@@ -50,6 +50,19 @@ Type "q"
 
 Hide
 Type "exit" Enter
+Type "stage rustkill" Enter
+Wait@180s /^\$ *$/
+Type "clear" Enter
+Sleep 300ms
+Show
+Type "rustkill --dry-run" Sleep 300ms Enter
+Sleep 3.5s
+Type "s" Sleep 2s
+Type "G" Sleep 2.5s
+Type "q"
+
+Hide
+Type "exit" Enter
 Type "stage decruft" Enter
 Wait@180s /^\$ *$/
 # Skip the scan animation: show decruft once its overview is complete.

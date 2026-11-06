@@ -5,6 +5,7 @@
     { "id": "fell", "group": "tools" },
     { "id": "flutterkill", "group": "tools" },
     { "id": "nodekill", "group": "tools" },
+    { "id": "rustkill", "group": "tools" },
     { "id": "lately", "group": "tools" },
     { "id": "homebrew-tap", "group": "tools" },
     { "id": "decruft", "group": "tools", "note": "one TUI over the cleaners" },
@@ -30,6 +31,7 @@
     ["decruft", "fell", "depends"],
     ["decruft", "flutterkill", "depends"],
     ["decruft", "nodekill", "depends"],
+    ["decruft", "rustkill", "depends"],
     ["s1-landingpage", "s1", "link"],
 
     ["s1", "#agents", "tag"],
@@ -46,6 +48,7 @@
     ["fell", "#go", "tag"],
     ["flutterkill", "#go", "tag"],
     ["nodekill", "#go", "tag"],
+    ["rustkill", "#go", "tag"],
     ["lately", "#go", "tag"],
 
     ["s1", "#macos", "tag"],
