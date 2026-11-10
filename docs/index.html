@@ -54,7 +54,7 @@ fetch("graph.json").then(r => r.json()).then(({ nodes, edges }) => {
     const color = n.tag ? "var(--muted)" : `var(--${n.group})`;
     el("circle", n.planned ? { r: n.r, fill: "var(--bg)", stroke: color, "stroke-width": 1.5, "stroke-dasharray": "2.5 2" }
                            : { r: n.r, fill: color }, g);
-    el("text", { y: n.r + 12 }, g).textContent = n.id + (n.planned ? " (planned)" : "");
+    el("text", { y: n.r + 12 }, g).textContent = n.id.toLowerCase() + (n.planned ? " (planned)" : "");
     n.g = g;
     return g;
   });
@@ -67,8 +67,8 @@ fetch("graph.json").then(r => r.json()).then(({ nodes, edges }) => {
     if (!n || n.tag) { info.style.display = "none"; return; }
     info.style.display = "block";
     info.innerHTML = "";
-    const b = document.createElement("b"); b.textContent = n.id; info.append(b);
-    const s = document.createElement("span"); s.textContent = "  " + [n.note, n.desc].filter(Boolean).join(" · "); info.append(s);
+    const b = document.createElement("b"); b.textContent = n.id.toLowerCase(); info.append(b);
+    const s = document.createElement("span"); s.textContent = "  " + [n.note, n.desc].filter(Boolean).join(" · ").toLowerCase(); info.append(s);
   }
 
   // Pointer → SVG coordinates.

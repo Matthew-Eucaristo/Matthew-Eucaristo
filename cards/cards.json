@@ -5,13 +5,13 @@
       "repo": "Fotoin",
       "group": "apps",
       "visual": "ghost",
-      "kicker": "camera app · Android + iOS",
-      "desc": "Photograph someone exactly like a reference pose: a ghost overlay, a live match meter, one hint at a time, auto-capture. On-device, no ads.",
+      "kicker": "camera app · android + ios",
+      "desc": "photograph someone exactly like a reference pose: a ghost overlay, a live match meter, one hint at a time, auto-capture. on-device, no ads.",
       "stack": [
-        "Expo",
-        "React Native",
-        "VisionCamera",
-        "MediaPipe · Apple Vision"
+        "expo",
+        "react native",
+        "visioncamera",
+        "mediapipe · apple vision"
       ],
       "where": "matthew-eucaristo.github.io/fotoin"
     },
@@ -19,12 +19,12 @@
       "repo": "s1",
       "group": "s1",
       "visual": "voice",
-      "kicker": "AI agent · macOS",
-      "desc": "Voice-first macOS agent. A fast local System 1 acts; an LLM System 2 is asked only when unsure. Every step gated and logged.",
+      "kicker": "ai agent · macos",
+      "desc": "voice-first macos agent. a fast local system 1 acts; an llm system 2 is asked only when unsure. every step gated and logged.",
       "stack": [
-        "Swift 6",
-        "AX API",
-        "ScreenCaptureKit"
+        "swift 6",
+        "ax api",
+        "screencapturekit"
       ],
       "where": "s1-mac.pages.dev"
     },
@@ -33,11 +33,11 @@
       "group": "games",
       "visual": "maze",
       "kicker": "reinforcement learning · thesis",
-      "desc": "Four cats vs. one RL mouse in 3D mazes. A solver-distilled policy plays in your browser via ONNX.",
+      "desc": "four cats vs. one rl mouse in 3d mazes. a solver-distilled policy plays in your browser via onnx.",
       "stack": [
-        "PyTorch",
-        "ONNX",
-        "React Three Fiber"
+        "pytorch",
+        "onnx",
+        "react three fiber"
       ],
       "where": "mouse-maze-mayhem-skripsi.web.app"
     },
@@ -46,9 +46,9 @@
       "group": "games",
       "visual": "crowd",
       "kicker": "game · browser",
-      "desc": "The game from those fake mobile ads, for real: pick multiplier gates and outgun mobs, walls and bosses across 5 zones.",
+      "desc": "the game from those fake mobile ads, for real: pick multiplier gates and outgun mobs, walls and bosses across 5 zones.",
       "stack": [
-        "Three.js"
+        "three.js"
       ],
       "where": "mob-run.pages.dev"
     },
@@ -57,10 +57,10 @@
       "group": "tools",
       "visual": "storage",
       "kicker": "dev tool · all in one",
-      "desc": "A better Storage screen for programmers: one scan of what your dev machine has piled up, reclaimed through each tool's own command.",
+      "desc": "a better storage screen for programmers: one scan of what your dev machine has piled up, reclaimed through each tool's own command.",
       "stack": [
-        "Go",
-        "Bubble Tea",
+        "go",
+        "bubble tea",
         "fell · nodekill · rustkill · flutterkill"
       ],
       "where": "github.com/Matthew-Eucaristo/decruft"
@@ -69,12 +69,12 @@
       "repo": "lately",
       "group": "tools",
       "visual": "timeline",
-      "kicker": "dev tool · macOS",
-      "desc": "What just happened on my Mac? A classified timeline from the unified log, crash reports and persistence items. No root, no daemon.",
+      "kicker": "dev tool · macos",
+      "desc": "what just happened on my mac? a classified timeline from the unified log, crash reports and persistence items. no root, no daemon.",
       "stack": [
-        "Go",
-        "Bubble Tea",
-        "Homebrew"
+        "go",
+        "bubble tea",
+        "homebrew"
       ],
       "where": "brew install matthew-eucaristo/tap/lately"
     },
@@ -82,12 +82,12 @@
       "repo": "spoor.nvim",
       "group": "nvim",
       "visual": "bowtie",
-      "kicker": "Neovim plugin",
-      "desc": "Follow the trail through a codebase in Neovim: a call bow-tie on K, trace mode with notes, and what your agent changed. No AI, no index.",
+      "kicker": "neovim plugin",
+      "desc": "follow the trail through a codebase in neovim: a call bow-tie on K, trace mode with notes, and what your agent changed. no ai, no index.",
       "stack": [
-        "Lua",
-        "Neovim",
-        "LSP",
+        "lua",
+        "neovim",
+        "lsp",
         "tree-sitter"
       ],
       "where": "github.com/Matthew-Eucaristo/spoor.nvim"

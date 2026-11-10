@@ -45,7 +45,7 @@ def voice(c, a):
         h = 10 + (i * 37 % 23) + (14 if 9 < i < 20 else 0)
         out.append(f'<rect class="wave" style="animation-delay:{i * 0.06:.2f}s" x="{30 + i * 8}" y="{62 - h / 2:.1f}" '
                    f'width="4" height="{h}" rx="2" fill="{a}"/>')
-    lanes = [("System 1 · local", "act", a, 2.2, 1, ""), ("System 2 · LLM", "ask", c["muted"], 6.6, 0.25, ' stroke-dasharray="3 4"')]
+    lanes = [("system 1 · local", "act", a, 2.2, 1, ""), ("system 2 · llm", "ask", c["muted"], 6.6, 0.25, ' stroke-dasharray="3 4"')]
     for k, (name, verb, col, dur, end, dash) in enumerate(lanes):
         y = 118 + k * 40
         out += [
@@ -118,14 +118,14 @@ def worktrees(c, a):
             f'<rect class="{"strip" if tag == "safe" else ""}" x="150" y="{y - 4}" width="{70 * size:.0f}" height="8" rx="3" fill="{col}" opacity="0.8"/>',
             f'<text x="282" y="{y + 4}" text-anchor="end" font-size="10" fill="{col}">{tag}</text>',
         ]
-    out.append(f'<text x="144" y="196" text-anchor="middle" font-size="11" fill="{c["muted"]}">evidence first · Trash + rescue bundle</text>')
+    out.append(f'<text x="144" y="196" text-anchor="middle" font-size="11" fill="{c["muted"]}">evidence first · trash + rescue bundle</text>')
     return out
 
 
 def timeline(c, a):
-    rows = [("14:49", "▲", "HIGH", c["orange"], "Launch agent added"), ("14:52", "✖", "CRIT", c["red"], "System extension added"),
-            ("14:53", "▲", "HIGH", c["orange"], "App crashed ×3"), ("14:58", "▲", "HIGH", c["orange"], "Screen Recording allowed"),
-            ("15:01", "●", "MED", c["s1"], "Shell startup file changed")]
+    rows = [("14:49", "▲", "high", c["orange"], "launch agent added"), ("14:52", "✖", "crit", c["red"], "system extension added"),
+            ("14:53", "▲", "high", c["orange"], "app crashed ×3"), ("14:58", "▲", "high", c["orange"], "screen recording allowed"),
+            ("15:01", "●", "med", c["s1"], "shell startup file changed")]
     out = []
     for i, (t, g, lvl, col, what) in enumerate(rows):
         y = 26 + i * 30
@@ -160,9 +160,9 @@ def bowtie(c, a):
 
 def storage(c, a):
     # The disk as one bar by developer category; the safe parts shrink as their own tool cleans them.
-    rows = [("Xcode", "xcrun simctl delete unavailable", c["orange"], 70, True), ("Go", "go clean -cache", a, 46, True),
-            ("node_modules", "via nodekill", c["nvim"], 58, False), ("Homebrew", "brew autoremove", c["games"], 34, True),
-            ("Docker", "docker system prune", c["misc"], 40, True)]
+    rows = [("xcode", "xcrun simctl delete unavailable", c["orange"], 70, True), ("go", "go clean -cache", a, 46, True),
+            ("node_modules", "via nodekill", c["nvim"], 58, False), ("homebrew", "brew autoremove", c["games"], 34, True),
+            ("docker", "docker system prune", c["misc"], 40, True)]
     out = [f'<text x="8" y="14" font-size="10" fill="{c["muted"]}">disk</text>',
            f'<rect x="8" y="20" width="272" height="16" rx="4" fill="{c["border"]}" opacity="0.5"/>']
     x = 8
@@ -249,7 +249,7 @@ def spotlight(spec, c):
         "@media (prefers-reduced-motion:reduce){*{animation:none!important}.s{opacity:0}.s0{opacity:1}.many,.row{opacity:1}}"
     )
     out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{h}" viewBox="0 0 {W} {h}" role="img" '
-           f'aria-label="Project spotlight: {esc(", ".join(s["repo"] for s in slides))}">', f"<style>{css}</style>"]
+           f'aria-label="project spotlight: {esc(", ".join(s["repo"] for s in slides).lower())}">', f"<style>{css}</style>"]
     out += chrome(c, h, "spotlight --loop", f"{n} projects · {n * t}s")
     for k in range(n):  # the dots under every slide
         out.append(f'<circle cx="{W - 32 - (n - 1 - k) * 14}" cy="{h - 22}" r="3" fill="{c["border"]}"/>')
@@ -257,8 +257,8 @@ def spotlight(spec, c):
         a = c[s["group"]]
         delay = f"animation-delay:{(i - n) * t}s"
         g = [f'<g class="s s{i}" style="{delay}">']
-        g.append(f'<text x="{TEXT_X}" y="70" font-size="11" letter-spacing="1.5" fill="{a}">{esc(s["kicker"].upper())}</text>')
-        g.append(f'<text x="{TEXT_X}" y="106" font-size="28" font-weight="700" fill="{c["text"]}">{esc(s["repo"])}</text>')
+        g.append(f'<text x="{TEXT_X}" y="70" font-size="11" letter-spacing="1.5" fill="{a}">{esc(s["kicker"].lower())}</text>')
+        g.append(f'<text x="{TEXT_X}" y="106" font-size="28" font-weight="700" fill="{c["text"]}">{esc(s["repo"].lower())}</text>')
         for j, line in enumerate(textwrap.wrap(s["desc"], 54)[:3]):
             g.append(f'<text x="{TEXT_X}" y="{136 + j * 21}" font-size="14" fill="{c["text"]}" opacity="0.88">{esc(line)}</text>')
         x = TEXT_X
@@ -300,18 +300,18 @@ def shipped(rels, c):
            "@keyframes ping{0%{transform:scale(1);opacity:.8}100%{transform:scale(3);opacity:0}}"
            "@media (prefers-reduced-motion:reduce){*{animation:none!important}.new{display:none}}")
     out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{h}" viewBox="0 0 {W} {h}" role="img" '
-           f'aria-label="Latest releases: {esc(", ".join(r["repo"] + " " + r["tag"] for r in rels))}">', f"<style>{css}</style>"]
+           f'aria-label="latest releases: {esc(", ".join(r["repo"] + " " + r["tag"] for r in rels))}">', f"<style>{css}</style>"]
     out += chrome(c, h, "git tag --sort=-creatordate  # latest releases", "updated weekly")
     cw = (W - 40) / n
     for i, r in enumerate(rels):
         x, a = 20 + i * cw, c[r["group"]]
-        day = datetime.fromisoformat(r["date"].replace("Z", "+00:00")).strftime("%b %-d")
+        day = datetime.fromisoformat(r["date"].replace("Z", "+00:00")).strftime("%b %-d").lower()
         out.append('<g>')
         out.append(f'<rect x="{x + 4:.0f}" y="46" width="{cw - 8:.0f}" height="50" rx="8" fill="{c["bar"]}" stroke="{c["border"]}"/>')
         if i == 0:
             out.append(f'<circle class="new" cx="{x + 20:.0f}" cy="63" r="3.5" fill="{a}"/>')
         out.append(f'<circle cx="{x + 20:.0f}" cy="63" r="3.5" fill="{a}"/>')
-        out.append(f'<text x="{x + 32:.0f}" y="67" font-size="13" font-weight="700" fill="{c["text"]}">{esc(r["repo"])}</text>')
+        out.append(f'<text x="{x + 32:.0f}" y="67" font-size="13" font-weight="700" fill="{c["text"]}">{esc(r["repo"].lower())}</text>')
         out.append(f'<text x="{x + 20:.0f}" y="87" font-size="11" fill="{a}">{esc(r["tag"])}<tspan fill="{c["muted"]}">  ·  {day}</tspan></text>')
         out.append("</g>")
     out.append("</svg>")

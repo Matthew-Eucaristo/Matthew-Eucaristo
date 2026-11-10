@@ -177,7 +177,7 @@ def fit(nodes, pos, deg):
 
 
 def label(n):
-    return n["id"] + (" (planned)" if n.get("planned") else "")
+    return n["id"].lower() + (" (planned)" if n.get("planned") else "")
 
 
 def untangle(nodes, xy, deg, gap=6):
@@ -221,7 +221,7 @@ def esc(s):
 def svg(nodes, edges, xy, deg, c):
     out = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" '
-        f'aria-label="Graph of public projects: dev tools, the Homebrew tap, s1, Neovim plugins, games and apps">',
+        f'aria-label="graph of public projects: dev tools, the homebrew tap, s1, neovim plugins, games and apps">',
         "<style>text{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace}"
         ".flow{animation:flow 1.2s linear infinite}@keyframes flow{to{stroke-dashoffset:-8}}"
         "@media (prefers-reduced-motion:reduce){.flow{animation:none}.pulse{display:none}}</style>",
