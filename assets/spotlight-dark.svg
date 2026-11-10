@@ -13,22 +13,22 @@
 <circle cx="834" cy="278" r="3" fill="#30363d"/>
 <circle cx="848" cy="278" r="3" fill="#30363d"/>
 <g class="s s0" style="animation-delay:-35s">
-<text x="32" y="70" font-size="11" letter-spacing="1.5" fill="#39c5cf">CAMERA APP · ANDROID + IOS</text>
-<text x="32" y="106" font-size="28" font-weight="700" fill="#e6edf3">Fotoin</text>
-<text x="32" y="136" font-size="14" fill="#e6edf3" opacity="0.88">Photograph someone exactly like a reference pose: a</text>
-<text x="32" y="157" font-size="14" fill="#e6edf3" opacity="0.88">ghost overlay, a live match meter, one hint at a time,</text>
-<text x="32" y="178" font-size="14" fill="#e6edf3" opacity="0.88">auto-capture. On-device, no ads.</text>
-<rect x="32" y="212" width="42" height="20" rx="10" fill="none" stroke="#30363d"/>
-<text x="53" y="226" text-anchor="middle" font-size="11" fill="#7d8590">Expo</text>
-<rect x="82.4" y="212" width="95" height="20" rx="10" fill="none" stroke="#30363d"/>
-<text x="130" y="226" text-anchor="middle" font-size="11" fill="#7d8590">React Native</text>
-<rect x="185.6" y="212" width="95" height="20" rx="10" fill="none" stroke="#30363d"/>
-<text x="233" y="226" text-anchor="middle" font-size="11" fill="#7d8590">VisionCamera</text>
-<rect x="288.79999999999995" y="212" width="174" height="20" rx="10" fill="none" stroke="#30363d"/>
-<text x="376" y="226" text-anchor="middle" font-size="11" fill="#7d8590">MediaPipe · Apple Vision</text>
-<text x="32" y="282" font-size="12" fill="#7d8590"><tspan fill="#39c5cf">→</tspan> matthew-eucaristo.github.io/fotoin</text>
-<rect x="560" y="50" width="296" height="214" rx="8" fill="#161b22" stroke="#30363d"/>
-<g transform="translate(564,58)">
+<text x="352" y="70" font-size="11" letter-spacing="1.5" fill="#39c5cf">CAMERA APP · ANDROID + IOS</text>
+<text x="352" y="106" font-size="28" font-weight="700" fill="#e6edf3">Fotoin</text>
+<text x="352" y="136" font-size="14" fill="#e6edf3" opacity="0.88">Photograph someone exactly like a reference pose: a</text>
+<text x="352" y="157" font-size="14" fill="#e6edf3" opacity="0.88">ghost overlay, a live match meter, one hint at a time,</text>
+<text x="352" y="178" font-size="14" fill="#e6edf3" opacity="0.88">auto-capture. On-device, no ads.</text>
+<rect x="352" y="212" width="42" height="20" rx="10" fill="none" stroke="#30363d"/>
+<text x="373" y="226" text-anchor="middle" font-size="11" fill="#7d8590">Expo</text>
+<rect x="402.4" y="212" width="95" height="20" rx="10" fill="none" stroke="#30363d"/>
+<text x="450" y="226" text-anchor="middle" font-size="11" fill="#7d8590">React Native</text>
+<rect x="505.59999999999997" y="212" width="95" height="20" rx="10" fill="none" stroke="#30363d"/>
+<text x="553" y="226" text-anchor="middle" font-size="11" fill="#7d8590">VisionCamera</text>
+<rect x="608.8" y="212" width="174" height="20" rx="10" fill="none" stroke="#30363d"/>
+<text x="696" y="226" text-anchor="middle" font-size="11" fill="#7d8590">MediaPipe · Apple Vision</text>
+<text x="352" y="282" font-size="12" fill="#7d8590"><tspan fill="#39c5cf">→</tspan> matthew-eucaristo.github.io/fotoin</text>
+<rect x="24" y="50" width="296" height="214" rx="8" fill="#161b22" stroke="#30363d"/>
+<g transform="translate(28,58)">
 <rect x="94" y="4" width="100" height="180" rx="14" fill="none" stroke="#30363d" stroke-width="2"/>
 <rect x="104" y="14" width="80" height="5" rx="2.5" fill="#30363d"/>
 <rect class="meter" x="104" y="14" width="80" height="5" rx="2.5" fill="#39c5cf"/>
@@ -50,20 +50,20 @@
 <rect class="bar" style="animation-delay:-35s" x="1" y="32" width="878" height="2" fill="#39c5cf" opacity="0.7"/>
 </g>
 <g class="s s1" style="animation-delay:-30s">
-<text x="32" y="70" font-size="11" letter-spacing="1.5" fill="#d29922">AI AGENT · MACOS</text>
-<text x="32" y="106" font-size="28" font-weight="700" fill="#e6edf3">s1</text>
-<text x="32" y="136" font-size="14" fill="#e6edf3" opacity="0.88">Voice-first macOS agent. A fast local System 1 acts;</text>
-<text x="32" y="157" font-size="14" fill="#e6edf3" opacity="0.88">an LLM System 2 is asked only when unsure. Every step</text>
-<text x="32" y="178" font-size="14" fill="#e6edf3" opacity="0.88">gated and logged.</text>
-<rect x="32" y="212" width="62" height="20" rx="10" fill="none" stroke="#30363d"/>
-<text x="63" y="226" text-anchor="middle" font-size="11" fill="#7d8590">Swift 6</text>
-<rect x="102.19999999999999" y="212" width="56" height="20" rx="10" fill="none" stroke="#30363d"/>
-<text x="130" y="226" text-anchor="middle" font-size="11" fill="#7d8590">AX API</text>
-<rect x="165.79999999999998" y="212" width="122" height="20" rx="10" fill="none" stroke="#30363d"/>
-<text x="227" y="226" text-anchor="middle" font-size="11" fill="#7d8590">ScreenCaptureKit</text>
-<text x="32" y="282" font-size="12" fill="#7d8590"><tspan fill="#d29922">→</tspan> s1-mac.pages.dev</text>
-<rect x="560" y="50" width="296" height="214" rx="8" fill="#161b22" stroke="#30363d"/>
-<g transform="translate(564,58)">
+<text x="352" y="70" font-size="11" letter-spacing="1.5" fill="#d29922">AI AGENT · MACOS</text>
+<text x="352" y="106" font-size="28" font-weight="700" fill="#e6edf3">s1</text>
+<text x="352" y="136" font-size="14" fill="#e6edf3" opacity="0.88">Voice-first macOS agent. A fast local System 1 acts;</text>
+<text x="352" y="157" font-size="14" fill="#e6edf3" opacity="0.88">an LLM System 2 is asked only when unsure. Every step</text>
+<text x="352" y="178" font-size="14" fill="#e6edf3" opacity="0.88">gated and logged.</text>
+<rect x="352" y="212" width="62" height="20" rx="10" fill="none" stroke="#30363d"/>
+<text x="383" y="226" text-anchor="middle" font-size="11" fill="#7d8590">Swift 6</text>
+<rect x="422.2" y="212" width="56" height="20" rx="10" fill="none" stroke="#30363d"/>
+<text x="450" y="226" text-anchor="middle" font-size="11" fill="#7d8590">AX API</text>
+<rect x="485.79999999999995" y="212" width="122" height="20" rx="10" fill="none" stroke="#30363d"/>
+<text x="547" y="226" text-anchor="middle" font-size="11" fill="#7d8590">ScreenCaptureKit</text>
+<text x="352" y="282" font-size="12" fill="#7d8590"><tspan fill="#d29922">→</tspan> s1-mac.pages.dev</text>
+<rect x="24" y="50" width="296" height="214" rx="8" fill="#161b22" stroke="#30363d"/>
+<g transform="translate(28,58)">
 <text x="144" y="26" text-anchor="middle" font-size="12" fill="#e6edf3">“rename these screenshots by date”</text>
 <rect class="wave" style="animation-delay:0.00s" x="30" y="57.0" width="4" height="10" rx="2" fill="#d29922"/>
 <rect class="wave" style="animation-delay:0.06s" x="38" y="50.0" width="4" height="24" rx="2" fill="#d29922"/>
@@ -108,19 +108,19 @@
 <rect class="bar" style="animation-delay:-30s" x="1" y="32" width="878" height="2" fill="#d29922" opacity="0.7"/>
 </g>
 <g class="s s2" style="animation-delay:-25s">
-<text x="32" y="70" font-size="11" letter-spacing="1.5" fill="#58a6ff">REINFORCEMENT LEARNING · THESIS</text>
-<text x="32" y="106" font-size="28" font-weight="700" fill="#e6edf3">Mouse Maze Mayhem</text>
-<text x="32" y="136" font-size="14" fill="#e6edf3" opacity="0.88">Four cats vs. one RL mouse in 3D mazes. A solver-</text>
-<text x="32" y="157" font-size="14" fill="#e6edf3" opacity="0.88">distilled policy plays in your browser via ONNX.</text>
-<rect x="32" y="212" width="62" height="20" rx="10" fill="none" stroke="#30363d"/>
-<text x="63" y="226" text-anchor="middle" font-size="11" fill="#7d8590">PyTorch</text>
-<rect x="102.19999999999999" y="212" width="42" height="20" rx="10" fill="none" stroke="#30363d"/>
-<text x="123" y="226" text-anchor="middle" font-size="11" fill="#7d8590">ONNX</text>
-<rect x="152.6" y="212" width="128" height="20" rx="10" fill="none" stroke="#30363d"/>
-<text x="217" y="226" text-anchor="middle" font-size="11" fill="#7d8590">React Three Fiber</text>
-<text x="32" y="282" font-size="12" fill="#7d8590"><tspan fill="#58a6ff">→</tspan> mouse-maze-mayhem-skripsi.web.app</text>
-<rect x="560" y="50" width="296" height="214" rx="8" fill="#161b22" stroke="#30363d"/>
-<g transform="translate(564,58)">
+<text x="352" y="70" font-size="11" letter-spacing="1.5" fill="#58a6ff">REINFORCEMENT LEARNING · THESIS</text>
+<text x="352" y="106" font-size="28" font-weight="700" fill="#e6edf3">Mouse Maze Mayhem</text>
+<text x="352" y="136" font-size="14" fill="#e6edf3" opacity="0.88">Four cats vs. one RL mouse in 3D mazes. A solver-</text>
+<text x="352" y="157" font-size="14" fill="#e6edf3" opacity="0.88">distilled policy plays in your browser via ONNX.</text>
+<rect x="352" y="212" width="62" height="20" rx="10" fill="none" stroke="#30363d"/>
+<text x="383" y="226" text-anchor="middle" font-size="11" fill="#7d8590">PyTorch</text>
+<rect x="422.2" y="212" width="42" height="20" rx="10" fill="none" stroke="#30363d"/>
+<text x="443" y="226" text-anchor="middle" font-size="11" fill="#7d8590">ONNX</text>
+<rect x="472.59999999999997" y="212" width="128" height="20" rx="10" fill="none" stroke="#30363d"/>
+<text x="537" y="226" text-anchor="middle" font-size="11" fill="#7d8590">React Three Fiber</text>
+<text x="352" y="282" font-size="12" fill="#7d8590"><tspan fill="#58a6ff">→</tspan> mouse-maze-mayhem-skripsi.web.app</text>
+<rect x="24" y="50" width="296" height="214" rx="8" fill="#161b22" stroke="#30363d"/>
+<g transform="translate(28,58)">
 <g stroke="#30363d" stroke-width="2" stroke-linecap="round">
 <line x1="72" y1="132" x2="72" y2="168"/>
 <line x1="108" y1="96" x2="108" y2="132"/>
@@ -147,16 +147,16 @@
 <rect class="bar" style="animation-delay:-25s" x="1" y="32" width="878" height="2" fill="#58a6ff" opacity="0.7"/>
 </g>
 <g class="s s3" style="animation-delay:-20s">
-<text x="32" y="70" font-size="11" letter-spacing="1.5" fill="#58a6ff">GAME · BROWSER</text>
-<text x="32" y="106" font-size="28" font-weight="700" fill="#e6edf3">mob-run</text>
-<text x="32" y="136" font-size="14" fill="#e6edf3" opacity="0.88">The game from those fake mobile ads, for real: pick</text>
-<text x="32" y="157" font-size="14" fill="#e6edf3" opacity="0.88">multiplier gates and outgun mobs, walls and bosses</text>
-<text x="32" y="178" font-size="14" fill="#e6edf3" opacity="0.88">across 5 zones.</text>
-<rect x="32" y="212" width="69" height="20" rx="10" fill="none" stroke="#30363d"/>
-<text x="66" y="226" text-anchor="middle" font-size="11" fill="#7d8590">Three.js</text>
-<text x="32" y="282" font-size="12" fill="#7d8590"><tspan fill="#58a6ff">→</tspan> mob-run.pages.dev</text>
-<rect x="560" y="50" width="296" height="214" rx="8" fill="#161b22" stroke="#30363d"/>
-<g transform="translate(564,58)">
+<text x="352" y="70" font-size="11" letter-spacing="1.5" fill="#58a6ff">GAME · BROWSER</text>
+<text x="352" y="106" font-size="28" font-weight="700" fill="#e6edf3">mob-run</text>
+<text x="352" y="136" font-size="14" fill="#e6edf3" opacity="0.88">The game from those fake mobile ads, for real: pick</text>
+<text x="352" y="157" font-size="14" fill="#e6edf3" opacity="0.88">multiplier gates and outgun mobs, walls and bosses</text>
+<text x="352" y="178" font-size="14" fill="#e6edf3" opacity="0.88">across 5 zones.</text>
+<rect x="352" y="212" width="69" height="20" rx="10" fill="none" stroke="#30363d"/>
+<text x="386" y="226" text-anchor="middle" font-size="11" fill="#7d8590">Three.js</text>
+<text x="352" y="282" font-size="12" fill="#7d8590"><tspan fill="#58a6ff">→</tspan> mob-run.pages.dev</text>
+<rect x="24" y="50" width="296" height="214" rx="8" fill="#161b22" stroke="#30363d"/>
+<g transform="translate(28,58)">
 <line x1="8" y1="58" x2="280" y2="58" stroke="#30363d"/>
 <line x1="8" y1="142" x2="280" y2="142" stroke="#30363d"/>
 <rect x="112" y="54" width="4" height="92" fill="#58a6ff" opacity="0.7"/>
@@ -173,20 +173,20 @@
 <rect class="bar" style="animation-delay:-20s" x="1" y="32" width="878" height="2" fill="#58a6ff" opacity="0.7"/>
 </g>
 <g class="s s4" style="animation-delay:-15s">
-<text x="32" y="70" font-size="11" letter-spacing="1.5" fill="#3fb950">DEV TOOL · ALL IN ONE</text>
-<text x="32" y="106" font-size="28" font-weight="700" fill="#e6edf3">decruft</text>
-<text x="32" y="136" font-size="14" fill="#e6edf3" opacity="0.88">A better Storage screen for programmers: one scan of</text>
-<text x="32" y="157" font-size="14" fill="#e6edf3" opacity="0.88">what your dev machine has piled up, reclaimed through</text>
-<text x="32" y="178" font-size="14" fill="#e6edf3" opacity="0.88">each tool's own command.</text>
-<rect x="32" y="212" width="29" height="20" rx="10" fill="none" stroke="#30363d"/>
-<text x="47" y="226" text-anchor="middle" font-size="11" fill="#7d8590">Go</text>
-<rect x="69.2" y="212" width="82" height="20" rx="10" fill="none" stroke="#30363d"/>
-<text x="110" y="226" text-anchor="middle" font-size="11" fill="#7d8590">Bubble Tea</text>
-<rect x="159.2" y="212" width="280" height="20" rx="10" fill="none" stroke="#30363d"/>
-<text x="299" y="226" text-anchor="middle" font-size="11" fill="#7d8590">fell · nodekill · rustkill · flutterkill</text>
-<text x="32" y="282" font-size="12" fill="#7d8590"><tspan fill="#3fb950">→</tspan> github.com/Matthew-Eucaristo/decruft</text>
-<rect x="560" y="50" width="296" height="214" rx="8" fill="#161b22" stroke="#30363d"/>
-<g transform="translate(564,58)">
+<text x="352" y="70" font-size="11" letter-spacing="1.5" fill="#3fb950">DEV TOOL · ALL IN ONE</text>
+<text x="352" y="106" font-size="28" font-weight="700" fill="#e6edf3">decruft</text>
+<text x="352" y="136" font-size="14" fill="#e6edf3" opacity="0.88">A better Storage screen for programmers: one scan of</text>
+<text x="352" y="157" font-size="14" fill="#e6edf3" opacity="0.88">what your dev machine has piled up, reclaimed through</text>
+<text x="352" y="178" font-size="14" fill="#e6edf3" opacity="0.88">each tool's own command.</text>
+<rect x="352" y="212" width="29" height="20" rx="10" fill="none" stroke="#30363d"/>
+<text x="367" y="226" text-anchor="middle" font-size="11" fill="#7d8590">Go</text>
+<rect x="389.2" y="212" width="82" height="20" rx="10" fill="none" stroke="#30363d"/>
+<text x="430" y="226" text-anchor="middle" font-size="11" fill="#7d8590">Bubble Tea</text>
+<rect x="479.2" y="212" width="280" height="20" rx="10" fill="none" stroke="#30363d"/>
+<text x="619" y="226" text-anchor="middle" font-size="11" fill="#7d8590">fell · nodekill · rustkill · flutterkill</text>
+<text x="352" y="282" font-size="12" fill="#7d8590"><tspan fill="#3fb950">→</tspan> github.com/Matthew-Eucaristo/decruft</text>
+<rect x="24" y="50" width="296" height="214" rx="8" fill="#161b22" stroke="#30363d"/>
+<g transform="translate(28,58)">
 <text x="8" y="14" font-size="10" fill="#7d8590">disk</text>
 <rect x="8" y="20" width="272" height="16" rx="4" fill="#30363d" opacity="0.5"/>
 <rect class="strip" style="animation-delay:0.00s" x="8" y="20" width="70" height="16" fill="#db6d28" opacity="0.85"/>
@@ -215,20 +215,20 @@
 <rect class="bar" style="animation-delay:-15s" x="1" y="32" width="878" height="2" fill="#3fb950" opacity="0.7"/>
 </g>
 <g class="s s5" style="animation-delay:-10s">
-<text x="32" y="70" font-size="11" letter-spacing="1.5" fill="#3fb950">DEV TOOL · MACOS</text>
-<text x="32" y="106" font-size="28" font-weight="700" fill="#e6edf3">lately</text>
-<text x="32" y="136" font-size="14" fill="#e6edf3" opacity="0.88">What just happened on my Mac? A classified timeline</text>
-<text x="32" y="157" font-size="14" fill="#e6edf3" opacity="0.88">from the unified log, crash reports and persistence</text>
-<text x="32" y="178" font-size="14" fill="#e6edf3" opacity="0.88">items. No root, no daemon.</text>
-<rect x="32" y="212" width="29" height="20" rx="10" fill="none" stroke="#30363d"/>
-<text x="47" y="226" text-anchor="middle" font-size="11" fill="#7d8590">Go</text>
-<rect x="69.2" y="212" width="82" height="20" rx="10" fill="none" stroke="#30363d"/>
-<text x="110" y="226" text-anchor="middle" font-size="11" fill="#7d8590">Bubble Tea</text>
-<rect x="159.2" y="212" width="69" height="20" rx="10" fill="none" stroke="#30363d"/>
-<text x="194" y="226" text-anchor="middle" font-size="11" fill="#7d8590">Homebrew</text>
-<text x="32" y="282" font-size="12" fill="#7d8590"><tspan fill="#3fb950">→</tspan> brew install matthew-eucaristo/tap/lately</text>
-<rect x="560" y="50" width="296" height="214" rx="8" fill="#161b22" stroke="#30363d"/>
-<g transform="translate(564,58)">
+<text x="352" y="70" font-size="11" letter-spacing="1.5" fill="#3fb950">DEV TOOL · MACOS</text>
+<text x="352" y="106" font-size="28" font-weight="700" fill="#e6edf3">lately</text>
+<text x="352" y="136" font-size="14" fill="#e6edf3" opacity="0.88">What just happened on my Mac? A classified timeline</text>
+<text x="352" y="157" font-size="14" fill="#e6edf3" opacity="0.88">from the unified log, crash reports and persistence</text>
+<text x="352" y="178" font-size="14" fill="#e6edf3" opacity="0.88">items. No root, no daemon.</text>
+<rect x="352" y="212" width="29" height="20" rx="10" fill="none" stroke="#30363d"/>
+<text x="367" y="226" text-anchor="middle" font-size="11" fill="#7d8590">Go</text>
+<rect x="389.2" y="212" width="82" height="20" rx="10" fill="none" stroke="#30363d"/>
+<text x="430" y="226" text-anchor="middle" font-size="11" fill="#7d8590">Bubble Tea</text>
+<rect x="479.2" y="212" width="69" height="20" rx="10" fill="none" stroke="#30363d"/>
+<text x="514" y="226" text-anchor="middle" font-size="11" fill="#7d8590">Homebrew</text>
+<text x="352" y="282" font-size="12" fill="#7d8590"><tspan fill="#3fb950">→</tspan> brew install matthew-eucaristo/tap/lately</text>
+<rect x="24" y="50" width="296" height="214" rx="8" fill="#161b22" stroke="#30363d"/>
+<g transform="translate(28,58)">
 <g class="row" style="animation-delay:0.00s"><text x="8" y="26" font-size="11" fill="#7d8590">14:49</text><text x="52" y="26" font-size="11" fill="#db6d28">▲ HIGH</text><text x="110" y="26" font-size="11" fill="#e6edf3">Launch agent added</text></g>
 <g class="row" style="animation-delay:0.45s"><text x="8" y="56" font-size="11" fill="#7d8590">14:52</text><text x="52" y="56" font-size="11" fill="#f85149">✖ CRIT</text><text x="110" y="56" font-size="11" fill="#e6edf3">System extension added</text></g>
 <g class="row" style="animation-delay:0.90s"><text x="8" y="86" font-size="11" fill="#7d8590">14:53</text><text x="52" y="86" font-size="11" fill="#db6d28">▲ HIGH</text><text x="110" y="86" font-size="11" fill="#e6edf3">App crashed ×3</text></g>
@@ -240,22 +240,22 @@
 <rect class="bar" style="animation-delay:-10s" x="1" y="32" width="878" height="2" fill="#3fb950" opacity="0.7"/>
 </g>
 <g class="s s6" style="animation-delay:-5s">
-<text x="32" y="70" font-size="11" letter-spacing="1.5" fill="#a371f7">NEOVIM PLUGIN</text>
-<text x="32" y="106" font-size="28" font-weight="700" fill="#e6edf3">spoor.nvim</text>
-<text x="32" y="136" font-size="14" fill="#e6edf3" opacity="0.88">Follow the trail through a codebase in Neovim: a call</text>
-<text x="32" y="157" font-size="14" fill="#e6edf3" opacity="0.88">bow-tie on K, trace mode with notes, and what your</text>
-<text x="32" y="178" font-size="14" fill="#e6edf3" opacity="0.88">agent changed. No AI, no index.</text>
-<rect x="32" y="212" width="36" height="20" rx="10" fill="none" stroke="#30363d"/>
-<text x="50" y="226" text-anchor="middle" font-size="11" fill="#7d8590">Lua</text>
-<rect x="75.8" y="212" width="56" height="20" rx="10" fill="none" stroke="#30363d"/>
-<text x="104" y="226" text-anchor="middle" font-size="11" fill="#7d8590">Neovim</text>
-<rect x="139.39999999999998" y="212" width="36" height="20" rx="10" fill="none" stroke="#30363d"/>
-<text x="157" y="226" text-anchor="middle" font-size="11" fill="#7d8590">LSP</text>
-<rect x="183.2" y="212" width="89" height="20" rx="10" fill="none" stroke="#30363d"/>
-<text x="228" y="226" text-anchor="middle" font-size="11" fill="#7d8590">tree-sitter</text>
-<text x="32" y="282" font-size="12" fill="#7d8590"><tspan fill="#a371f7">→</tspan> github.com/Matthew-Eucaristo/spoor.nvim</text>
-<rect x="560" y="50" width="296" height="214" rx="8" fill="#161b22" stroke="#30363d"/>
-<g transform="translate(564,58)">
+<text x="352" y="70" font-size="11" letter-spacing="1.5" fill="#a371f7">NEOVIM PLUGIN</text>
+<text x="352" y="106" font-size="28" font-weight="700" fill="#e6edf3">spoor.nvim</text>
+<text x="352" y="136" font-size="14" fill="#e6edf3" opacity="0.88">Follow the trail through a codebase in Neovim: a call</text>
+<text x="352" y="157" font-size="14" fill="#e6edf3" opacity="0.88">bow-tie on K, trace mode with notes, and what your</text>
+<text x="352" y="178" font-size="14" fill="#e6edf3" opacity="0.88">agent changed. No AI, no index.</text>
+<rect x="352" y="212" width="36" height="20" rx="10" fill="none" stroke="#30363d"/>
+<text x="370" y="226" text-anchor="middle" font-size="11" fill="#7d8590">Lua</text>
+<rect x="395.8" y="212" width="56" height="20" rx="10" fill="none" stroke="#30363d"/>
+<text x="424" y="226" text-anchor="middle" font-size="11" fill="#7d8590">Neovim</text>
+<rect x="459.4" y="212" width="36" height="20" rx="10" fill="none" stroke="#30363d"/>
+<text x="477" y="226" text-anchor="middle" font-size="11" fill="#7d8590">LSP</text>
+<rect x="503.2" y="212" width="89" height="20" rx="10" fill="none" stroke="#30363d"/>
+<text x="548" y="226" text-anchor="middle" font-size="11" fill="#7d8590">tree-sitter</text>
+<text x="352" y="282" font-size="12" fill="#7d8590"><tspan fill="#a371f7">→</tspan> github.com/Matthew-Eucaristo/spoor.nvim</text>
+<rect x="24" y="50" width="296" height="214" rx="8" fill="#161b22" stroke="#30363d"/>
+<g transform="translate(28,58)">
 <path class="flow" d="M74 42 C89.0 42 89.0 92 104 92" fill="none" stroke="#30363d" stroke-width="1.5" stroke-dasharray="4 4"/>
 <circle r="3" fill="#a371f7"><animateMotion dur="2.4s" begin="0.0s" repeatCount="indefinite" path="M74 42 C89.0 42 89.0 92 104 92"/></circle>
 <text x="40" y="46" text-anchor="middle" font-size="11" fill="#e6edf3">CartPage</text>

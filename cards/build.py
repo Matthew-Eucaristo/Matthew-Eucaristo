@@ -21,6 +21,7 @@ sys.path.insert(0, str(ROOT / "graph"))
 import build as graph  # noqa: E402  (shares the palette, the API helper and the public-repo check)
 
 W = 880
+SKETCH_X, TEXT_X = 24, 352  # spotlight: sketch on the left, words on the right (the header above is the mirror)
 TOP = 32
 FONT = "font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace"
 esc = graph.esc
@@ -256,19 +257,19 @@ def spotlight(spec, c):
         a = c[s["group"]]
         delay = f"animation-delay:{(i - n) * t}s"
         g = [f'<g class="s s{i}" style="{delay}">']
-        g.append(f'<text x="32" y="70" font-size="11" letter-spacing="1.5" fill="{a}">{esc(s["kicker"].upper())}</text>')
-        g.append(f'<text x="32" y="106" font-size="28" font-weight="700" fill="{c["text"]}">{esc(s["repo"])}</text>')
+        g.append(f'<text x="{TEXT_X}" y="70" font-size="11" letter-spacing="1.5" fill="{a}">{esc(s["kicker"].upper())}</text>')
+        g.append(f'<text x="{TEXT_X}" y="106" font-size="28" font-weight="700" fill="{c["text"]}">{esc(s["repo"])}</text>')
         for j, line in enumerate(textwrap.wrap(s["desc"], 54)[:3]):
-            g.append(f'<text x="32" y="{136 + j * 21}" font-size="14" fill="{c["text"]}" opacity="0.88">{esc(line)}</text>')
-        x = 32
+            g.append(f'<text x="{TEXT_X}" y="{136 + j * 21}" font-size="14" fill="{c["text"]}" opacity="0.88">{esc(line)}</text>')
+        x = TEXT_X
         for chip in s["stack"]:
             w = len(chip) * 6.6 + 16
             g.append(f'<rect x="{x}" y="212" width="{w:.0f}" height="20" rx="10" fill="none" stroke="{c["border"]}"/>')
             g.append(f'<text x="{x + w / 2:.0f}" y="226" text-anchor="middle" font-size="11" fill="{c["muted"]}">{esc(chip)}</text>')
             x += w + 8
-        g.append(f'<text x="32" y="{h - 18}" font-size="12" fill="{c["muted"]}"><tspan fill="{a}">→</tspan> {esc(s["where"])}</text>')
-        g.append(f'<rect x="560" y="50" width="296" height="214" rx="8" fill="{c["bar"]}" stroke="{c["border"]}"/>')
-        g.append('<g transform="translate(564,58)">')
+        g.append(f'<text x="{TEXT_X}" y="{h - 18}" font-size="12" fill="{c["muted"]}"><tspan fill="{a}">→</tspan> {esc(s["where"])}</text>')
+        g.append(f'<rect x="{SKETCH_X}" y="50" width="296" height="214" rx="8" fill="{c["bar"]}" stroke="{c["border"]}"/>')
+        g.append(f'<g transform="translate({SKETCH_X + 4},58)">')
         g += VISUALS[s["visual"]](c, a)
         g.append("</g>")
         g.append(f'<circle cx="{W - 32 - (n - 1 - i) * 14}" cy="{h - 22}" r="3.5" fill="{a}"/>')
