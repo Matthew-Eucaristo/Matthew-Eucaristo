@@ -2,6 +2,20 @@
   "seconds_per_slide": 5,
   "slides": [
     {
+      "repo": "Fotoin",
+      "group": "apps",
+      "visual": "ghost",
+      "kicker": "camera app · Android + iOS",
+      "desc": "Photograph someone exactly like a reference pose: a ghost overlay, a live match meter, one hint at a time, auto-capture. On-device, no ads.",
+      "stack": [
+        "Expo",
+        "React Native",
+        "VisionCamera",
+        "MediaPipe · Apple Vision"
+      ],
+      "where": "matthew-eucaristo.github.io/fotoin"
+    },
+    {
       "repo": "s1",
       "group": "s1",
       "visual": "voice",

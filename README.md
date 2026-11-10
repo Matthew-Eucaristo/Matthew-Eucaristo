@@ -11,10 +11,10 @@ Rule of thumb: keep it simple, measure it, ship it.
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/spotlight-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/spotlight-light.svg">
-  <img alt="Project spotlight, one at a time: s1, a voice-first macOS agent; Mouse Maze Mayhem, an RL mouse escaping cats in the browser; mob-run, a 3D crowd-runner; decruft, a Storage screen for developer machines; fell, a cleaner for AI agents' git worktrees; lately, a timeline of what just happened on a Mac; spoor.nvim, call bow-ties and traces in Neovim" src="assets/spotlight-dark.svg" width="100%">
+  <img alt="Project spotlight, one at a time: Fotoin, a camera app that coaches you to match a reference pose; s1, a voice-first macOS agent; Mouse Maze Mayhem, an RL mouse escaping cats in the browser; mob-run, a 3D crowd-runner; decruft, a Storage screen for developer machines; fell, a cleaner for AI agents' git worktrees; lately, a timeline of what just happened on a Mac; spoor.nvim, call bow-ties and traces in Neovim" src="assets/spotlight-dark.svg" width="100%">
 </picture>
 
-[**s1**](https://github.com/Matthew-Eucaristo/s1) · [**Mouse Maze Mayhem**](https://mouse-maze-mayhem-skripsi.web.app) · [**mob-run**](https://mob-run.pages.dev) · [**Flip10**](https://flip10.pages.dev) · [**solitaire-rl**](https://github.com/Matthew-Eucaristo/solitaire-rl) · [**crypto-cycle-signals**](https://github.com/Matthew-Eucaristo/crypto-cycle-signals)
+[**Fotoin**](https://matthew-eucaristo.github.io/fotoin/) · [**s1**](https://github.com/Matthew-Eucaristo/s1) · [**Mouse Maze Mayhem**](https://mouse-maze-mayhem-skripsi.web.app) · [**mob-run**](https://mob-run.pages.dev) · [**Flip10**](https://flip10.pages.dev) · [**solitaire-rl**](https://github.com/Matthew-Eucaristo/solitaire-rl) · [**crypto-cycle-signals**](https://github.com/Matthew-Eucaristo/crypto-cycle-signals)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/shipped-dark.svg">
@@ -65,6 +65,7 @@ brew install matthew-eucaristo/tap/{decruft,fell,flutterkill,nodekill,rustkill,l
 
 | project | what it is | built with |
 | :-- | :-- | :-- |
+| [**Fotoin**](https://github.com/Matthew-Eucaristo/fotoin) | Photograph someone exactly like a reference pose (Pinterest, IG, or an example shot): a ghost overlay and pose skeleton over the live camera, a match meter, one hint at a time, auto-capture. Bodies, faces and groups; on-device, free, no ads. [Site →](https://matthew-eucaristo.github.io/fotoin/) | Expo · React Native · VisionCamera · MediaPipe · Apple Vision |
 | [**s1**](https://github.com/Matthew-Eucaristo/s1) | Voice-first macOS agent. A fast local *System 1* acts; an LLM *System 2* is asked only when unsure. Every step gated and logged. [Site →](https://s1-mac.pages.dev) `brew install --cask matthew-eucaristo/tap/s1` | Swift 6 · AX API · ScreenCaptureKit |
 | [**Mouse Maze Mayhem**](https://mouse-maze-mayhem-skripsi.web.app) | My thesis, playable. Four cats vs. one RL mouse in 3D mazes — a solver-distilled policy running in your browser via ONNX. | PyTorch · ONNX · React Three Fiber |
 | [**solitaire-rl**](https://github.com/Matthew-Eucaristo/solitaire-rl) | Masked DQN and MaskablePPO learning Klondike, judged on a fixed 1000-deal benchmark. Honest result: the heuristic still wins. | Python · SB3 · Gymnasium |

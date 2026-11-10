@@ -26,13 +26,13 @@ THEMES = {
     "dark": {
         "bg": "#0d1117", "bar": "#161b22", "border": "#30363d", "edge": "#30363d",
         "text": "#e6edf3", "muted": "#7d8590",
-        "tools": "#3fb950", "s1": "#d29922", "nvim": "#a371f7", "games": "#58a6ff", "misc": "#db61a2",
+        "tools": "#3fb950", "s1": "#d29922", "nvim": "#a371f7", "games": "#58a6ff", "misc": "#db61a2", "apps": "#39c5cf",
         "red": "#f85149", "orange": "#db6d28",
     },
     "light": {
         "bg": "#ffffff", "bar": "#f6f8fa", "border": "#d0d7de", "edge": "#d0d7de",
         "text": "#1f2328", "muted": "#656d76",
-        "tools": "#1a7f37", "s1": "#9a6700", "nvim": "#8250df", "games": "#0969da", "misc": "#bf3989",
+        "tools": "#1a7f37", "s1": "#9a6700", "nvim": "#8250df", "games": "#0969da", "misc": "#bf3989", "apps": "#1b7c83",
         "red": "#cf222e", "orange": "#bc4c00",
     },
 }
@@ -221,7 +221,7 @@ def esc(s):
 def svg(nodes, edges, xy, deg, c):
     out = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" '
-        f'aria-label="Graph of public projects: dev tools, the Homebrew tap, s1, Neovim plugins and games">',
+        f'aria-label="Graph of public projects: dev tools, the Homebrew tap, s1, Neovim plugins, games and apps">',
         "<style>text{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace}"
         ".flow{animation:flow 1.2s linear infinite}@keyframes flow{to{stroke-dashoffset:-8}}"
         "@media (prefers-reduced-motion:reduce){.flow{animation:none}.pulse{display:none}}</style>",
@@ -256,7 +256,7 @@ def svg(nodes, edges, xy, deg, c):
         text = esc(label(n))
         out.append(f'<text x="{x}" y="{round(y + r + 12, 1)}" text-anchor="middle" font-size="11" fill="{fill}"{weight}>{text}</text>')
         out.append("</g>")
-    legend = [("tools", "dev tools"), ("s1", "s1"), ("nvim", "neovim"), ("games", "games")]
+    legend = [("tools", "dev tools"), ("s1", "s1"), ("nvim", "neovim"), ("games", "games"), ("apps", "apps")]
     lx = 20
     for g, name in legend:
         out.append(f'<circle cx="{lx + 4}" cy="{H - 16}" r="3.5" fill="{c[g]}"/>')

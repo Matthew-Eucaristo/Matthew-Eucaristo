@@ -21,6 +21,8 @@
     { "id": "solitaire-rl", "group": "games" },
     { "id": "crypto-cycle-signals", "group": "misc" },
 
+    { "id": "fotoin", "group": "apps" },
+
     { "id": "#agents", "tag": true },
     { "id": "#neovim", "tag": true },
     { "id": "#games", "tag": true },

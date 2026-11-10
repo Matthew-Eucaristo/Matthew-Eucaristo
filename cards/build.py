@@ -178,7 +178,31 @@ def storage(c, a):
     return out
 
 
-VISUALS = {"voice": voice, "maze": maze, "crowd": crowd, "worktrees": worktrees, "timeline": timeline, "bowtie": bowtie,
+def ghost(c, a):
+    # A phone viewfinder: the reference pose as a dashed ghost, the live pose drifting onto it, the meter filling, snap.
+    pose = ("M128 58 L160 58 L154 104 L134 104 Z M128 58 L116 80 L122 100 M160 58 L174 74 L170 52 "
+            "M134 104 L130 132 L128 160 M154 104 L160 132 L164 160")
+    out = [f'<rect x="94" y="4" width="100" height="180" rx="14" fill="none" stroke="{c["border"]}" stroke-width="2"/>',
+           f'<rect x="104" y="14" width="80" height="5" rx="2.5" fill="{c["border"]}"/>',
+           f'<rect class="meter" x="104" y="14" width="80" height="5" rx="2.5" fill="{a}"/>',
+           f'<g fill="none" stroke="{c["muted"]}" stroke-width="2" stroke-dasharray="3 3" stroke-linejoin="round">'
+           f'<circle cx="144" cy="40" r="9"/><path d="{pose}"/></g>',
+           f'<g class="live" fill="none" stroke="{a}" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">'
+           f'<circle cx="144" cy="40" r="9"/><path d="{pose}"/></g>',
+           f'<rect class="snap" x="95" y="5" width="98" height="178" rx="13" fill="{c["text"]}"/>']
+    for k, (word, col) in enumerate((("reference", c["muted"]), ("you", a))):
+        y = 44 + k * 28
+        dash = ' stroke-dasharray="3 3"' if not k else ""
+        out += [f'<line x1="8" y1="{y - 4}" x2="26" y2="{y - 4}" stroke="{col}" stroke-width="2"{dash}/>',
+                f'<text x="32" y="{y}" font-size="11" fill="{col}">{word}</text>']
+    out.append(f'<rect class="scan" x="200" y="26" width="84" height="22" rx="4" fill="{a}" opacity="0.12"/>')
+    for i, hint in enumerate(("step back", "move right", "chin up", "✓ snap")):
+        out.append(f'<text x="208" y="{41 + i * 33}" font-size="11" fill="{a if i == 3 else c["text"]}">{hint}</text>')
+    out.append(f'<text x="144" y="196" text-anchor="middle" font-size="11" fill="{c["muted"]}">one hint at a time · auto-capture at 80</text>')
+    return out
+
+
+VISUALS = {"ghost": ghost, "voice": voice, "maze": maze, "crowd": crowd, "worktrees": worktrees, "timeline": timeline, "bowtie": bowtie,
            "storage": storage}
 
 SKETCH_CSS = (
@@ -198,6 +222,11 @@ SKETCH_CSS = (
     ".row{opacity:0;animation:row 5s ease-out infinite}"
     "@keyframes row{0%{opacity:0;transform:translateX(-8px)}8%,88%{opacity:1;transform:none}100%{opacity:0}}"
     ".flow{animation:flow 1s linear infinite}@keyframes flow{to{stroke-dashoffset:-8}}"
+    ".live{transform-box:fill-box;transform-origin:center;transform:translate(14px,8px) rotate(-6deg);animation:live 4s ease-in-out infinite}"
+    "@keyframes live{0%{transform:translate(14px,8px) rotate(-6deg)}70%,100%{transform:none}}"
+    ".meter{transform-box:fill-box;transform-origin:left;transform:scaleX(.35);animation:meter 4s ease-in-out infinite}"
+    "@keyframes meter{0%{transform:scaleX(.35)}70%,100%{transform:scaleX(1)}}"
+    ".snap{opacity:0;animation:snap 4s linear infinite}@keyframes snap{0%,72%{opacity:0}76%{opacity:.5}86%,100%{opacity:0}}"
 )
 
 
