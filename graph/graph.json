@@ -19,15 +19,18 @@
     { "id": "mob-run", "group": "games" },
     { "id": "Flip10", "group": "games" },
     { "id": "solitaire-rl", "group": "games" },
+    { "id": "rl-2048", "group": "games" },
     { "id": "crypto-cycle-signals", "group": "misc" },
 
     { "id": "fotoin", "group": "apps" },
+    { "id": "plain-gallery", "group": "apps" },
+    { "id": "blockies", "group": "misc" },
 
     { "id": "#agents", "tag": true },
     { "id": "#neovim", "tag": true },
     { "id": "#games", "tag": true },
-    { "id": "#go", "tag": true },
-    { "id": "#macos", "tag": true }
+    { "id": "#macos", "tag": true },
+    { "id": "#on-device", "tag": true }
   ],
   "edges": [
     ["decruft", "fell", "depends"],
@@ -46,12 +49,13 @@
     ["mob-run", "#games", "tag"],
     ["Flip10", "#games", "tag"],
     ["solitaire-rl", "#games", "tag"],
+    ["rl-2048", "#games", "tag"],
 
-    ["fell", "#go", "tag"],
-    ["flutterkill", "#go", "tag"],
-    ["nodekill", "#go", "tag"],
-    ["rustkill", "#go", "tag"],
-    ["lately", "#go", "tag"],
+    ["blockies", "#agents", "tag"],
+
+    ["fotoin", "#on-device", "tag"],
+    ["plain-gallery", "#on-device", "tag"],
+
 
     ["s1", "#macos", "tag"],
     ["lately", "#macos", "tag"]

@@ -56,7 +56,7 @@
       "repo": "decruft",
       "group": "tools",
       "visual": "storage",
-      "kicker": "dev tool · Go TUI",
+      "kicker": "dev tool · all in one",
       "desc": "A better Storage screen for programmers: one scan of what your dev machine has piled up, reclaimed through each tool's own command.",
       "stack": [
         "Go",
@@ -64,19 +64,6 @@
         "fell · nodekill · rustkill · flutterkill"
       ],
       "where": "github.com/Matthew-Eucaristo/decruft"
-    },
-    {
-      "repo": "fell",
-      "group": "tools",
-      "visual": "worktrees",
-      "kicker": "dev tool · Go TUI",
-      "desc": "Finds git worktrees left behind by AI coding agents, shows the evidence, and cleans up without breaking the agent's own lifecycle.",
-      "stack": [
-        "Go",
-        "Bubble Tea",
-        "Homebrew"
-      ],
-      "where": "brew install matthew-eucaristo/tap/fell"
     },
     {
       "repo": "lately",

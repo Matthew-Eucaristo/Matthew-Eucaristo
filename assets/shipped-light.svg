@@ -26,9 +26,9 @@
 </g>
 <g>
 <rect x="528" y="46" width="160" height="50" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
-<circle cx="544" cy="63" r="3.5" fill="#bf3989"/>
+<circle cx="544" cy="63" r="3.5" fill="#1b7c83"/>
 <text x="556" y="67" font-size="13" font-weight="700" fill="#1f2328">plain-gallery</text>
-<text x="544" y="87" font-size="11" fill="#bf3989">v0.2.1<tspan fill="#656d76">  ·  Nov 3</tspan></text>
+<text x="544" y="87" font-size="11" fill="#1b7c83">v0.2.1<tspan fill="#656d76">  ·  Nov 3</tspan></text>
 </g>
 <g>
 <rect x="696" y="46" width="160" height="50" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
