@@ -20,6 +20,7 @@
     { "id": "Flip10", "group": "games" },
     { "id": "solitaire-rl", "group": "games" },
     { "id": "rl-2048", "group": "games" },
+    { "id": "quoridor-zero", "group": "games" },
     { "id": "crypto-cycle-signals", "group": "misc" },
 
     { "id": "fotoin", "group": "apps" },
@@ -50,6 +51,7 @@
     ["Flip10", "#games", "tag"],
     ["solitaire-rl", "#games", "tag"],
     ["rl-2048", "#games", "tag"],
+    ["quoridor-zero", "#games", "tag"],
 
     ["blockies", "#agents", "tag"],
 

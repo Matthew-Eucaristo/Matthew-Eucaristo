@@ -203,8 +203,35 @@ def ghost(c, a):
     return out
 
 
+def quoridor(c, a):
+    # A 9 × 9 board: the ai (accent) runs round the walls to the far side while the bot heads the other way.
+    cx = lambda col: 71 + 18 * col  # noqa: E731
+    cy = lambda row: 14 + 18 * row  # noqa: E731
+    route = lambda cells: "M" + " L".join(f"{cx(col)} {cy(row)}" for col, row in cells)  # noqa: E731
+    out = [f'<rect x="{63 + 18 * col}" y="{6 + 18 * row}" width="16" height="16" rx="3" fill="{c["border"]}" '
+           f'opacity="{0.9 if row in (0, 8) else 0.45}"/>' for row in range(9) for col in range(9)]
+    for vert, row, col in ((0, 5, 3), (0, 1, 4), (1, 2, 1), (0, 6, 6), (1, 3, 6), (0, 3, 0)):
+        if vert:
+            x = 63 + 18 * (col + 1) - 1
+            out.append(f'<line x1="{x}" y1="{6 + 18 * row}" x2="{x}" y2="{6 + 18 * (row + 2) - 2}" stroke="{c["text"]}" '
+                       f'stroke-width="2.5" stroke-linecap="round"/>')
+        else:
+            y = 6 + 18 * (row + 1) - 1
+            out.append(f'<line x1="{63 + 18 * col}" y1="{y}" x2="{63 + 18 * (col + 2) - 2}" y2="{y}" stroke="{c["text"]}" '
+                       f'stroke-width="2.5" stroke-linecap="round"/>')
+    ai = route([(4, 8), (4, 7), (4, 6), (5, 6), (5, 5), (5, 4), (5, 3), (5, 2), (5, 1), (5, 0)])
+    bot = route([(4, 0), (4, 1), (3, 1), (3, 2), (3, 3), (3, 4), (3, 5), (3, 6)])
+    out.append(f'<circle r="6" fill="{a}"><animateMotion dur="5s" repeatCount="indefinite" keyPoints="0;1;1" '
+               f'keyTimes="0;0.85;1" path="{ai}"/></circle>')
+    out.append(f'<circle r="6" fill="{c["orange"]}"><animateMotion dur="5s" repeatCount="indefinite" keyPoints="0;1;1" '
+               f'keyTimes="0;0.85;1" path="{bot}"/></circle>')
+    out.append(f'<text x="144" y="196" text-anchor="middle" font-size="11" fill="{c["muted"]}">'
+               f'<tspan fill="{a}">●</tspan> ai · net + mcts   <tspan fill="{c["orange"]}">●</tspan> rule-based bot</text>')
+    return out
+
+
 VISUALS = {"ghost": ghost, "voice": voice, "maze": maze, "crowd": crowd, "worktrees": worktrees, "timeline": timeline, "bowtie": bowtie,
-           "storage": storage}
+           "storage": storage, "quoridor": quoridor}
 
 SKETCH_CSS = (
     ".wave{transform-box:fill-box;transform-origin:center;animation:wave 1.1s ease-in-out infinite}"

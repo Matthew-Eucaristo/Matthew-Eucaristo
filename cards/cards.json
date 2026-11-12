@@ -29,6 +29,19 @@
       "where": "s1-mac.pages.dev"
     },
     {
+      "repo": "quoridor-zero",
+      "group": "games",
+      "visual": "quoridor",
+      "kicker": "reinforcement learning · browser",
+      "desc": "alphazero-style quoridor ai trained from scratch on one laptop, checked against an exact solver. play it or its benchmark bots in your browser.",
+      "stack": [
+        "c → wasm",
+        "mcts",
+        "mlx"
+      ],
+      "where": "matthew-eucaristo.github.io/quoridor-zero"
+    },
+    {
       "repo": "Mouse Maze Mayhem",
       "group": "games",
       "visual": "maze",
