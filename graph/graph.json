@@ -25,6 +25,7 @@
 
     { "id": "fotoin", "group": "apps" },
     { "id": "plain-gallery", "group": "apps" },
+    { "id": "tunewell", "group": "apps" },
     { "id": "blockies", "group": "misc" },
 
     { "id": "#agents", "tag": true },
@@ -57,6 +58,7 @@
 
     ["fotoin", "#on-device", "tag"],
     ["plain-gallery", "#on-device", "tag"],
+    ["tunewell", "#on-device", "tag"],
 
 
     ["s1", "#macos", "tag"],

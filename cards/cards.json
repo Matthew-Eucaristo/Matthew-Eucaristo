@@ -16,6 +16,19 @@
       "where": "matthew-eucaristo.github.io/fotoin"
     },
     {
+      "repo": "tunewell",
+      "group": "apps",
+      "visual": "tuner",
+      "kicker": "instrument tuner · browser",
+      "desc": "a free tuner for guitar, bass, strings and piano. it fits each note's stretched overtones to read the true fundamental. no ads, no install.",
+      "stack": [
+        "web audio",
+        "mpm + partial fit",
+        "vanilla js"
+      ],
+      "where": "matthew-eucaristo.github.io/tunewell"
+    },
+    {
       "repo": "s1",
       "group": "s1",
       "visual": "voice",

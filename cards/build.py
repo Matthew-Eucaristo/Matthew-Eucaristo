@@ -230,8 +230,30 @@ def quoridor(c, a):
     return out
 
 
+def tuner(c, a):
+    # A stiff string's partials (accent bars) drift sharp of n·f0 (dashed ticks), more at each step up; the fit
+    # through them recovers the true fundamental and the needle settles on 0 cents.
+    out, base = [], 84
+    for n, h in enumerate((12, 50, 44, 36, 29, 22, 16, 11), start=1):
+        x = 16 + n * 28
+        out += [f'<line x1="{x}" y1="18" x2="{x}" y2="{base}" stroke="{c["muted"]}" stroke-dasharray="2 3" opacity="0.7"/>',
+                f'<rect x="{x + 0.12 * n * n - 2:.1f}" y="{base - h}" width="4" height="{h}" rx="2" fill="{a}"/>',
+                f'<text x="{x}" y="{base + 14}" text-anchor="middle" font-size="10" fill="{c["muted"]}">{n}</text>']
+    out.append(f'<text x="8" y="12" font-size="10" fill="{c["muted"]}">partials vs n·f0</text>')
+    out.append(f'<rect x="138" y="116" width="12" height="36" rx="2" fill="{a}" opacity="0.15"/>')
+    for k in range(-50, 51, 10):
+        x, major = 144 + 2 * k, k % 50 == 0
+        out.append(f'<line x1="{x}" y1="{140 if major else 144}" x2="{x}" y2="152" stroke="{c["muted" if major else "border"]}" '
+                   f'stroke-width="1.5"/>')
+    for k, label in ((-50, "−50"), (0, "0"), (50, "+50")):
+        out.append(f'<text x="{144 + 2 * k}" y="168" text-anchor="middle" font-size="10" fill="{c["muted"]}">{label}</text>')
+    out.append(f'<line class="tune" x1="144" y1="114" x2="144" y2="154" stroke="{a}" stroke-width="3" stroke-linecap="round"/>')
+    out.append(f'<text x="144" y="196" text-anchor="middle" font-size="11" fill="{c["muted"]}">stretched partials in · true fundamental out</text>')
+    return out
+
+
 VISUALS = {"ghost": ghost, "voice": voice, "maze": maze, "crowd": crowd, "worktrees": worktrees, "timeline": timeline, "bowtie": bowtie,
-           "storage": storage, "quoridor": quoridor}
+           "storage": storage, "quoridor": quoridor, "tuner": tuner}
 
 SKETCH_CSS = (
     ".wave{transform-box:fill-box;transform-origin:center;animation:wave 1.1s ease-in-out infinite}"
@@ -255,6 +277,8 @@ SKETCH_CSS = (
     ".meter{transform-box:fill-box;transform-origin:left;transform:scaleX(.35);animation:meter 4s ease-in-out infinite}"
     "@keyframes meter{0%{transform:scaleX(.35)}70%,100%{transform:scaleX(1)}}"
     ".snap{opacity:0;animation:snap 4s linear infinite}@keyframes snap{0%,72%{opacity:0}76%{opacity:.5}86%,100%{opacity:0}}"
+    ".tune{animation:tune 4s ease-out infinite}"
+    "@keyframes tune{0%{transform:translateX(-46px)}35%{transform:translateX(7px)}50%,100%{transform:none}}"
 )
 
 
