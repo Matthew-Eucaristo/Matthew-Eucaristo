@@ -21,7 +21,7 @@ sys.path.insert(0, str(ROOT / "graph"))
 import build as graph  # noqa: E402  (shares the palette, the API helper and the public-repo check)
 
 W = 880
-SKETCH_X, TEXT_X = 24, 352  # spotlight: sketch on the left, words on the right (the header above is the mirror)
+SKETCH_X, TEXT_X = 24, 352
 TOP = 32
 FONT = "font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace"
 esc = graph.esc
@@ -36,8 +36,6 @@ def chrome(c, h, title, right=""):
         f'<text x="{W - 20}" y="21" text-anchor="end" font-size="12" fill="{c["muted"]}">{esc(right)}</text>' if right else "",
     ]
 
-
-# ── the small sketches, one per kind of project; each draws in a 288 × 200 box ──
 
 def voice(c, a):
     out = [f'<text x="144" y="26" text-anchor="middle" font-size="12" fill="{c["text"]}">“rename these screenshots by date”</text>']
@@ -60,7 +58,6 @@ def voice(c, a):
 
 
 def maze(c, a):
-    # 6 × 4 cells of 36px; the mouse's route and both patrols run only through open walls.
     walls = [(72, 132, 72, 168), (108, 96, 108, 132), (108, 24, 108, 60), (180, 60, 180, 96), (72, 96, 108, 96),
              (108, 132, 144, 132), (144, 132, 180, 132), (216, 60, 252, 60), (36, 60, 72, 60), (180, 132, 216, 132),
              (36, 24, 252, 24), (36, 168, 252, 168), (36, 24, 36, 132), (252, 60, 252, 168)]
@@ -159,7 +156,6 @@ def bowtie(c, a):
 
 
 def storage(c, a):
-    # The disk as one bar by developer category; the safe parts shrink as their own tool cleans them.
     rows = [("xcode", "xcrun simctl delete unavailable", c["orange"], 70, True), ("go", "go clean -cache", a, 46, True),
             ("node_modules", "via nodekill", c["nvim"], 58, False), ("homebrew", "brew autoremove", c["games"], 34, True),
             ("docker", "docker system prune", c["misc"], 40, True)]
@@ -180,7 +176,6 @@ def storage(c, a):
 
 
 def ghost(c, a):
-    # A phone viewfinder: the reference pose as a dashed ghost, the live pose drifting onto it, the meter filling, snap.
     pose = ("M128 58 L160 58 L154 104 L134 104 Z M128 58 L116 80 L122 100 M160 58 L174 74 L170 52 "
             "M134 104 L130 132 L128 160 M154 104 L160 132 L164 160")
     out = [f'<rect x="94" y="4" width="100" height="180" rx="14" fill="none" stroke="{c["border"]}" stroke-width="2"/>',
@@ -204,7 +199,6 @@ def ghost(c, a):
 
 
 def quoridor(c, a):
-    # A 9 × 9 board: the ai (accent) runs round the walls to the far side while the bot heads the other way.
     cx = lambda col: 71 + 18 * col  # noqa: E731
     cy = lambda row: 14 + 18 * row  # noqa: E731
     route = lambda cells: "M" + " L".join(f"{cx(col)} {cy(row)}" for col, row in cells)  # noqa: E731
@@ -231,8 +225,6 @@ def quoridor(c, a):
 
 
 def tuner(c, a):
-    # A stiff string's partials (accent bars) drift sharp of n·f0 (dashed ticks), more at each step up; the fit
-    # through them recovers the true fundamental and the needle settles on 0 cents.
     out, base = [], 84
     for n, h in enumerate((12, 50, 44, 36, 29, 22, 16, 11), start=1):
         x = 16 + n * 28
@@ -289,8 +281,6 @@ def spotlight(spec, c):
     fade = 1.6
     css = (
         f"text{{{FONT}}}"
-        # Negative delays keep every slide's animation running from t=0, and each slide is fully visible at the
-        # start of its own turn, so the first frame (and any renderer that ignores CSS animation) shows slide 0.
         f".s{{opacity:0;animation:slide {n * t}s infinite}}.s0{{opacity:1}}"
         f"@keyframes slide{{0%,{share - fade:.2f}%{{opacity:1;transform:none}}{share:.2f}%{{opacity:0}}"
         f"{100 - fade:.2f}%{{opacity:0;transform:translateY(6px)}}100%{{opacity:1;transform:none}}}}"
@@ -302,7 +292,7 @@ def spotlight(spec, c):
     out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{h}" viewBox="0 0 {W} {h}" role="img" '
            f'aria-label="project spotlight: {esc(", ".join(s["repo"] for s in slides).lower())}">', f"<style>{css}</style>"]
     out += chrome(c, h, "spotlight --loop", f"{n} projects · {n * t}s")
-    for k in range(n):  # the dots under every slide
+    for k in range(n):
         out.append(f'<circle cx="{W - 32 - (n - 1 - k) * 14}" cy="{h - 22}" r="3" fill="{c["border"]}"/>')
     for i, s in enumerate(slides):
         a = c[s["group"]]

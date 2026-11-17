@@ -19,7 +19,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 W, H = 880, 400
-TOP = 32  # title bar
+TOP = 32
 PAD = 28
 
 THEMES = {
@@ -82,7 +82,7 @@ def resolve(spec):
             continue
         full = n.get("repo", f"{owner}/{n['id']}")
         r = repos.get(full)
-        if r is None and not full.startswith(owner + "/"):  # someone else's repo the user contributes to
+        if r is None and not full.startswith(owner + "/"):
             try:
                 r = api(f"repos/{full}")
                 r = None if r.get("private") else r
@@ -128,7 +128,7 @@ def layout(nodes, edges, seed=7, steps=900):
                 a, b = ids[x], ids[y]
                 dx, dy = pos[a][0] - pos[b][0], pos[a][1] - pos[b][1]
                 d = max(math.hypot(dx, dy), 0.01)
-                f = k * k / d if d < 3 * k else 0  # short range: clusters don't fling each other away
+                f = k * k / d if d < 3 * k else 0
                 disp[a][0] += dx / d * f; disp[a][1] += dy / d * f
                 disp[b][0] -= dx / d * f; disp[b][1] -= dy / d * f
         for a, b, kind in edges:
@@ -139,7 +139,7 @@ def layout(nodes, edges, seed=7, steps=900):
             disp[b][0] += dx / d * f; disp[b][1] += dy / d * f
         for i in ids:
             g = 0.6
-            disp[i][0] -= pos[i][0] * g; disp[i][1] -= pos[i][1] * g * 2.4  # squash: the canvas is wide
+            disp[i][0] -= pos[i][0] * g; disp[i][1] -= pos[i][1] * g * 2.4
             d = max(math.hypot(*disp[i]), 1e-9)
             pos[i][0] += disp[i][0] / d * min(d, t)
             pos[i][1] += disp[i][1] / d * min(d, t)
@@ -199,7 +199,7 @@ def untangle(nodes, xy, deg, gap=6):
                 if ox <= 0 or oy <= 0:
                     continue
                 moved = True
-                if oy < ox:  # cheaper to separate vertically
+                if oy < ox:
                     d = (oy / 2 + 0.5) * (1 if xy[a][1] >= xy[b][1] else -1)
                     xy[a][1] += d; xy[b][1] -= d
                 else:
@@ -236,7 +236,7 @@ def svg(nodes, edges, xy, deg, c):
         dash = ' stroke-dasharray="4 4" class="flow"' if kind == "depends" else ""
         op = "0.6" if kind == "tag" else "1"
         out.append(f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="{c["edge"]}" stroke-width="1.2" stroke-opacity="{op}"{dash}/>')
-        if kind != "tag":  # a slow signal along real links (tap, depends, landing page)
+        if kind != "tag":
             dur = 3.5 + (k * 7 % 5) * 0.5
             out.append(f'<circle class="pulse" r="1.8" fill="{c[nodes[a].get("group", "tools")]}" opacity="0.8">'
                        f'<animateMotion dur="{dur}s" begin="{k * 0.4:.1f}s" repeatCount="indefinite" path="M{x1} {y1} L{x2} {y2}"/></circle>')
