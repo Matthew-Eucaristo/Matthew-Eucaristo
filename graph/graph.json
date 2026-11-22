@@ -17,6 +17,7 @@
     { "id": "jupynvim", "group": "nvim", "repo": "sheng-tse/jupynvim", "note": "upstream PRs" },
 
     { "id": "mob-run", "group": "games" },
+    { "id": "wings-of-steel", "group": "games" },
     { "id": "Flip10", "group": "games" },
     { "id": "solitaire-rl", "group": "games" },
     { "id": "rl-2048", "group": "games" },
@@ -49,6 +50,7 @@
     ["jupynvim", "#neovim", "tag"],
 
     ["mob-run", "#games", "tag"],
+    ["wings-of-steel", "#games", "tag"],
     ["Flip10", "#games", "tag"],
     ["solitaire-rl", "#games", "tag"],
     ["rl-2048", "#games", "tag"],
