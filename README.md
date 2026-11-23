@@ -8,6 +8,16 @@ i build **agents** that act, **rl** that plays games, and **games** people actua
 day job: cto at [geniusgrowthai](https://geniusgrowth.ai), running the infra and ai agents behind an education platform.
 rule of thumb: keep it simple, measure it, ship it.
 
+### `$ cat ~/.agents/AGENTS.md`
+
+<a href="https://matthew-eucaristo.github.io/Matthew-Eucaristo/agents-core-intro.mp4"><img alt="agents-core intro video, 97 seconds: seven engineering principles that every ai coding agent reads from one file, with the benchmark behind them" src="assets/agents-core-intro.jpg" width="100%"></a>
+
+[**agents-core**](https://github.com/Matthew-Eucaristo/agents-core): seven engineering principles that every ai coding agent reads from one file, `~/.agents/AGENTS.md`. claude code, codex, gemini cli, opencode and more link to it; your own preferences and project rules sit on top. measured on 19 trap tasks: after a repeated mistake, agents added a real check in 9 of 9 runs with the seven, 3 of 9 with nothing. [▶ watch the 97 s intro](https://matthew-eucaristo.github.io/Matthew-Eucaristo/agents-core-intro.mp4)
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/Matthew-Eucaristo/agents-core/main/install.sh | sh
+```
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/spotlight-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/spotlight-light.svg">
@@ -65,6 +75,7 @@ brew install matthew-eucaristo/tap/{decruft,lately}   # decruft pulls in fell, n
 
 | project | what it is | built with |
 | :-- | :-- | :-- |
+| [**agents-core**](https://github.com/Matthew-Eucaristo/agents-core) | seven engineering principles every ai coding agent reads from one file, with your own layer on top. one installer links claude code, codex, gemini cli, opencode and more; measured with a benchmark of trap tasks. [intro video →](https://matthew-eucaristo.github.io/Matthew-Eucaristo/agents-core-intro.mp4) | markdown · posix sh · python |
 | [**fotoin**](https://github.com/Matthew-Eucaristo/fotoin) | photograph someone exactly like a reference pose (pinterest, ig, or an example shot): a ghost overlay and pose skeleton over the live camera, a match meter, one hint at a time, auto-capture. bodies, faces and groups; on-device, free, no ads. [site →](https://matthew-eucaristo.github.io/fotoin/) | expo · react native · visioncamera · mediapipe · apple vision |
 | [**plain gallery**](https://github.com/Matthew-Eucaristo/plain-gallery) | a photo gallery for android that just works: no ads, no backup nagging, no internet permission. faces and text in photos are recognised on the phone, so search finds people and receipts. [apk →](https://github.com/Matthew-Eucaristo/plain-gallery/releases) | kotlin · jetpack compose · litert |
 | [**tunewell**](https://github.com/Matthew-Eucaristo/tunewell) | a free instrument tuner in the browser: guitar and its alternate tunings, bass, violin, viola, cello, folk strings and piano. it fits each note's stretched overtones to read the true fundamental; on its synthetic benchmark the popular open-source js detectors read guitar, bass and piano 5–12 cents sharp and it reads within 0.1. no ads, no install, audio stays on the device. [tune →](https://matthew-eucaristo.github.io/tunewell/) | javascript · web audio · mpm + partial fit |
