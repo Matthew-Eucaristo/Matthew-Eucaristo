@@ -26,13 +26,13 @@ THEMES = {
     "dark": {
         "bg": "#0d1117", "bar": "#161b22", "border": "#30363d", "edge": "#30363d",
         "text": "#e6edf3", "muted": "#7d8590",
-        "tools": "#3fb950", "s1": "#d29922", "nvim": "#a371f7", "games": "#58a6ff", "misc": "#db61a2", "apps": "#39c5cf",
+        "tools": "#3fb950", "s1": "#d29922", "nvim": "#a371f7", "games": "#58a6ff", "misc": "#db61a2", "apps": "#39c5cf", "math": "#f778ba",
         "red": "#f85149", "orange": "#db6d28",
     },
     "light": {
         "bg": "#ffffff", "bar": "#f6f8fa", "border": "#d0d7de", "edge": "#d0d7de",
         "text": "#1f2328", "muted": "#656d76",
-        "tools": "#1a7f37", "s1": "#9a6700", "nvim": "#8250df", "games": "#0969da", "misc": "#bf3989", "apps": "#1b7c83",
+        "tools": "#1a7f37", "s1": "#9a6700", "nvim": "#8250df", "games": "#0969da", "misc": "#bf3989", "apps": "#1b7c83", "math": "#bf3989",
         "red": "#cf222e", "orange": "#bc4c00",
     },
 }
@@ -256,7 +256,7 @@ def svg(nodes, edges, xy, deg, c):
         text = esc(label(n))
         out.append(f'<text x="{x}" y="{round(y + r + 12, 1)}" text-anchor="middle" font-size="11" fill="{fill}"{weight}>{text}</text>')
         out.append("</g>")
-    legend = [("tools", "dev tools"), ("s1", "s1"), ("nvim", "neovim"), ("games", "games"), ("apps", "apps")]
+    legend = [("tools", "dev tools"), ("s1", "s1"), ("nvim", "neovim"), ("games", "games"), ("apps", "apps"), ("math", "math")]
     lx = 20
     for g, name in legend:
         out.append(f'<circle cx="{lx + 4}" cy="{H - 16}" r="3.5" fill="{c[g]}"/>')

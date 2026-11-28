@@ -37,10 +37,29 @@ curl -fsSL https://raw.githubusercontent.com/Matthew-Eucaristo/agents-core/main/
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/graph-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/graph-light.svg">
-  <img alt="graph of public projects: fell, flutterkill, nodekill and rustkill ship through homebrew-tap and feed decruft, one tui over all of them; lately sits beside them as a go tool for macos; s1 has its landing page and cask; spoor.nvim and jupynvim are neovim plugins; the games form their own cluster; fotoin and plain gallery are on-device phone apps and tunewell an on-device tuner in the browser" src="assets/graph-dark.svg" width="100%">
+  <img alt="graph of public projects: fell, flutterkill, nodekill and rustkill ship through homebrew-tap and feed decruft, one tui over all of them; lately sits beside them as a go tool for macos; s1 has its landing page and cask; spoor.nvim and jupynvim are neovim plugins; the games form their own cluster; fotoin and plain gallery are on-device phone apps and tunewell an on-device tuner in the browser; six graph theory and combinatorics proof repos form the math cluster" src="assets/graph-dark.svg" width="100%">
 </picture>
 
 <sub>drawn by <a href="graph/build.py"><code>graph/build.py</code></a> on every change and once a week. it only draws repos the github api reports as public. <a href="https://matthew-eucaristo.github.io/Matthew-Eucaristo/">interactive version →</a></sub>
+
+### `$ ls ~/math-proofs`
+
+analytical proofs and exact verifiers for open problems in graph theory and combinatorics from recent arxiv papers.
+
+<details>
+<summary>6 published results (latex proof + independent python verifier each)</summary>
+<br>
+
+| repo | problem settled | source |
+| :-- | :-- | :-- |
+| [**non-overlapping-unidomination-thresholds**](https://github.com/Matthew-Eucaristo/non-overlapping-unidomination-thresholds) | sharp np-completeness thresholds for non-overlapping uni-domination (`c > 1` on connected graphs, `c > 2` on connected split graphs, sharp `2√n − 1` split lower bound) | [arxiv:2611.21210](https://arxiv.org/abs/2611.21210) |
+| [**av-3421-4312-cycle-type**](https://github.com/Matthew-Eucaristo/av-3421-4312-cycle-type) | cycle type, cycle count and reflection length are inversion-graph invariants on `Av(3421, 4312)` (conjectures 8.3 & 8.5) | [arxiv:2611.33575](https://arxiv.org/abs/2611.33575) |
+| [**directed-weak-coloring-numbers**](https://github.com/Matthew-Eucaristo/directed-weak-coloring-numbers) | disproof of the weak coloring-number bounds in problems 3.5 & 3.6 and full `k = 1` resolution | [arxiv:2611.33681](https://arxiv.org/abs/2611.33681) |
+| [**bipartite-even-q-kernels**](https://github.com/Matthew-Eucaristo/bipartite-even-q-kernels) | linear-excess counterexample family for even `q`-kernels in strongly connected bipartite digraphs (spiro's question 7.7 parity dichotomy) | [arxiv:2608.00825](https://arxiv.org/abs/2608.00825) |
+| [**flow-reconfiguration-zk-to-k**](https://github.com/Matthew-Eucaristo/flow-reconfiguration-zk-to-k) | modular-to-integer flow reconfiguration equivalence for `k ≤ 5` (problem 2.6) and sharpness of single-step lifting at `k ≥ 6` | [arxiv:2512.17342](https://arxiv.org/abs/2512.17342) |
+| [**strong-2kernel-split-digraphs**](https://github.com/Matthew-Eucaristo/strong-2kernel-split-digraphs) | counterexample family to the `|V|/2` strong `2`-kernel bound on source-free split digraphs (`43`-vertex minimum in family) | [arxiv:2409.05039](https://arxiv.org/abs/2409.05039) |
+
+</details>
 
 ### `$ ls ~/dev-tools`
 

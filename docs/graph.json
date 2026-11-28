@@ -3,56 +3,78 @@
   {
    "id": "#agents",
    "tag": true,
-   "x": 386.8,
-   "y": 262.3
+   "x": 479.2,
+   "y": 167.6
   },
   {
    "id": "#games",
    "tag": true,
-   "x": 616.0,
-   "y": 248.4
+   "x": 626.5,
+   "y": 263.0
   },
   {
    "id": "#macos",
    "tag": true,
-   "x": 348.1,
-   "y": 90.7
+   "x": 377.0,
+   "y": 261.3
+  },
+  {
+   "id": "#math",
+   "tag": true,
+   "x": 300.6,
+   "y": 226.7
   },
   {
    "id": "#neovim",
    "tag": true,
-   "x": 434.6,
-   "y": 344.8
+   "x": 396.1,
+   "y": 91.4
   },
   {
    "id": "#on-device",
    "tag": true,
-   "x": 263.8,
-   "y": 229.6
+   "x": 608.5,
+   "y": 131.5
   },
   {
    "id": "Flip10",
    "group": "games",
    "url": "https://github.com/Matthew-Eucaristo/Flip10",
    "desc": "",
-   "x": 687.0,
-   "y": 184.2
+   "x": 571.1,
+   "y": 227.1
+  },
+  {
+   "id": "av-3421-4312-cycle-type",
+   "group": "math",
+   "url": "https://github.com/Matthew-Eucaristo/av-3421-4312-cycle-type",
+   "desc": "Analytical proof of Conjectures 8.3 and 8.5 from Mandrick-Tenner-Vatter (arXiv:2611.33575): cycle type is a graph invariant for Av(3421, 4312).",
+   "x": 320.2,
+   "y": 337.9
+  },
+  {
+   "id": "bipartite-even-q-kernels",
+   "group": "math",
+   "url": "https://github.com/Matthew-Eucaristo/bipartite-even-q-kernels",
+   "desc": "Linear-excess counterexamples for even q-kernels in strongly connected oriented bipartite digraphs (resolving the even-q open question of Penev, Stein, and Trujillo-Negrete, arXiv:2608.00825)",
+   "x": 274.1,
+   "y": 290.6
   },
   {
    "id": "blockies",
    "group": "misc",
    "url": "https://github.com/Matthew-Eucaristo/blockies",
    "desc": "Live boards that AI agents write and people watch: a tiny script, a deterministic kernel, and three views of one run",
-   "x": 330.3,
-   "y": 278.1
+   "x": 502.8,
+   "y": 133.7
   },
   {
    "id": "crypto-cycle-signals",
    "group": "misc",
    "url": "https://github.com/Matthew-Eucaristo/crypto-cycle-signals",
    "desc": "Crypto futures indicator (Pine v6): BTC 4-year-cycle anchored, two measured signal engines (trend pullback + capitulation fade), limit-order entries. 87% WR backtested on 68 perps × 6y, sniper, not scalper.",
-   "x": 602.8,
-   "y": 87.2
+   "x": 178.6,
+   "y": 227.2
   },
   {
    "id": "decruft",
@@ -60,40 +82,56 @@
    "note": "one TUI over the cleaners",
    "url": "https://github.com/Matthew-Eucaristo/decruft",
    "desc": "See everything your developer machine has accumulated, and reclaim it the official way.",
-   "x": 492.3,
-   "y": 185.7
+   "x": 482.5,
+   "y": 306.6
+  },
+  {
+   "id": "directed-weak-coloring-numbers",
+   "group": "math",
+   "url": "https://github.com/Matthew-Eucaristo/directed-weak-coloring-numbers",
+   "desc": "Disproof of the weak directed coloring number parts of Problems 3.5 & 3.6 and resolution of k=1 in Li-Nesetril-Yang (arXiv:2611.33681)",
+   "x": 303.4,
+   "y": 134.3
   },
   {
    "id": "fell",
    "group": "tools",
    "url": "https://github.com/Matthew-Eucaristo/fell",
    "desc": "Find and safely clean up git worktrees left behind by AI coding agents (TUI): evidence first, Trash + rescue bundle, never breaks the agent's own lifecycle",
-   "x": 456.1,
-   "y": 232.8
+   "x": 471.2,
+   "y": 233.6
+  },
+  {
+   "id": "flow-reconfiguration-zk-to-k",
+   "group": "math",
+   "url": "https://github.com/Matthew-Eucaristo/flow-reconfiguration-zk-to-k",
+   "desc": "Affirmative resolution of Problem 2.6 of Esperet et al. (arXiv:2512.17342) for k <= 5 via Hoffman's circulation theorem and sharpness of single-step lifting at k >= 6",
+   "x": 249.1,
+   "y": 165.5
   },
   {
    "id": "flutterkill",
    "group": "tools",
    "url": "https://github.com/Matthew-Eucaristo/flutterkill",
    "desc": "npkill for Flutter: reclaim disk space from Flutter/Dart build artifacts and global caches (TUI)",
-   "x": 493.5,
-   "y": 108.9
+   "x": 499.7,
+   "y": 340.6
   },
   {
    "id": "fotoin",
    "group": "apps",
    "url": "https://github.com/Matthew-Eucaristo/fotoin",
    "desc": "Foto dia persis seperti referensinya: kamera pemandu pose gratis, open source, tanpa iklan (Expo / React Native)",
-   "x": 235.3,
-   "y": 158.8
+   "x": 564.2,
+   "y": 161.0
   },
   {
    "id": "homebrew-tap",
    "group": "tools",
    "url": "https://github.com/Matthew-Eucaristo/homebrew-tap",
    "desc": "",
-   "x": 450.4,
-   "y": 148.3
+   "x": 443.4,
+   "y": 270.2
   },
   {
    "id": "jupynvim",
@@ -102,118 +140,144 @@
    "note": "upstream PRs",
    "url": "https://github.com/sheng-tse/jupynvim",
    "desc": "Jupyter notebooks in Neovim, plus a full remote workspace over SSH that edits any file and runs kernels on a remote machine or cluster as if local. Kitty graphics, Rust backend.",
-   "x": 491.1,
-   "y": 337.4
+   "x": 339.6,
+   "y": 95.2
   },
   {
    "id": "lately",
    "group": "tools",
    "url": "https://github.com/Matthew-Eucaristo/lately",
    "desc": "What just happened on my Mac? A classified timeline from the unified log, crash reports and persistence items (TUI). No root, no daemon, no AI.",
-   "x": 412.5,
-   "y": 92.7
+   "x": 391.0,
+   "y": 305.3
   },
   {
    "id": "mob-run",
    "group": "games",
    "url": "https://github.com/Matthew-Eucaristo/mob-run",
    "desc": "The game from those fake mobile ads — for real. 3D crowd-runner × multiplier-gates shooter in Three.js.",
-   "x": 632.1,
-   "y": 312.9
+   "x": 610.9,
+   "y": 331.5
   },
   {
    "id": "nodekill",
    "group": "tools",
    "url": "https://github.com/Matthew-Eucaristo/nodekill",
    "desc": "Reclaim the disk space Node.js leaves behind (TUI): node_modules, .next and framework caches, npm/pnpm/Yarn/Bun caches, npx, global packages and old Node versions; Trash first, official commands only",
-   "x": 434.7,
-   "y": 191.6
+   "x": 430.0,
+   "y": 340.3
+  },
+  {
+   "id": "non-overlapping-unidomination-thresholds",
+   "group": "math",
+   "url": "https://github.com/Matthew-Eucaristo/non-overlapping-unidomination-thresholds",
+   "desc": "Sharp complexity thresholds for non-overlapping uni-domination (resolving the open gap in Foucaud et al., arXiv:2611.21210)",
+   "x": 345.9,
+   "y": 197.4
   },
   {
    "id": "plain-gallery",
    "group": "apps",
    "url": "https://github.com/Matthew-Eucaristo/plain-gallery",
    "desc": "Fast, private, ad-free photo gallery for Android. No internet permission. Kotlin + Jetpack Compose + Material 3 Expressive.",
-   "x": 180.9,
-   "y": 228.8
+   "x": 567.2,
+   "y": 97.6
   },
   {
    "id": "quoridor-zero",
    "group": "games",
    "url": "https://github.com/Matthew-Eucaristo/quoridor-zero",
    "desc": "AlphaZero-style Quoridor AI trained on a laptop: C engine + exact solver, batched MCTS, MLX network, benchmarked against rule-based bots",
-   "x": 617.3,
-   "y": 173.0
+   "x": 701.4,
+   "y": 237.4
   },
   {
    "id": "rl-2048",
    "group": "games",
    "url": "https://github.com/Matthew-Eucaristo/rl-2048",
    "desc": "A 2048 agent that learns by self-play on a laptop in 20 minutes: n-tuple TD learning + expectimax, in Go",
-   "x": 552.9,
-   "y": 261.4
+   "x": 639.7,
+   "y": 205.4
   },
   {
    "id": "rustkill",
    "group": "tools",
    "url": "https://github.com/Matthew-Eucaristo/rustkill",
    "desc": "Reclaim the disk space Rust leaves behind (TUI): target folders found by cargo's own tag, Cargo registry and git caches, sccache, cargo install tools, rustup toolchains and rust-docs; Trash first, rustup and cargo's own commands only",
-   "x": 527.1,
-   "y": 151.3
+   "x": 515.5,
+   "y": 267.3
   },
   {
    "id": "s1",
    "group": "s1",
    "url": "https://github.com/Matthew-Eucaristo/s1",
    "desc": "Voice-first macOS agent — drive your whole Mac by voice: sees the screen via Accessibility, acts via clicks/typing, verifies every step. Fast local System 1 + pluggable System 2 LLM. Beta.",
-   "x": 372.6,
-   "y": 167.1
+   "x": 423.5,
+   "y": 230.7
   },
   {
    "id": "s1-landingpage",
    "group": "s1",
    "url": "https://github.com/Matthew-Eucaristo/s1-landingpage",
    "desc": "Landing page for S1",
-   "x": 311.8,
-   "y": 152.2
+   "x": 402.9,
+   "y": 165.4
   },
   {
    "id": "solitaire-rl",
    "group": "games",
    "url": "https://github.com/Matthew-Eucaristo/solitaire-rl",
    "desc": "Trying to make RL in Solitare with help of Devin Cloud (since it's still free)",
-   "x": 563.3,
-   "y": 324.9
+   "x": 671.2,
+   "y": 294.6
   },
   {
    "id": "spoor.nvim",
    "group": "nvim",
    "url": "https://github.com/Matthew-Eucaristo/spoor.nvim",
    "desc": "Follow the trail through a codebase in LazyVim: live call bow-tie, trace mode with notes, and what your agent changed. No AI, no index.",
-   "x": 372.3,
-   "y": 329.1
+   "x": 458.5,
+   "y": 101.1
+  },
+  {
+   "id": "strong-2kernel-split-digraphs",
+   "group": "math",
+   "url": "https://github.com/Matthew-Eucaristo/strong-2kernel-split-digraphs",
+   "desc": "Disproof and exact verifier for the strong 2-kernel half-bound open question in split digraphs (Nguyen, Scott, Seymour, EJC 2026)",
+   "x": 252.1,
+   "y": 256.9
   },
   {
    "id": "tunewell",
    "group": "apps",
    "url": "https://github.com/Matthew-Eucaristo/tunewell",
    "desc": "Free, open-source instrument tuner in the browser. Accurate on guitar, bass, strings and piano. No ads, no install.",
-   "x": 253.4,
-   "y": 299.3
+   "x": 674.9,
+   "y": 137.6
   },
   {
    "id": "wings-of-steel",
    "group": "games",
    "url": "https://github.com/Matthew-Eucaristo/wings-of-steel",
    "desc": "odm-gear titan action in the browser: lead an ai squadron, cover the engineers, seal the gate. three.js + vite.",
-   "x": 689.0,
-   "y": 255.7
+   "x": 573.0,
+   "y": 299.1
   }
  ],
  "edges": [
   [
    "Flip10",
    "#games",
+   "tag"
+  ],
+  [
+   "av-3421-4312-cycle-type",
+   "#math",
+   "tag"
+  ],
+  [
+   "bipartite-even-q-kernels",
+   "#math",
    "tag"
   ],
   [
@@ -247,6 +311,11 @@
    "depends"
   ],
   [
+   "directed-weak-coloring-numbers",
+   "#math",
+   "tag"
+  ],
+  [
    "fell",
    "#agents",
    "tag"
@@ -255,6 +324,11 @@
    "fell",
    "homebrew-tap",
    "formula"
+  ],
+  [
+   "flow-reconfiguration-zk-to-k",
+   "#math",
+   "tag"
   ],
   [
    "flutterkill",
@@ -290,6 +364,11 @@
    "nodekill",
    "homebrew-tap",
    "formula"
+  ],
+  [
+   "non-overlapping-unidomination-thresholds",
+   "#math",
+   "tag"
   ],
   [
    "plain-gallery",
@@ -344,6 +423,11 @@
   [
    "spoor.nvim",
    "#neovim",
+   "tag"
+  ],
+  [
+   "strong-2kernel-split-digraphs",
+   "#math",
    "tag"
   ],
   [

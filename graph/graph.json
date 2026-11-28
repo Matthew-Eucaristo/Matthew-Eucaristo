@@ -29,11 +29,19 @@
     { "id": "tunewell", "group": "apps" },
     { "id": "blockies", "group": "misc" },
 
+    { "id": "strong-2kernel-split-digraphs", "group": "math" },
+    { "id": "flow-reconfiguration-zk-to-k", "group": "math" },
+    { "id": "bipartite-even-q-kernels", "group": "math" },
+    { "id": "directed-weak-coloring-numbers", "group": "math" },
+    { "id": "av-3421-4312-cycle-type", "group": "math" },
+    { "id": "non-overlapping-unidomination-thresholds", "group": "math" },
+
     { "id": "#agents", "tag": true },
     { "id": "#neovim", "tag": true },
     { "id": "#games", "tag": true },
     { "id": "#macos", "tag": true },
-    { "id": "#on-device", "tag": true }
+    { "id": "#on-device", "tag": true },
+    { "id": "#math", "tag": true }
   ],
   "edges": [
     ["decruft", "fell", "depends"],
@@ -64,6 +72,13 @@
 
 
     ["s1", "#macos", "tag"],
-    ["lately", "#macos", "tag"]
+    ["lately", "#macos", "tag"],
+
+    ["strong-2kernel-split-digraphs", "#math", "tag"],
+    ["flow-reconfiguration-zk-to-k", "#math", "tag"],
+    ["bipartite-even-q-kernels", "#math", "tag"],
+    ["directed-weak-coloring-numbers", "#math", "tag"],
+    ["av-3421-4312-cycle-type", "#math", "tag"],
+    ["non-overlapping-unidomination-thresholds", "#math", "tag"]
   ]
 }
