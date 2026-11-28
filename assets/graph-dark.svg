@@ -4,189 +4,194 @@
 <path d="M0.5 12.5 a12 12 0 0 1 12 -12 h855 a12 12 0 0 1 12 12 v19.5 h-879 z" fill="#161b22"/>
 <line x1="0.5" y1="32" x2="879.5" y2="32" stroke="#30363d"/>
 <text x="20" y="21" font-size="12" fill="#7d8590"><tspan fill="#3fb950">~</tspan> $ graph --public</text>
-<text x="860" y="21" text-anchor="end" font-size="12" fill="#7d8590">28 nodes · 35 links</text>
-<line x1="571.1" y1="227.1" x2="626.5" y2="263.0" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
-<line x1="320.2" y1="337.9" x2="300.6" y2="226.7" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
-<line x1="274.1" y1="290.6" x2="300.6" y2="226.7" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
-<line x1="502.8" y1="133.7" x2="479.2" y2="167.6" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
-<line x1="482.5" y1="306.6" x2="471.2" y2="233.6" stroke="#30363d" stroke-width="1.2" stroke-opacity="1" stroke-dasharray="4 4" class="flow"/>
-<circle class="pulse" r="1.8" fill="#3fb950" opacity="0.8"><animateMotion dur="5.0s" begin="1.6s" repeatCount="indefinite" path="M482.5 306.6 L471.2 233.6"/></circle>
-<line x1="482.5" y1="306.6" x2="499.7" y2="340.6" stroke="#30363d" stroke-width="1.2" stroke-opacity="1" stroke-dasharray="4 4" class="flow"/>
-<circle class="pulse" r="1.8" fill="#3fb950" opacity="0.8"><animateMotion dur="3.5s" begin="2.0s" repeatCount="indefinite" path="M482.5 306.6 L499.7 340.6"/></circle>
-<line x1="482.5" y1="306.6" x2="443.4" y2="270.2" stroke="#30363d" stroke-width="1.2" stroke-opacity="1"/>
-<circle class="pulse" r="1.8" fill="#3fb950" opacity="0.8"><animateMotion dur="4.5s" begin="2.4s" repeatCount="indefinite" path="M482.5 306.6 L443.4 270.2"/></circle>
-<line x1="482.5" y1="306.6" x2="430.0" y2="340.3" stroke="#30363d" stroke-width="1.2" stroke-opacity="1" stroke-dasharray="4 4" class="flow"/>
-<circle class="pulse" r="1.8" fill="#3fb950" opacity="0.8"><animateMotion dur="5.5s" begin="2.8s" repeatCount="indefinite" path="M482.5 306.6 L430.0 340.3"/></circle>
-<line x1="482.5" y1="306.6" x2="515.5" y2="267.3" stroke="#30363d" stroke-width="1.2" stroke-opacity="1" stroke-dasharray="4 4" class="flow"/>
-<circle class="pulse" r="1.8" fill="#3fb950" opacity="0.8"><animateMotion dur="4.0s" begin="3.2s" repeatCount="indefinite" path="M482.5 306.6 L515.5 267.3"/></circle>
-<line x1="303.4" y1="134.3" x2="300.6" y2="226.7" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
-<line x1="471.2" y1="233.6" x2="479.2" y2="167.6" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
-<line x1="471.2" y1="233.6" x2="443.4" y2="270.2" stroke="#30363d" stroke-width="1.2" stroke-opacity="1"/>
-<circle class="pulse" r="1.8" fill="#3fb950" opacity="0.8"><animateMotion dur="4.5s" begin="4.4s" repeatCount="indefinite" path="M471.2 233.6 L443.4 270.2"/></circle>
-<line x1="249.1" y1="165.5" x2="300.6" y2="226.7" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
-<line x1="499.7" y1="340.6" x2="443.4" y2="270.2" stroke="#30363d" stroke-width="1.2" stroke-opacity="1"/>
-<circle class="pulse" r="1.8" fill="#3fb950" opacity="0.8"><animateMotion dur="4.0s" begin="5.2s" repeatCount="indefinite" path="M499.7 340.6 L443.4 270.2"/></circle>
-<line x1="564.2" y1="161.0" x2="608.5" y2="131.5" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
-<line x1="339.6" y1="95.2" x2="396.1" y2="91.4" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
-<line x1="391.0" y1="305.3" x2="377.0" y2="261.3" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
-<line x1="391.0" y1="305.3" x2="443.4" y2="270.2" stroke="#30363d" stroke-width="1.2" stroke-opacity="1"/>
-<circle class="pulse" r="1.8" fill="#3fb950" opacity="0.8"><animateMotion dur="5.5s" begin="6.8s" repeatCount="indefinite" path="M391.0 305.3 L443.4 270.2"/></circle>
-<line x1="610.9" y1="331.5" x2="626.5" y2="263.0" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
-<line x1="430.0" y1="340.3" x2="443.4" y2="270.2" stroke="#30363d" stroke-width="1.2" stroke-opacity="1"/>
-<circle class="pulse" r="1.8" fill="#3fb950" opacity="0.8"><animateMotion dur="5.0s" begin="7.6s" repeatCount="indefinite" path="M430.0 340.3 L443.4 270.2"/></circle>
-<line x1="345.9" y1="197.4" x2="300.6" y2="226.7" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
-<line x1="567.2" y1="97.6" x2="608.5" y2="131.5" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
-<line x1="701.4" y1="237.4" x2="626.5" y2="263.0" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
-<line x1="639.7" y1="205.4" x2="626.5" y2="263.0" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
-<line x1="515.5" y1="267.3" x2="443.4" y2="270.2" stroke="#30363d" stroke-width="1.2" stroke-opacity="1"/>
-<circle class="pulse" r="1.8" fill="#3fb950" opacity="0.8"><animateMotion dur="5.0s" begin="9.6s" repeatCount="indefinite" path="M515.5 267.3 L443.4 270.2"/></circle>
-<line x1="423.5" y1="230.7" x2="479.2" y2="167.6" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
-<line x1="423.5" y1="230.7" x2="377.0" y2="261.3" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
-<line x1="423.5" y1="230.7" x2="443.4" y2="270.2" stroke="#30363d" stroke-width="1.2" stroke-opacity="1"/>
-<circle class="pulse" r="1.8" fill="#d29922" opacity="0.8"><animateMotion dur="5.5s" begin="10.8s" repeatCount="indefinite" path="M423.5 230.7 L443.4 270.2"/></circle>
-<line x1="402.9" y1="165.4" x2="423.5" y2="230.7" stroke="#30363d" stroke-width="1.2" stroke-opacity="1"/>
-<circle class="pulse" r="1.8" fill="#d29922" opacity="0.8"><animateMotion dur="4.0s" begin="11.2s" repeatCount="indefinite" path="M402.9 165.4 L423.5 230.7"/></circle>
-<line x1="671.2" y1="294.6" x2="626.5" y2="263.0" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
-<line x1="458.5" y1="101.1" x2="479.2" y2="167.6" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
-<line x1="458.5" y1="101.1" x2="396.1" y2="91.4" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
-<line x1="252.1" y1="256.9" x2="300.6" y2="226.7" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
-<line x1="674.9" y1="137.6" x2="608.5" y2="131.5" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
-<line x1="573.0" y1="299.1" x2="626.5" y2="263.0" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
+<text x="860" y="21" text-anchor="end" font-size="12" fill="#7d8590">29 nodes · 36 links</text>
+<line x1="188.5" y1="154.7" x2="261.9" y2="150.5" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
+<line x1="613.4" y1="134.7" x2="594.1" y2="225.8" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
+<line x1="597.8" y1="348" x2="594.1" y2="225.8" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
+<line x1="486.0" y1="348" x2="429.3" y2="287.0" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
+<line x1="398.7" y1="127.8" x2="417.9" y2="238.2" stroke="#30363d" stroke-width="1.2" stroke-opacity="1" stroke-dasharray="4 4" class="flow"/>
+<circle class="pulse" r="1.8" fill="#3fb950" opacity="0.8"><animateMotion dur="5.0s" begin="1.6s" repeatCount="indefinite" path="M398.7 127.8 L417.9 238.2"/></circle>
+<line x1="398.7" y1="127.8" x2="379.8" y2="205.2" stroke="#30363d" stroke-width="1.2" stroke-opacity="1" stroke-dasharray="4 4" class="flow"/>
+<circle class="pulse" r="1.8" fill="#3fb950" opacity="0.8"><animateMotion dur="3.5s" begin="2.0s" repeatCount="indefinite" path="M398.7 127.8 L379.8 205.2"/></circle>
+<line x1="398.7" y1="127.8" x2="429.1" y2="163.4" stroke="#30363d" stroke-width="1.2" stroke-opacity="1"/>
+<circle class="pulse" r="1.8" fill="#3fb950" opacity="0.8"><animateMotion dur="4.5s" begin="2.4s" repeatCount="indefinite" path="M398.7 127.8 L429.1 163.4"/></circle>
+<line x1="398.7" y1="127.8" x2="377.8" y2="94.0" stroke="#30363d" stroke-width="1.2" stroke-opacity="1" stroke-dasharray="4 4" class="flow"/>
+<circle class="pulse" r="1.8" fill="#3fb950" opacity="0.8"><animateMotion dur="5.5s" begin="2.8s" repeatCount="indefinite" path="M398.7 127.8 L377.8 94.0"/></circle>
+<line x1="398.7" y1="127.8" x2="436.9" y2="94.0" stroke="#30363d" stroke-width="1.2" stroke-opacity="1" stroke-dasharray="4 4" class="flow"/>
+<circle class="pulse" r="1.8" fill="#3fb950" opacity="0.8"><animateMotion dur="4.0s" begin="3.2s" repeatCount="indefinite" path="M398.7 127.8 L436.9 94.0"/></circle>
+<line x1="642.9" y1="166.1" x2="594.1" y2="225.8" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
+<line x1="579.2" y1="103.3" x2="594.1" y2="225.8" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
+<line x1="417.9" y1="238.2" x2="429.3" y2="287.0" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
+<line x1="417.9" y1="238.2" x2="429.1" y2="163.4" stroke="#30363d" stroke-width="1.2" stroke-opacity="1"/>
+<circle class="pulse" r="1.8" fill="#3fb950" opacity="0.8"><animateMotion dur="5.5s" begin="4.8s" repeatCount="indefinite" path="M417.9 238.2 L429.1 163.4"/></circle>
+<line x1="550.6" y1="197.1" x2="594.1" y2="225.8" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
+<line x1="379.8" y1="205.2" x2="429.1" y2="163.4" stroke="#30363d" stroke-width="1.2" stroke-opacity="1"/>
+<circle class="pulse" r="1.8" fill="#3fb950" opacity="0.8"><animateMotion dur="5.0s" begin="5.6s" repeatCount="indefinite" path="M379.8 205.2 L429.1 163.4"/></circle>
+<line x1="262.6" y1="269.4" x2="214.5" y2="298.9" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
+<line x1="331.2" y1="308.0" x2="357.3" y2="337.5" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
+<line x1="490.1" y1="71.3" x2="495.5" y2="160.4" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
+<line x1="490.1" y1="71.3" x2="429.1" y2="163.4" stroke="#30363d" stroke-width="1.2" stroke-opacity="1"/>
+<circle class="pulse" r="1.8" fill="#3fb950" opacity="0.8"><animateMotion dur="4.0s" begin="7.2s" repeatCount="indefinite" path="M490.1 71.3 L429.1 163.4"/></circle>
+<line x1="230.1" y1="98.7" x2="261.9" y2="150.5" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
+<line x1="377.8" y1="94.0" x2="429.1" y2="163.4" stroke="#30363d" stroke-width="1.2" stroke-opacity="1"/>
+<circle class="pulse" r="1.8" fill="#3fb950" opacity="0.8"><animateMotion dur="3.5s" begin="8.0s" repeatCount="indefinite" path="M377.8 94.0 L429.1 163.4"/></circle>
+<line x1="639.9" y1="254.5" x2="594.1" y2="225.8" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
+<line x1="165.2" y1="257.2" x2="214.5" y2="298.9" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
+<line x1="302.2" y1="90.4" x2="261.9" y2="150.5" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
+<line x1="315.9" y1="161.0" x2="261.9" y2="150.5" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
+<line x1="436.9" y1="94.0" x2="429.1" y2="163.4" stroke="#30363d" stroke-width="1.2" stroke-opacity="1"/>
+<circle class="pulse" r="1.8" fill="#3fb950" opacity="0.8"><animateMotion dur="3.5s" begin="10.0s" repeatCount="indefinite" path="M436.9 94.0 L429.1 163.4"/></circle>
+<line x1="471.5" y1="238.9" x2="429.3" y2="287.0" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
+<line x1="471.5" y1="238.9" x2="495.5" y2="160.4" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
+<line x1="471.5" y1="238.9" x2="429.1" y2="163.4" stroke="#30363d" stroke-width="1.2" stroke-opacity="1"/>
+<circle class="pulse" r="1.8" fill="#d29922" opacity="0.8"><animateMotion dur="4.0s" begin="11.2s" repeatCount="indefinite" path="M471.5 238.9 L429.1 163.4"/></circle>
+<line x1="505.6" y1="316.8" x2="471.5" y2="238.9" stroke="#30363d" stroke-width="1.2" stroke-opacity="1"/>
+<circle class="pulse" r="1.8" fill="#d29922" opacity="0.8"><animateMotion dur="5.0s" begin="11.6s" repeatCount="indefinite" path="M505.6 316.8 L471.5 238.9"/></circle>
+<line x1="296.9" y1="224.4" x2="261.9" y2="150.5" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
+<line x1="419.6" y1="341.6" x2="429.3" y2="287.0" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
+<line x1="419.6" y1="341.6" x2="357.3" y2="337.5" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
+<line x1="555.0" y1="285.7" x2="594.1" y2="225.8" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
+<line x1="267.0" y1="328.1" x2="214.5" y2="298.9" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
+<line x1="228.5" y1="192.4" x2="261.9" y2="150.5" stroke="#30363d" stroke-width="1.2" stroke-opacity="0.6"/>
 <g>
-<circle cx="443.4" cy="270.2" r="7.5" fill="#3fb950"/>
-<text x="443.4" y="289.7" text-anchor="middle" font-size="11" fill="#e6edf3">homebrew-tap</text>
+<circle cx="429.1" cy="163.4" r="7.5" fill="#3fb950"/>
+<text x="429.1" y="182.9" text-anchor="middle" font-size="11" fill="#e6edf3">homebrew-tap</text>
 </g>
 <g>
-<circle cx="482.5" cy="306.6" r="6.9" fill="#3fb950"/>
-<text x="482.5" y="325.5" text-anchor="middle" font-size="11" fill="#e6edf3">decruft</text>
+<circle cx="398.7" cy="127.8" r="6.9" fill="#3fb950"/>
+<text x="398.7" y="146.7" text-anchor="middle" font-size="11" fill="#e6edf3">decruft</text>
 </g>
 <g>
-<circle cx="423.5" cy="230.7" r="6.5" fill="#d29922"/>
-<text x="423.5" y="249.2" text-anchor="middle" font-size="11" fill="#e6edf3">s1</text>
+<circle cx="471.5" cy="238.9" r="6.5" fill="#d29922"/>
+<text x="471.5" y="257.4" text-anchor="middle" font-size="11" fill="#e6edf3">s1</text>
 </g>
 <g>
-<circle cx="471.2" cy="233.6" r="6.1" fill="#3fb950"/>
-<text x="471.2" y="251.7" text-anchor="middle" font-size="11" fill="#e6edf3">fell</text>
+<circle cx="417.9" cy="238.2" r="6.1" fill="#3fb950"/>
+<text x="417.9" y="256.3" text-anchor="middle" font-size="11" fill="#e6edf3">fell</text>
 </g>
 <g>
-<circle cx="499.7" cy="340.6" r="5.6" fill="#3fb950"/>
-<text x="499.7" y="358.2" text-anchor="middle" font-size="11" fill="#e6edf3">flutterkill</text>
+<circle cx="379.8" cy="205.2" r="5.6" fill="#3fb950"/>
+<text x="379.8" y="222.8" text-anchor="middle" font-size="11" fill="#e6edf3">flutterkill</text>
 </g>
 <g>
-<circle cx="391.0" cy="305.3" r="5.6" fill="#3fb950"/>
-<text x="391.0" y="322.9" text-anchor="middle" font-size="11" fill="#e6edf3">lately</text>
+<circle cx="490.1" cy="71.3" r="5.6" fill="#3fb950"/>
+<text x="490.1" y="88.9" text-anchor="middle" font-size="11" fill="#e6edf3">lately</text>
 </g>
 <g>
-<circle cx="430.0" cy="340.3" r="5.6" fill="#3fb950"/>
-<text x="430.0" y="357.9" text-anchor="middle" font-size="11" fill="#e6edf3">nodekill</text>
+<circle cx="377.8" cy="94.0" r="5.6" fill="#3fb950"/>
+<text x="377.8" y="111.6" text-anchor="middle" font-size="11" fill="#e6edf3">nodekill</text>
 </g>
 <g>
-<circle cx="515.5" cy="267.3" r="5.6" fill="#3fb950"/>
-<text x="515.5" y="284.9" text-anchor="middle" font-size="11" fill="#e6edf3">rustkill</text>
+<circle cx="436.9" cy="94.0" r="5.6" fill="#3fb950"/>
+<text x="436.9" y="111.6" text-anchor="middle" font-size="11" fill="#e6edf3">rustkill</text>
 </g>
 <g>
-<circle cx="458.5" cy="101.1" r="5.6" fill="#a371f7"/>
-<text x="458.5" y="118.7" text-anchor="middle" font-size="11" fill="#e6edf3">spoor.nvim</text>
+<circle cx="419.6" cy="341.6" r="5.6" fill="#a371f7"/>
+<text x="419.6" y="359.2" text-anchor="middle" font-size="11" fill="#e6edf3">spoor.nvim</text>
 </g>
 <g>
-<circle cx="571.1" cy="227.1" r="5.0" fill="#58a6ff"/>
-<text x="571.1" y="244.1" text-anchor="middle" font-size="11" fill="#e6edf3">flip10</text>
+<circle cx="188.5" cy="154.7" r="5.0" fill="#58a6ff"/>
+<text x="188.5" y="171.7" text-anchor="middle" font-size="11" fill="#e6edf3">flip10</text>
 </g>
 <g>
-<circle cx="320.2" cy="337.9" r="5.0" fill="#f778ba"/>
-<text x="320.2" y="354.9" text-anchor="middle" font-size="11" fill="#e6edf3">av-3421-4312-cycle-type</text>
+<circle cx="613.4" cy="134.7" r="5.0" fill="#f778ba"/>
+<text x="613.4" y="151.7" text-anchor="middle" font-size="11" fill="#e6edf3">av-3421-4312-cycle-type</text>
 </g>
 <g>
-<circle cx="274.1" cy="290.6" r="5.0" fill="#f778ba"/>
-<text x="274.1" y="307.6" text-anchor="middle" font-size="11" fill="#e6edf3">bipartite-even-q-kernels</text>
+<circle cx="597.8" cy="348" r="5.0" fill="#f778ba"/>
+<text x="597.8" y="365.0" text-anchor="middle" font-size="11" fill="#e6edf3">bipartite-even-q-kernels</text>
 </g>
 <g>
-<circle cx="502.8" cy="133.7" r="5.0" fill="#db61a2"/>
-<text x="502.8" y="150.7" text-anchor="middle" font-size="11" fill="#e6edf3">blockies</text>
+<circle cx="486.0" cy="348" r="5.0" fill="#db61a2"/>
+<text x="486.0" y="365.0" text-anchor="middle" font-size="11" fill="#e6edf3">blockies</text>
 </g>
 <g>
-<circle cx="303.4" cy="134.3" r="5.0" fill="#f778ba"/>
-<text x="303.4" y="151.3" text-anchor="middle" font-size="11" fill="#e6edf3">directed-weak-coloring-numbers</text>
+<circle cx="642.9" cy="166.1" r="5.0" fill="#f778ba"/>
+<text x="642.9" y="183.1" text-anchor="middle" font-size="11" fill="#e6edf3">directed-weak-coloring-numbers</text>
 </g>
 <g>
-<circle cx="249.1" cy="165.5" r="5.0" fill="#f778ba"/>
-<text x="249.1" y="182.5" text-anchor="middle" font-size="11" fill="#e6edf3">flow-reconfiguration-zk-to-k</text>
+<circle cx="579.2" cy="103.3" r="5.0" fill="#f778ba"/>
+<text x="579.2" y="120.3" text-anchor="middle" font-size="11" fill="#e6edf3">distance-hereditary-odd-chromatic</text>
 </g>
 <g>
-<circle cx="564.2" cy="161.0" r="5.0" fill="#39c5cf"/>
-<text x="564.2" y="178.0" text-anchor="middle" font-size="11" fill="#e6edf3">fotoin</text>
+<circle cx="550.6" cy="197.1" r="5.0" fill="#f778ba"/>
+<text x="550.6" y="214.1" text-anchor="middle" font-size="11" fill="#e6edf3">flow-reconfiguration-zk-to-k</text>
 </g>
 <g>
-<circle cx="339.6" cy="95.2" r="5.0" fill="#a371f7"/>
-<text x="339.6" y="112.2" text-anchor="middle" font-size="11" fill="#e6edf3">jupynvim</text>
+<circle cx="262.6" cy="269.4" r="5.0" fill="#39c5cf"/>
+<text x="262.6" y="286.4" text-anchor="middle" font-size="11" fill="#e6edf3">fotoin</text>
 </g>
 <g>
-<circle cx="610.9" cy="331.5" r="5.0" fill="#58a6ff"/>
-<text x="610.9" y="348.5" text-anchor="middle" font-size="11" fill="#e6edf3">mob-run</text>
+<circle cx="331.2" cy="308.0" r="5.0" fill="#a371f7"/>
+<text x="331.2" y="325.0" text-anchor="middle" font-size="11" fill="#e6edf3">jupynvim</text>
 </g>
 <g>
-<circle cx="345.9" cy="197.4" r="5.0" fill="#f778ba"/>
-<text x="345.9" y="214.4" text-anchor="middle" font-size="11" fill="#e6edf3">non-overlapping-unidomination-thresholds</text>
+<circle cx="230.1" cy="98.7" r="5.0" fill="#58a6ff"/>
+<text x="230.1" y="115.7" text-anchor="middle" font-size="11" fill="#e6edf3">mob-run</text>
 </g>
 <g>
-<circle cx="567.2" cy="97.6" r="5.0" fill="#39c5cf"/>
-<text x="567.2" y="114.6" text-anchor="middle" font-size="11" fill="#e6edf3">plain-gallery</text>
+<circle cx="639.9" cy="254.5" r="5.0" fill="#f778ba"/>
+<text x="639.9" y="271.5" text-anchor="middle" font-size="11" fill="#e6edf3">non-overlapping-unidomination-thresholds</text>
 </g>
 <g>
-<circle cx="701.4" cy="237.4" r="5.0" fill="#58a6ff"/>
-<text x="701.4" y="254.4" text-anchor="middle" font-size="11" fill="#e6edf3">quoridor-zero</text>
+<circle cx="165.2" cy="257.2" r="5.0" fill="#39c5cf"/>
+<text x="165.2" y="274.2" text-anchor="middle" font-size="11" fill="#e6edf3">plain-gallery</text>
 </g>
 <g>
-<circle cx="639.7" cy="205.4" r="5.0" fill="#58a6ff"/>
-<text x="639.7" y="222.4" text-anchor="middle" font-size="11" fill="#e6edf3">rl-2048</text>
+<circle cx="302.2" cy="90.4" r="5.0" fill="#58a6ff"/>
+<text x="302.2" y="107.4" text-anchor="middle" font-size="11" fill="#e6edf3">quoridor-zero</text>
 </g>
 <g>
-<circle cx="402.9" cy="165.4" r="5.0" fill="#d29922"/>
-<text x="402.9" y="182.4" text-anchor="middle" font-size="11" fill="#e6edf3">s1-landingpage</text>
+<circle cx="315.9" cy="161.0" r="5.0" fill="#58a6ff"/>
+<text x="315.9" y="178.0" text-anchor="middle" font-size="11" fill="#e6edf3">rl-2048</text>
 </g>
 <g>
-<circle cx="671.2" cy="294.6" r="5.0" fill="#58a6ff"/>
-<text x="671.2" y="311.6" text-anchor="middle" font-size="11" fill="#e6edf3">solitaire-rl</text>
+<circle cx="505.6" cy="316.8" r="5.0" fill="#d29922"/>
+<text x="505.6" y="333.8" text-anchor="middle" font-size="11" fill="#e6edf3">s1-landingpage</text>
 </g>
 <g>
-<circle cx="252.1" cy="256.9" r="5.0" fill="#f778ba"/>
-<text x="252.1" y="273.9" text-anchor="middle" font-size="11" fill="#e6edf3">strong-2kernel-split-digraphs</text>
+<circle cx="296.9" cy="224.4" r="5.0" fill="#58a6ff"/>
+<text x="296.9" y="241.4" text-anchor="middle" font-size="11" fill="#e6edf3">solitaire-rl</text>
 </g>
 <g>
-<circle cx="674.9" cy="137.6" r="5.0" fill="#39c5cf"/>
-<text x="674.9" y="154.6" text-anchor="middle" font-size="11" fill="#e6edf3">tunewell</text>
+<circle cx="555.0" cy="285.7" r="5.0" fill="#f778ba"/>
+<text x="555.0" y="302.7" text-anchor="middle" font-size="11" fill="#e6edf3">strong-2kernel-split-digraphs</text>
 </g>
 <g>
-<circle cx="573.0" cy="299.1" r="5.0" fill="#58a6ff"/>
-<text x="573.0" y="316.1" text-anchor="middle" font-size="11" fill="#e6edf3">wings-of-steel</text>
+<circle cx="267.0" cy="328.1" r="5.0" fill="#39c5cf"/>
+<text x="267.0" y="345.1" text-anchor="middle" font-size="11" fill="#e6edf3">tunewell</text>
 </g>
 <g>
-<circle cx="178.6" cy="227.2" r="3.5" fill="#db61a2"/>
-<text x="178.6" y="242.7" text-anchor="middle" font-size="11" fill="#e6edf3">crypto-cycle-signals</text>
+<circle cx="228.5" cy="192.4" r="5.0" fill="#58a6ff"/>
+<text x="228.5" y="209.4" text-anchor="middle" font-size="11" fill="#e6edf3">wings-of-steel</text>
 </g>
 <g>
-<circle cx="626.5" cy="263.0" r="2.5" fill="#7d8590"/>
-<text x="626.5" y="277.5" text-anchor="middle" font-size="11" fill="#7d8590">#games</text>
+<circle cx="716.0" cy="213.6" r="3.5" fill="#db61a2"/>
+<text x="716.0" y="229.1" text-anchor="middle" font-size="11" fill="#e6edf3">crypto-cycle-signals</text>
 </g>
 <g>
-<circle cx="300.6" cy="226.7" r="2.5" fill="#7d8590"/>
-<text x="300.6" y="241.2" text-anchor="middle" font-size="11" fill="#7d8590">#math</text>
+<circle cx="594.1" cy="225.8" r="2.5" fill="#7d8590"/>
+<text x="594.1" y="240.3" text-anchor="middle" font-size="11" fill="#7d8590">#math</text>
 </g>
 <g>
-<circle cx="479.2" cy="167.6" r="2.5" fill="#7d8590"/>
-<text x="479.2" y="182.1" text-anchor="middle" font-size="11" fill="#7d8590">#agents</text>
+<circle cx="261.9" cy="150.5" r="2.5" fill="#7d8590"/>
+<text x="261.9" y="165.0" text-anchor="middle" font-size="11" fill="#7d8590">#games</text>
 </g>
 <g>
-<circle cx="608.5" cy="131.5" r="2.5" fill="#7d8590"/>
-<text x="608.5" y="146.0" text-anchor="middle" font-size="11" fill="#7d8590">#on-device</text>
+<circle cx="429.3" cy="287.0" r="2.5" fill="#7d8590"/>
+<text x="429.3" y="301.5" text-anchor="middle" font-size="11" fill="#7d8590">#agents</text>
 </g>
 <g>
-<circle cx="377.0" cy="261.3" r="2.5" fill="#7d8590"/>
-<text x="377.0" y="275.8" text-anchor="middle" font-size="11" fill="#7d8590">#macos</text>
+<circle cx="214.5" cy="298.9" r="2.5" fill="#7d8590"/>
+<text x="214.5" y="313.4" text-anchor="middle" font-size="11" fill="#7d8590">#on-device</text>
 </g>
 <g>
-<circle cx="396.1" cy="91.4" r="2.5" fill="#7d8590"/>
-<text x="396.1" y="105.9" text-anchor="middle" font-size="11" fill="#7d8590">#neovim</text>
+<circle cx="495.5" cy="160.4" r="2.5" fill="#7d8590"/>
+<text x="495.5" y="174.9" text-anchor="middle" font-size="11" fill="#7d8590">#macos</text>
+</g>
+<g>
+<circle cx="357.3" cy="337.5" r="2.5" fill="#7d8590"/>
+<text x="357.3" y="352.0" text-anchor="middle" font-size="11" fill="#7d8590">#neovim</text>
 </g>
 <circle cx="24" cy="384" r="3.5" fill="#3fb950"/>
 <text x="32" y="388" font-size="11" fill="#7d8590">dev tools</text>

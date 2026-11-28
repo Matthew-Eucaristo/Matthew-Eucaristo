@@ -37,7 +37,7 @@ curl -fsSL https://raw.githubusercontent.com/Matthew-Eucaristo/agents-core/main/
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/graph-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/graph-light.svg">
-  <img alt="graph of public projects: fell, flutterkill, nodekill and rustkill ship through homebrew-tap and feed decruft, one tui over all of them; lately sits beside them as a go tool for macos; s1 has its landing page and cask; spoor.nvim and jupynvim are neovim plugins; the games form their own cluster; fotoin and plain gallery are on-device phone apps and tunewell an on-device tuner in the browser; six graph theory and combinatorics proof repos form the math cluster" src="assets/graph-dark.svg" width="100%">
+  <img alt="graph of public projects: fell, flutterkill, nodekill and rustkill ship through homebrew-tap and feed decruft, one tui over all of them; lately sits beside them as a go tool for macos; s1 has its landing page and cask; spoor.nvim and jupynvim are neovim plugins; the games form their own cluster; fotoin and plain gallery are on-device phone apps and tunewell an on-device tuner in the browser; seven graph theory and combinatorics proof repos form the math cluster" src="assets/graph-dark.svg" width="100%">
 </picture>
 
 <sub>drawn by <a href="graph/build.py"><code>graph/build.py</code></a> on every change and once a week. it only draws repos the github api reports as public. <a href="https://matthew-eucaristo.github.io/Matthew-Eucaristo/">interactive version →</a></sub>
@@ -47,11 +47,12 @@ curl -fsSL https://raw.githubusercontent.com/Matthew-Eucaristo/agents-core/main/
 analytical proofs and exact verifiers for open problems in graph theory and combinatorics from recent arxiv papers.
 
 <details>
-<summary>6 published results (latex proof + independent python verifier each)</summary>
+<summary>7 published results (latex proof + independent python verifier each)</summary>
 <br>
 
 | repo | problem settled | source |
 | :-- | :-- | :-- |
+| [**distance-hereditary-odd-chromatic**](https://github.com/Matthew-Eucaristo/distance-hereditary-odd-chromatic) | exact sharp bound `χ_o(G) ≤ 3ω(G)` for all distance-hereditary graphs (attained on `7ω`-vertex family `D_ω`, `ω ≥ 2`, and `χ_o = 6` on bipartite) | [arxiv:2611.29332](https://arxiv.org/abs/2611.29332) |
 | [**non-overlapping-unidomination-thresholds**](https://github.com/Matthew-Eucaristo/non-overlapping-unidomination-thresholds) | sharp np-completeness thresholds for non-overlapping uni-domination (`c > 1` on connected graphs, `c > 2` on connected split graphs, sharp `2√n − 1` split lower bound) | [arxiv:2611.21210](https://arxiv.org/abs/2611.21210) |
 | [**av-3421-4312-cycle-type**](https://github.com/Matthew-Eucaristo/av-3421-4312-cycle-type) | cycle type, cycle count and reflection length are inversion-graph invariants on `Av(3421, 4312)` (conjectures 8.3 & 8.5) | [arxiv:2611.33575](https://arxiv.org/abs/2611.33575) |
 | [**directed-weak-coloring-numbers**](https://github.com/Matthew-Eucaristo/directed-weak-coloring-numbers) | disproof of the weak coloring-number bounds in problems 3.5 & 3.6 and full `k = 1` resolution | [arxiv:2611.33681](https://arxiv.org/abs/2611.33681) |
